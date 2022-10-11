@@ -60,12 +60,12 @@ public class dashboard {
     private By AddPatFirstName = By.xpath("//*[@id=\"mat-dialog-0\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[1]/div/div[1]/div");
     private By AddPatLastName = By.xpath("//*[@id=\"mat-dialog-0\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[2]/div/div[1]/div");
     private By AddPatDOB = By.xpath("//*[@id=\"mat-dialog-0\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[3]/div/div[1]/div[2]/mat-datepicker-toggle/button/span[1]");
-    private By AddPAtSelectDate = By.xpath("//*[@id=\"mat-datepicker-0\"]/div/mat-month-view/table/tbody/tr[4]/td[3]/div[1]");
+    private By AddPAtSelectDate = By.xpath("//*[@id=\"mat-datepicker-0\"]/div/mat-month-view/table/tbody/tr[2]/td[7]/div[1]");
     private By AddPatGender = By.xpath("//*[@id=\"female\"]");
     private By SaveBtn = By.xpath("//*[@id=\"mat-dialog-0\"]/app-add-patient/div/div/div[2]/div/form/div[2]/button[1]");
     //----------------------------------OTHERS XPATHS--------------------------------------
     private By FullScreenBtn = By.xpath("/html/body/app-root/app-main-layout/app-header/nav/div/div[2]/ul[2]/li[1]/button");
-    //----------------------------------CHATBOT XPATHS--------------------------------------
+    //----------------------------------CHAT BOT XPATHS--------------------------------------
     private By ChatbotIcon = By.xpath("//*[contains(@class,'minimized')][2]");
     private By PatientRetBtn = By.xpath("//*[@id=\"ms-28e1fd99-0d2e-5389-8b21-a9b851768f57\"]/div/ul/a[1]/li");
     private By ChatBotValidation = By.xpath("//*[@id=\"botHeaderTitle\"]");
@@ -127,7 +127,7 @@ public class dashboard {
 
     @Test(description = "Check search patient flow")
     public void searchPatientFlow() throws InterruptedException {
-            clickLogInButton();
+            login();
             searchPatient();
             clickLogOutButton();
     }
@@ -135,6 +135,7 @@ public class dashboard {
     //----------------------------------SUPPORT FLOW----------------------------------------
 
     public void supportSection() throws InterruptedException {
+            Thread.sleep(5000);
         driver.findElement(SupportIcon).click();
         boolean supMailVld = driver.getPageSource().contains("hello@velmeni.ai");
         if (supMailVld == true) {
@@ -235,11 +236,11 @@ public class dashboard {
             element1.doubleClick(fname).perform();
             Thread.sleep(4000);
             Actions newaction = new Actions(driver);
-            newaction.sendKeys("Harry").build().perform();
+            newaction.sendKeys("Fu").build().perform();
             driver.findElement(AddPatLastName).click();
             Thread.sleep(4000);
             Actions newaction2 = new Actions(driver);
-            newaction2.sendKeys("James").build().perform();
+            newaction2.sendKeys("Sese").build().perform();
             driver.findElement(AddPatDOB).click();
             Thread.sleep(2000);
             driver.findElement(AddPAtSelectDate).click();
@@ -306,6 +307,17 @@ public class dashboard {
             clickLogInButton();
             ImagesSection();
             clickLogOutButton();
+    }
+    @Test(description = "Check Images flow")
+    //----------------------------------IMAGES TESTCASE-------------------------------------
+    public void EntireFlow() throws InterruptedException {
+        clickLogInButton();
+        searchPatient();
+        addPatientFlow();
+        supportFlow();
+
+        ImagesSection();
+        clickLogOutButton();
     }
 
     //-----------------------------------AFTER CLASS--------------------------------
