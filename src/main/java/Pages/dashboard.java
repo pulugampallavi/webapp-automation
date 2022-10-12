@@ -112,12 +112,12 @@ public class dashboard {
     //-------------------------------LOGIN LOGOUT TESTCASE---------------------------------------
 
         @Test(description = "Check login flow")
-        public void login() throws InterruptedException {
+        public void loginflow() throws InterruptedException {
             clickLogInButton();
         }
     //-------------------------------LOGIN LOGOUT TESTCASE---------------------------------------
     @Test(description = "Check logout flow")
-    public void logout() throws InterruptedException {
+    public void logoutflow() throws InterruptedException {
         clickLogOutButton();
     }
 

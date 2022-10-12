@@ -6,13 +6,32 @@
         <class name="Pages.dashboard">
             <methods>
                 <include name="EntireFlow()"/>
-<!--                <include name="login()"/>-->
-<!--                <include name="searchPatientFlow()"/>-->
-<!--                <include name="supportFlow()"/>-->
-<!--                <include name="settingsFlow()"/>-->
-<!--                <include name="AddPatient()"/>-->
-<!--                <include name="ChatBot()"/>-->
-<!--                <include name="ImagesFlow()"/>-->
+            </methods>
+        </class>
+        <class name="Pages.loginPage">
+            <methods>
+                <include name="loginflow()"/>
+                <include name="logoutflow()"/>
+            </methods>
+        </class>
+        <class name="Pages.AddPatient">
+            <methods>
+                <include name="AddPatient()"/>
+            </methods>
+        </class>
+        <class name="Pages.Chatbot">
+            <methods>
+                <include name="ChatBot()"/>
+            </methods>
+        </class>
+        <class name="Pages.Settings">
+            <methods>
+                <include name="settingsFlow()"/>
+            </methods>
+        </class>
+        <class name="Pages.Support">
+            <methods>
+                <include name="supportFlow()"/>
             </methods>
         </class>
     </classes>
