@@ -37,7 +37,8 @@ public class dashboard {
     //---------------------------SUPPORT SECTION XPATH-------------------------------------------
     private By SupportIcon = By.xpath("//*[@id=\"leftsidebar\"]/div/ul/li[2]");
     private By UserManual = By.xpath("/html/body/app-root/app-main-layout/support/section/div/div[2]/div/div/div/div/div[2]/a");
-
+    //*[@id="mat-input-5"]
+    //*[@id="mat-input-0"]
     //---------------------------SETTINGS SECTION XPATH-------------------------------------------
     private By settingsIcon = By.xpath("//*[@id=\"leftsidebar\"]/div/ul/li[3]/a");
     private By UserNameField = By.xpath("//*[@id=\"mat-tab-content-0-0\"]/div/div/div/div/form/mat-form-field[1]/div/div[1]/div");
@@ -47,7 +48,8 @@ public class dashboard {
     private By ShowPassword = By.xpath("/html/body/app-root/app-main-layout/app-settings/section/div/mat-tab-group/div/mat-tab-body/div/div/div/div/form/mat-form-field[3]/div/div[1]/div[2]/a");
 
     //----------------------------------UPLOAD AND ANALYZE XPATHS--------------------------------------
-
+//*[@id="mat-input-6"]
+    //html/body/app-root/app-auth-layout/app-signin/div/div/div/div/div/div[2]/form/div[4]/div/button
     private By SelectPatient = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[6]");
     private By UploadAnalyzeButton = By.xpath("//*[@id=\"mat-tab-label-0-2\"]");
     private By BitewingRadioBtn = By.xpath("//*[@id=\"mat-radio-4\"]/label/span[1]");
@@ -104,10 +106,16 @@ public class dashboard {
 
     //-------------------------------LOGIN LOGOUT TESTCASE---------------------------------------
 
-        @Test(description = "Check entire login logout flow")
+        @Test(description = "Check login flow")
         public void login() throws InterruptedException {
             clickLogInButton();
         }
+    //-------------------------------LOGIN LOGOUT TESTCASE---------------------------------------
+    @Test(description = "Check logout flow")
+    public void logout() throws InterruptedException {
+        clickLogOutButton();
+    }
+
 
     //----------------------------------SEARCH PATIENT FLOW----------------------------------------
 
@@ -127,7 +135,7 @@ public class dashboard {
 
     @Test(description = "Check search patient flow")
     public void searchPatientFlow() throws InterruptedException {
-            login();
+            clickLogInButton();
             searchPatient();
             clickLogOutButton();
     }
@@ -160,7 +168,7 @@ public class dashboard {
 
     @Test(description = "Check support flow")
     public void supportFlow() throws InterruptedException {
-        login();
+        clickLogInButton();
         supportSection();
         clickLogOutButton();
     }
@@ -236,11 +244,11 @@ public class dashboard {
             element1.doubleClick(fname).perform();
             Thread.sleep(4000);
             Actions newaction = new Actions(driver);
-            newaction.sendKeys("Fu").build().perform();
+            newaction.sendKeys("Cinderella").build().perform();
             driver.findElement(AddPatLastName).click();
             Thread.sleep(4000);
             Actions newaction2 = new Actions(driver);
-            newaction2.sendKeys("Sese").build().perform();
+            newaction2.sendKeys("Queen").build().perform();
             driver.findElement(AddPatDOB).click();
             Thread.sleep(2000);
             driver.findElement(AddPAtSelectDate).click();
@@ -310,12 +318,14 @@ public class dashboard {
     }
     @Test(description = "Check Images flow")
     //----------------------------------IMAGES TESTCASE-------------------------------------
-    public void EntireFlow() throws InterruptedException {
+    public void EntireFlow() throws InterruptedException, IOException {
         clickLogInButton();
         searchPatient();
+        supportSection();
+        SettingsSection();
+        //uploadAndAnalyzeFlow();
         addPatientFlow();
-        supportFlow();
-
+        ChatbotFlow();
         ImagesSection();
         clickLogOutButton();
     }

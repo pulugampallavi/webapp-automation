@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-<test name="Velmeni Automation">
+<test name="VelMeni Automation">
     <classes>
         <class name="Pages.dashboard">
             <methods>
-                <include name="login()"/>
-                <include name="searchPatientFlow()"/>
+                <include name="EntireFlow()"/>
+<!--                <include name="login()"/>-->
+<!--                <include name="searchPatientFlow()"/>-->
+<!--                <include name="supportFlow()"/>-->
+<!--                <include name="settingsFlow()"/>-->
+<!--                <include name="AddPatient()"/>-->
+<!--                <include name="ChatBot()"/>-->
+<!--                <include name="ImagesFlow()"/>-->
             </methods>
         </class>
     </classes>
