@@ -41,7 +41,7 @@ public class dashboard {
     //*[@id="mat-input-0"]
     //---------------------------SETTINGS SECTION XPATH-------------------------------------------
     private By settingsIcon = By.xpath("//*[@id=\"leftsidebar\"]/div/ul/li[3]/a");
-    private By UserNameField = By.xpath("//*[@id=\"mat-tab-content-0-0\"]/div/div/div/div/form/mat-form-field[1]/div/div[1]/div");
+    private By UserNameField = By.xpath("//*[@id=\"mat-input-2\"]");
     private By CurrentPassword = By.xpath("//*[@id=\"mat-input-3\"]");
     private By NewPasswordField = By.xpath("//*[@id=\"mat-input-4\"]");
     private By ConfirmPasswordField = By.xpath("//*[@id=\"mat-input-5\"]");
@@ -58,6 +58,7 @@ public class dashboard {
     private By AnalyzeBtn = By.xpath("//*[@id=\"cdk-step-content-0-0\"]/form/div/div/div[2]/div/button[2]");
 
     //----------------------------------ADD PATIENTS XPATHS--------------------------------------
+    private By PatientSection = By.xpath("//*[@id=\"leftsidebar\"]/div/ul/li[1]/a");
     private By AddPatientBtn = By.xpath("//div/button/span[text()=' Add Patient ']");
     private By AddPatFirstName = By.xpath("//*[@id=\"mat-dialog-0\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[1]/div/div[1]/div");
     private By AddPatLastName = By.xpath("//*[@id=\"mat-dialog-0\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[2]/div/div[1]/div");
@@ -72,7 +73,11 @@ public class dashboard {
     private By PatientRetBtn = By.xpath("//*[@id=\"ms-28e1fd99-0d2e-5389-8b21-a9b851768f57\"]/div/ul/a[1]/li");
     private By ChatBotValidation = By.xpath("//*[@id=\"botHeaderTitle\"]");
     private By ChatBotCloseBtn = By.xpath("//*[@id=\"KORE_BOT\"]/div[4]/div[3]/button[5]");
+
     //----------------------------------IMAGES XPATHS-------------------------------------
+    //*[@id="mat-tab-label-2-1"]
+    //*[@id="mat-tab-label-2-1"]/div
+    //*[@id="mat-tab-label-0-1"]
     private By ImagesSecBtn = By.xpath("//*[@id=\"mat-tab-label-0-1\"]");
     private By XrayImage = By.xpath("//*[@id=\"mat-tab-content-0-1\"]/div/app-list-images/div/div[2]/div/img");
 
@@ -120,6 +125,7 @@ public class dashboard {
     //----------------------------------SEARCH PATIENT FLOW----------------------------------------
 
     public void searchPatient() throws InterruptedException {
+            Thread.sleep(2000);
             driver.findElement(FullScreenBtn).click();
             driver.findElement(SearchButton).click();
             driver.findElement(SearchButton).sendKeys("Bitewing");
@@ -237,7 +243,8 @@ public class dashboard {
 
     //----------------------------------ADD PATIENTS FLOW--------------------------------------
     public void addPatientFlow() throws InterruptedException {
-
+            driver.findElement(PatientSection).click();
+            Thread.sleep(2000);
             driver.findElement(AddPatientBtn).click();
             Actions element1 = new Actions(driver);
             WebElement fname = driver.findElement(AddPatFirstName);
@@ -248,7 +255,7 @@ public class dashboard {
             driver.findElement(AddPatLastName).click();
             Thread.sleep(4000);
             Actions newaction2 = new Actions(driver);
-            newaction2.sendKeys("Queen").build().perform();
+            newaction2.sendKeys("Thomas").build().perform();
             driver.findElement(AddPatDOB).click();
             Thread.sleep(2000);
             driver.findElement(AddPAtSelectDate).click();
@@ -302,8 +309,10 @@ public class dashboard {
     }
 
     //----------------------------------IMAGES SECTION--------------------------------------
-    public void ImagesSection(){
+    public void ImagesSection() throws InterruptedException {
+            driver.findElement(PatientSection).click();
             driver.findElement(SelectPatient).click();
+            Thread.sleep(2000);
             driver.findElement(ImagesSecBtn).click();
             driver.findElement(XrayImage).click();
 
@@ -325,8 +334,9 @@ public class dashboard {
         SettingsSection();
         //uploadAndAnalyzeFlow();
         addPatientFlow();
-        ChatbotFlow();
+        Thread.sleep(2000);
         ImagesSection();
+        ChatbotFlow();
         clickLogOutButton();
     }
 
