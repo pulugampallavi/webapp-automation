@@ -1,4 +1,5 @@
 package Pages;
+import Utils.SecondDentistUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,6 +20,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 public class UploadAnalyse {
     WebDriver driver;
+    SecondDentistUtils sdUtils;
     private loginPage  LoginPage;
 
     //----------------------------------UPLOAD AND ANALYZE XPATHS--------------------------------------
@@ -36,6 +38,7 @@ public class UploadAnalyse {
     {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
+        sdUtils= new SecondDentistUtils();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
@@ -60,7 +63,7 @@ public class UploadAnalyse {
     //----------------------------------Upload and Analyze Section Testcase----------------------------------------
     @Test(description = "Check Upload and Analyze flow")
     public void UploadAndAnalyze() throws InterruptedException, IOException {
-        LoginPage.clickLogInButton();
+        sdUtils.clickLogInButton(driver);
         uploadAndAnalyzeFlow();
         LoginPage.clickLogOutButton();
 
