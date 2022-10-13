@@ -18,6 +18,8 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 public class AddPatient {
     WebDriver driver;
+    protected String userEmail = "pallavi@frugaltesting.com";
+    protected String userPassword = "Test@12345";
     private loginPage  LoginPage;
 
     //----------------------------------ADD PATIENTS XPATHS--------------------------------------
@@ -72,5 +74,12 @@ public class AddPatient {
         LoginPage.clickLogInButton();
         addPatientFlow();
         LoginPage.clickLogOutButton();
+    }
+    //-----------------------------------AFTER CLASS--------------------------------
+
+    @AfterClass
+    public void tearDown()
+    {
+        driver.quit();
     }
 }

@@ -68,5 +68,12 @@ public class Support {
         supportSection();
         LoginPage.clickLogOutButton();
     }
+    //-----------------------------------AFTER CLASS--------------------------------
+
+    @AfterClass
+    public void tearDown()
+    {
+        driver.quit();
+    }
 
 }

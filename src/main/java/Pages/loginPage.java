@@ -2,6 +2,7 @@ package Pages;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -55,5 +56,12 @@ public class loginPage {
     @Test(description = "Check logout flow")
     public void logoutflow() throws InterruptedException {
         clickLogOutButton();
+    }
+    //-----------------------------------AFTER CLASS--------------------------------
+
+    @AfterClass
+    public void tearDown()
+    {
+        driver.quit();
     }
 }

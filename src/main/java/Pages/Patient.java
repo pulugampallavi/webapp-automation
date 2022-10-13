@@ -32,5 +32,12 @@ public class Patient {
         driver.manage().window().maximize();
         driver.get("https://app.seconddentist.ai/#/authentication/signin");
     }
+    //-----------------------------------AFTER CLASS--------------------------------
+
+    @AfterClass
+    public void tearDown()
+    {
+        driver.quit();
+    }
 }
 

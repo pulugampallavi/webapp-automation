@@ -65,5 +65,12 @@ public class UploadAnalyse {
         LoginPage.clickLogOutButton();
 
     }
+    //-----------------------------------AFTER CLASS--------------------------------
+
+    @AfterClass
+    public void tearDown()
+    {
+        driver.quit();
+    }
 
 }

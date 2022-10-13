@@ -3,11 +3,11 @@
 <suite name="All Test Suite">
 <test name="VelMeni Automation">
     <classes>
-        <class name="Pages.dashboard">
-            <methods>
-                <include name="EntireFlow()"/>
-            </methods>
-        </class>
+<!--        <class name="Pages.dashboard">-->
+<!--            <methods>-->
+<!--                <include name="EntireFlow()"/>-->
+<!--            </methods>-->
+<!--        </class>-->
         <class name="Pages.loginPage">
             <methods>
                 <include name="loginflow()"/>

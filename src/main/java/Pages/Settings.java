@@ -77,5 +77,12 @@ public class Settings {
         SettingsSection();
         LoginPage.clickLogOutButton();
     }
+    //-----------------------------------AFTER CLASS--------------------------------
+
+    @AfterClass
+    public void tearDown()
+    {
+        driver.quit();
+    }
 
 }

@@ -64,5 +64,12 @@ public class SearchPatient {
         LoginPage.clickLogOutButton();
 
     }
+    //-----------------------------------AFTER CLASS--------------------------------
+
+    @AfterClass
+    public void tearDown()
+    {
+        driver.quit();
+    }
 
 }

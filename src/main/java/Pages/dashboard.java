@@ -335,7 +335,7 @@ public class dashboard {
         //uploadAndAnalyzeFlow();
         addPatientFlow();
         Thread.sleep(2000);
-        ImagesSection();
+       // ImagesSection();
         ChatbotFlow();
         clickLogOutButton();
     }
