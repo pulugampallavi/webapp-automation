@@ -38,11 +38,11 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         element1.doubleClick(fname).perform();
         Thread.sleep(4000);
         Actions newaction = new Actions(driver);
-        newaction.sendKeys("Cinderella").build().perform();
+        newaction.sendKeys("Cinder").build().perform();
         driver.findElement(AddPatLastName).click();
         Thread.sleep(4000);
         Actions newaction2 = new Actions(driver);
-        newaction2.sendKeys("Thomas").build().perform();
+        newaction2.sendKeys("ella").build().perform();
         driver.findElement(AddPatDOB).click();
         Thread.sleep(2000);
         driver.findElement(AddPAtSelectDate).click();
@@ -87,7 +87,9 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         Thread.sleep(4000);
         driver.findElement(UploadImageBtn).sendKeys("R:/Velmeni/webapp-automation/resources/bitewing1.jpeg");
         driver.findElement(UploadImageBtn).submit();
-        driver.findElement(AnalyzeBtn).click();
+        driver.findElement(ProceedBtn).click();
+       // Thread.sleep(2000);
+        driver.findElement(AnalyzeBtnPopup).click();
     }
 
     //----------------------------------SUPPORT FLOW----------------------------------------

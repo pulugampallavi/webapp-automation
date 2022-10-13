@@ -28,8 +28,8 @@ public class SecondDentistXpaths {
     public By UploadAnalyzeButton = By.xpath("//*[@id=\"mat-tab-label-0-2\"]");
     public By BitewingRadioBtn = By.xpath("//*[@id=\"mat-radio-4\"]/label/span[1]");
     public By UploadImageBtn = By.xpath("//*[@id=\"undefined\"]");
-    public By AnalyzeBtn = By.xpath("//*[@id=\"cdk-step-content-0-0\"]/form/div/div/div[2]/div/button[2]");
-
+    public By ProceedBtn = By.xpath("//*[@id=\"cdk-step-content-0-0\"]/form/div/div/div[2]/div/button[2]");
+    public By AnalyzeBtnPopup = By.xpath("//*[@id=\"mat-dialog-0\"]/app-analyze-consent/div/div[2]/button[2]");
     //---------------------------SUPPORT SECTION XPATH-------------------------------------------
     public By SupportIcon = By.xpath("//*[@id=\"leftsidebar\"]/div/ul/li[2]");
     public By UserManual = By.xpath("/html/body/app-root/app-main-layout/support/section/div/div[2]/div/div/div/div/div[2]/a");
