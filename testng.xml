@@ -3,38 +3,38 @@
 <suite name="All Test Suite">
 <test name="VelMeni Automation">
     <classes>
-<!--        <class name="Pages.dashboard">-->
+<!--        <class name="Tests.CompleteFlowSD">-->
 <!--            <methods>-->
 <!--                <include name="EntireFlow()"/>-->
 <!--            </methods>-->
 <!--        </class>-->
-        <class name="Pages.loginPage">
+        <class name="Tests.LoginLogout">
             <methods>
                 <include name="loginflow()"/>
                 <include name="logoutflow()"/>
             </methods>
         </class>
-        <class name="Pages.AddPatient">
+        <class name="Tests.AddPatient">
             <methods>
                 <include name="AddPatient()"/>
             </methods>
         </class>
-        <class name="Pages.Chatbot">
+        <class name="Tests.Chatbot">
             <methods>
                 <include name="ChatBot()"/>
             </methods>
         </class>
-        <class name="Pages.UploadAnalyse">
+        <class name="Tests.UploadAndAnalyse">
             <methods>
                 <include name="UploadAndAnalyze()"/>
             </methods>
         </class>
-        <class name="Pages.Settings">
+        <class name="Tests.Settings">
             <methods>
                 <include name="settingsFlow()"/>
             </methods>
         </class>
-        <class name="Pages.Support">
+        <class name="Tests.Support">
             <methods>
                 <include name="supportFlow()"/>
             </methods>
