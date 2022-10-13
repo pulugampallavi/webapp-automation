@@ -3,42 +3,35 @@
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="VelMeni Automation(failed)">
     <classes>
-      <class name="Tests.UploadAndAnalyse">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="UploadAndAnalyze"/>
-        </methods>
-      </class> <!-- Tests.UploadAndAnalyse -->
-      <class name="Tests.AddPatient">
-        <methods>
-          <include name="AddPatient"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests.AddPatient -->
       <class name="Tests.Support">
         <methods>
-          <include name="tearDown"/>
           <include name="supportFlow"/>
+          <include name="tearDown"/>
           <include name="setup"/>
         </methods>
       </class> <!-- Tests.Support -->
+      <class name="Tests.LoginLogout">
+        <methods>
+          <include name="setup"/>
+          <include name="loginflow"/>
+          <include name="tearDown"/>
+          <include name="logoutflow"/>
+        </methods>
+      </class> <!-- Tests.LoginLogout -->
       <class name="Tests.Settings">
         <methods>
           <include name="setup"/>
-          <include name="settingsFlow"/>
           <include name="tearDown"/>
+          <include name="settingsFlow"/>
         </methods>
       </class> <!-- Tests.Settings -->
-      <class name="Tests.LoginLogout">
+      <class name="Tests.UploadAndAnalyse">
         <methods>
-          <include name="logoutflow"/>
-          <include name="tearDown"/>
           <include name="setup"/>
-          <include name="loginflow"/>
+          <include name="UploadAndAnalyze"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Tests.LoginLogout -->
+      </class> <!-- Tests.UploadAndAnalyse -->
     </classes>
   </test> <!-- VelMeni Automation(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

@@ -1,1 +1,0 @@
-{"uuid":"658e2aa8-a888-48f7-877a-41e2f2b7f397","name":"Pages.AddPatient","children":["89375d64-e1c7-40a0-934f-f968175150a4"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1665643331141,"stop":1665643339656}],"afters":[],"start":1665643293800,"stop":1665643359471}

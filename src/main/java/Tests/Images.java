@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeClass;
 import java.util.concurrent.TimeUnit;
 public class Images {
     WebDriver driver;
-    private LoginLogout LoginPage;
+
 
     //----------------------------------IMAGES XPATHS-------------------------------------
     //*[@id="mat-tab-label-2-1"]
@@ -25,6 +25,7 @@ public class Images {
     {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
+
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();

@@ -20,6 +20,7 @@ public class SearchPatient {
     {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
+        sdUtils= new SecondDentistUtils();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
