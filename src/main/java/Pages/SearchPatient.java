@@ -1,4 +1,5 @@
 package Pages;
+import Utils.SecondDentistUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,15 +19,9 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 public class SearchPatient {
     WebDriver driver;
+    SecondDentistUtils sdUtils;
 
-    //---------------------------SEARCH PATIENT XPATH-------------------------------------------
-    private By SearchButton = By.xpath("//*[@id=\"search-input\"]");
-    private By FirstSearchResults = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]");
 
-    //----------------------------------OTHERS XPATHS--------------------------------------
-    private By FullScreenBtn = By.xpath("/html/body/app-root/app-main-layout/app-header/nav/div/div[2]/ul[2]/li[1]/button");
-
-    private loginPage  LoginPage;
     //----------------------------------BEFORE CLASS--------------------------------------
 
     @BeforeClass
@@ -40,28 +35,14 @@ public class SearchPatient {
         driver.get("https://app.seconddentist.ai/#/authentication/signin");
     }
 
-    //----------------------------------SEARCH PATIENT FLOW----------------------------------------
-
-    public void searchPatient() throws InterruptedException {
-        Thread.sleep(2000);
-        driver.findElement(FullScreenBtn).click();
-        driver.findElement(SearchButton).click();
-        driver.findElement(SearchButton).sendKeys("Bitewing");
-        driver.findElement(By.xpath("//div/mat-table/mat-row[@class='mat-row cdk-row ng-star-inserted']")).click();
-        Thread.sleep(4000);
-        boolean vld = driver.getPageSource().contains(" Bitewing Cases");
-        if (vld == true) {
-            System.out.println("Redirected to correct user");
-        }
-    }
 
     //----------------------------------SEARCH PATIENT TESTCASE----------------------------------------
 
     @Test(description = "Check search patient flow")
     public void searchPatientFlow() throws InterruptedException {
-        LoginPage.clickLogInButton();
-        searchPatient();
-        LoginPage.clickLogOutButton();
+        sdUtils.clickLogInButton(driver);
+        sdUtils.searchPatient(driver);
+        sdUtils.clickLogOutButton(driver);
 
     }
     //-----------------------------------AFTER CLASS--------------------------------

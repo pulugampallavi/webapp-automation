@@ -1,4 +1,5 @@
 package Pages;
+import Utils.SecondDentistUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,49 +19,31 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 public class Chatbot {
     WebDriver driver;
-    private loginPage  LoginPage;
-
-    //----------------------------------CHAT BOT XPATHS--------------------------------------
-    private By ChatbotIcon = By.xpath("//*[contains(@class,'minimized')][2]");
-    private By PatientRetBtn = By.xpath("//*[@id=\"ms-28e1fd99-0d2e-5389-8b21-a9b851768f57\"]/div/ul/a[1]/li");
-    private By ChatBotValidation = By.xpath("//*[@id=\"botHeaderTitle\"]");
-    private By ChatBotCloseBtn = By.xpath("//*[@id=\"KORE_BOT\"]/div[4]/div[3]/button[5]");
+    SecondDentistUtils sdUtils;
 
 
-    //----------------------------------CHATBOT FLOW--------------------------------------
+    //----------------------------------BEFORE CLASS--------------------------------------
 
-    public void ChatbotFlow() throws InterruptedException {
-        JavascriptExecutor js= (JavascriptExecutor) driver;
-        Thread.sleep(10000);
-        js.executeScript("document.getElementsByClassName('minimized')[0].click();");
-        Thread.sleep(5000);
-        WebElement element2 = driver.findElement(ChatBotValidation);
-        if (element2.isDisplayed()){
-            System.out.println("ChatBot Popup opened");
-        }
-        else {
-            System.out.println("ChatBot popup did not open");
-        }
-        js.executeScript("document.getElementsByClassName('buttonTmplContentChild')[0].click();");
-        Thread.sleep(10000);
-        js.executeScript("document.getElementsByClassName('buttonTmplContentChild')[1].click();");
-        Thread.sleep(10000);
-        js.executeScript("document.getElementsByClassName('buttonTmplContentChild')[2].click();");
-        Thread.sleep(10000);
-        js.executeScript("document.getElementsByClassName('buttonTmplContentChild')[3].click();");
-        Thread.sleep(10000);
-        js.executeScript("document.getElementsByClassName('buttonTmplContentChild')[4].click();");
-        driver.findElement(ChatBotCloseBtn).click();
-
+    @BeforeClass
+    public void setup()
+    {
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        sdUtils= new SecondDentistUtils();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().deleteAllCookies();
+        driver.manage().window().maximize();
+        driver.get("https://app.seconddentist.ai/#/authentication/signin");
     }
+
 
     //----------------------------------CHATBOT TESTCASE--------------------------------------
 
     @Test(description = "Check ChatBot flow")
     public void ChatBot() throws InterruptedException {
-        LoginPage.clickLogInButton();
-        ChatbotFlow();
-        LoginPage.clickLogOutButton();
+        sdUtils.clickLogInButton(driver);
+        sdUtils.ChatbotFlow(driver);
+        sdUtils.clickLogOutButton(driver);
     }
     //-----------------------------------AFTER CLASS--------------------------------
 

@@ -24,6 +24,11 @@
                 <include name="ChatBot()"/>
             </methods>
         </class>
+        <class name="Pages.UploadAnalyse">
+            <methods>
+                <include name="UploadAndAnalyze()"/>
+            </methods>
+        </class>
         <class name="Pages.Settings">
             <methods>
                 <include name="settingsFlow()"/>
