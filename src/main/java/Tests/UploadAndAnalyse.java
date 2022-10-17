@@ -11,10 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class UploadAndAnalyse {
     WebDriver driver;
     SecondDentistUtils sdUtils;
-
-
     //----------------------------------BEFORE CLASS--------------------------------------
-
     @BeforeClass
     public void setup()
     {
@@ -26,22 +23,17 @@ public class UploadAndAnalyse {
         driver.manage().window().maximize();
         driver.get("https://app.seconddentist.ai/#/authentication/signin");
     }
-
-
     //----------------------------------Upload and Analyze Section Testcase----------------------------------------
     @Test(description = "Check Upload and Analyze flow")
     public void UploadAndAnalyze() throws InterruptedException, IOException {
         sdUtils.clickLogInButton(driver);
         sdUtils.uploadAndAnalyzeFlow(driver);
         sdUtils.clickLogOutButton(driver);
-
     }
     //-----------------------------------AFTER CLASS--------------------------------
-
     @AfterClass
     public void tearDown()
     {
         driver.quit();
     }
-
 }

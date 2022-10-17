@@ -50,6 +50,8 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         driver.findElement(SaveBtn).click();
     }
 
+
+
     //----------------------------------CHATBOT FLOW--------------------------------------
 
     public void ChatbotFlow(WebDriver driver) throws InterruptedException {
@@ -85,11 +87,18 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         Thread.sleep(2000);
         driver.findElement(BitewingRadioBtn).click();
         Thread.sleep(4000);
-        driver.findElement(UploadImageBtn).sendKeys("R:/Velmeni/webapp-automation/resources/bitewing1.jpeg");
+        driver.findElement(UploadImageBtn).sendKeys("R:/Velmeni/Proofs & Files/bitewingimage/200-4.1.jpeg");
         driver.findElement(UploadImageBtn).submit();
         driver.findElement(ProceedBtn).click();
        // Thread.sleep(2000);
         driver.findElement(AnalyzeBtnPopup).click();
+        Thread.sleep(2000);
+        driver.findElement(AcceptBtn).click();
+        Thread.sleep(2000);
+        driver.findElement(SaveFindingsBtn).click();
+        Thread.sleep(2000);
+        driver.findElement(DownloadReportBtn).click();
+
     }
 
     //----------------------------------SUPPORT FLOW----------------------------------------
@@ -157,7 +166,15 @@ public class SecondDentistUtils extends SecondDentistXpaths {
             System.out.println("Redirected to correct user");
         }
     }
-
-
-
+    //----------------------------------PATIENT VISITS FLOW----------------------------------------
+    public void patientVisitsflow(WebDriver driver){
+        boolean vld = driver.findElement(PVHeader).isDisplayed();
+        if (vld == true){
+            System.out.println("On Patient Visits Page");
+        }
+        driver.findElement(SelectPatient2).click();
+        driver.findElement(ImageIconSmall).click();
+        driver.findElement(PatientVisitsSection).click();
+        driver.findElement(ReportIconSmall).click();
+    }
 }

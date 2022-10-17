@@ -31,6 +31,7 @@ public class Images {
         driver.manage().window().maximize();
         driver.get("https://app.seconddentist.ai/#/authentication/signin");
     }
+
     //-----------------------------------AFTER CLASS--------------------------------
 
     @AfterClass

@@ -33,6 +33,7 @@ public class AddPatient {
         sdUtils.addPatientFlow(driver);
         sdUtils.clickLogOutButton(driver);
     }
+
     //-----------------------------------AFTER CLASS--------------------------------
 
     @AfterClass
