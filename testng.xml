@@ -17,6 +17,7 @@
         <class name="Tests.AddPatient">
             <methods>
                 <include name="AddPatient()"/>
+                <include name="AddPatientbtn"/>
             </methods>
         </class>
         <class name="Tests.Chatbot">
@@ -32,6 +33,10 @@
         <class name="Tests.Settings">
             <methods>
                 <include name="settingsFlow()"/>
+                <include name="settingsFlow2()"/>
+                <include name="settingsFlow3()"/>
+                <include name="settingsFlow4()"/>
+                <include name="settingsFlow5()"/>
             </methods>
         </class>
         <class name="Tests.Support">
