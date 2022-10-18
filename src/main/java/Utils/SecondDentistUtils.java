@@ -1,6 +1,7 @@
 package Utils;
 
 import Constants.SecondDentistXpaths;
+import Tests.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -16,11 +17,11 @@ public class SecondDentistUtils extends SecondDentistXpaths {
 
     //----------------------------------LOGIN LOGOUT FLOW--------------------------------------
     public void clickLogInButton(WebDriver driver) {
-        driver.findElement(username).clear();
-        driver.findElement(username).sendKeys("pallavi@frugaltesting.com");
+        driver.findElement(usernameXpath).clear();
+        driver.findElement(usernameXpath).sendKeys(BaseTest.username);
 
-        driver.findElement(Password).clear();
-        driver.findElement(Password).sendKeys("Test@12345");
+        driver.findElement(PasswordXpath).clear();
+        driver.findElement(PasswordXpath).sendKeys(BaseTest.password);
 
         driver.findElement(SignIn).click();
     }

@@ -1,21 +1,18 @@
 package Tests;
 import Utils.SecondDentistUtils;
+import com.fasterxml.jackson.databind.ser.Serializers;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
-public class LoginLogout {
+public class LoginLogout extends BaseTest {
     WebDriver driver;
     SecondDentistUtils sdUtils;
-    protected String userEmail = "pallavi@frugaltesting.com";
-    protected String userPassword = "Test@12345";
-
-
-
     //----------------------------------BEFORE CLASS--------------------------------------
 
     @BeforeClass
@@ -27,7 +24,7 @@ public class LoginLogout {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-        driver.get("https://app.seconddentist.ai/#/authentication/signin");
+        driver.get(BaseTest.url);
     }
 
 
@@ -35,6 +32,7 @@ public class LoginLogout {
 
     @Test(description = "Check login flow")
     public void loginflow() throws InterruptedException {
+        Reporter.log("url="+BaseTest.url);
         sdUtils.clickLogInButton(driver);
     }
     //-------------------------------LOGIN LOGOUT TESTCASE---------------------------------------

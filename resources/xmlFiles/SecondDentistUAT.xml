@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="environment" value="uat" />
+    <parameter name="url" value="https://uat.seconddentist.ai/#/authentication/signin" />
+    <parameter name="username" value="pallavi@velmeni.com" />
+    <parameter name="password" value="Velmeni@2022" />
+    <test name="makeConfigRead" preserve-order="true">
+        <classes>
+            <class name="Tests.BaseTest" />
+        </classes>
+    </test>
+    <test name="Login">
+        <classes>
+            <class name="Tests.LoginLogout" />
+        </classes>
+    </test>
+</suite>

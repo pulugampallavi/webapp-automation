@@ -1,39 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="2" failed="5" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[url=https://uat.seconddentist.ai/#/authentication/signin]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-10-13T17:07:14 IST" name="All Test Suite" finished-at="2022-10-13T17:10:05 IST" duration-ms="170743">
+  <suite started-at="2022-10-18T15:26:42 IST" name="All Test Suite" finished-at="2022-10-18T15:27:30 IST" duration-ms="48183">
     <groups>
     </groups>
-    <test started-at="2022-10-13T17:07:14 IST" name="VelMeni Automation" finished-at="2022-10-13T17:10:05 IST" duration-ms="170743">
-      <class name="Tests.UploadAndAnalyse">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.UploadAndAnalyse@766653e6]" started-at="2022-10-13T17:09:13 IST" name="setup" finished-at="2022-10-13T17:09:22 IST" duration-ms="9824" status="PASS">
+    <test started-at="2022-10-18T15:26:42 IST" name="makeConfigRead" finished-at="2022-10-18T15:26:42 IST" duration-ms="17">
+    </test> <!-- makeConfigRead -->
+    <test started-at="2022-10-18T15:26:42 IST" name="Login" finished-at="2022-10-18T15:27:30 IST" duration-ms="47975">
+      <class name="Tests.LoginLogout">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.LoginLogout@2a3888c1]" started-at="2022-10-18T15:26:42 IST" name="setUp" finished-at="2022-10-18T15:26:42 IST" duration-ms="23" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[prod]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://uat.seconddentist.ai/#/authentication/signin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pallavi@velmeni.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Velmeni@2022]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.LoginLogout@2a3888c1]" started-at="2022-10-18T15:26:42 IST" name="setup" finished-at="2022-10-18T15:26:53 IST" duration-ms="11214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="UploadAndAnalyze()[pri:0, instance:Tests.UploadAndAnalyse@766653e6]" started-at="2022-10-13T17:09:22 IST" name="UploadAndAnalyze" description="Check Upload and Analyze flow" finished-at="2022-10-13T17:09:44 IST" duration-ms="21055" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="loginflow()[pri:0, instance:Tests.LoginLogout@2a3888c1]" started-at="2022-10-18T15:26:53 IST" name="loginflow" description="Check login flow" finished-at="2022-10-18T15:26:54 IST" duration-ms="399" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[url=https://uat.seconddentist.ai/#/authentication/signin]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginflow -->
+        <test-method signature="logoutflow()[pri:0, instance:Tests.LoginLogout@2a3888c1]" started-at="2022-10-18T15:26:54 IST" name="logoutflow" description="Check logout flow" finished-at="2022-10-18T15:27:29 IST" duration-ms="35089" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <a _ngcontent-mjw-c90="" class="menu-top">...</a> is not clickable at point (32, 520). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="leftsidebar"]/div/ul/li[4]/a"}
   (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-M4HISO1', ip: '172.21.64.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+System info: host: 'PALLAVIREDDY', ip: '192.168.29.190', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ebc208a56fd4e00e3bf5920cb720a969, clickElement {id=c152c7f6-a788-4b00-9ed3-95c0d0639ffb}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\RIAAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49894}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49894/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (ebc208a56fd4e00e3bf5920cb720a969)] -> xpath: //*[@id="leftsidebar"]/div/ul/li[4]/a]
-Session ID: ebc208a56fd4e00e3bf5920cb720a969]]>
+Command: [af185662d7035ae3afca6b4979d70a16, findElement {using=xpath, value=//*[@id="leftsidebar"]/div/ul/li[4]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\palla\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63577}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63577/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: af185662d7035ae3afca6b4979d70a16]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a _ngcontent-mjw-c90="" class="menu-top">...</a> is not clickable at point (32, 520). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="leftsidebar"]/div/ul/li[4]/a"}
   (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-M4HISO1', ip: '172.21.64.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+System info: host: 'PALLAVIREDDY', ip: '192.168.29.190', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ebc208a56fd4e00e3bf5920cb720a969, clickElement {id=c152c7f6-a788-4b00-9ed3-95c0d0639ffb}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\RIAAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49894}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49894/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (ebc208a56fd4e00e3bf5920cb720a969)] -> xpath: //*[@id="leftsidebar"]/div/ul/li[4]/a]
-Session ID: ebc208a56fd4e00e3bf5920cb720a969
+Command: [af185662d7035ae3afca6b4979d70a16, findElement {using=xpath, value=//*[@id="leftsidebar"]/div/ul/li[4]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\palla\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63577}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63577/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: af185662d7035ae3afca6b4979d70a16
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -45,10 +83,12 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at Utils.SecondDentistUtils.clickLogOutButton(SecondDentistUtils.java:28)
-at Tests.UploadAndAnalyse.UploadAndAnalyze(UploadAndAnalyse.java:36)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at Utils.SecondDentistUtils.clickLogOutButton(SecondDentistUtils.java:30)
+at Tests.LoginLogout.logoutflow(LoginLogout.java:41)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -78,225 +118,15 @@ at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UploadAndAnalyze -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.UploadAndAnalyse@766653e6]" started-at="2022-10-13T17:09:44 IST" name="tearDown" finished-at="2022-10-13T17:09:44 IST" duration-ms="874" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Tests.UploadAndAnalyse -->
-      <class name="Tests.Chatbot">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.Chatbot@6a57ae10]" started-at="2022-10-13T17:08:02 IST" name="setup" finished-at="2022-10-13T17:08:11 IST" duration-ms="8313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="ChatBot()[pri:0, instance:Tests.Chatbot@6a57ae10]" started-at="2022-10-13T17:08:11 IST" name="ChatBot" description="Check ChatBot flow" finished-at="2022-10-13T17:09:12 IST" duration-ms="61150" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChatBot -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Chatbot@6a57ae10]" started-at="2022-10-13T17:09:12 IST" name="tearDown" finished-at="2022-10-13T17:09:13 IST" duration-ms="809" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Tests.Chatbot -->
-      <class name="Tests.Support">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.Support@28b46423]" started-at="2022-10-13T17:09:54 IST" name="setup" finished-at="2022-10-13T17:10:04 IST" duration-ms="9906" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="supportFlow()[pri:0, instance:Tests.Support@28b46423]" started-at="2022-10-13T17:10:04 IST" name="supportFlow" description="Check support flow" finished-at="2022-10-13T17:10:04 IST" duration-ms="0" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at Tests.Support.supportFlow(Support.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- supportFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Support@28b46423]" started-at="2022-10-13T17:10:04 IST" name="tearDown" finished-at="2022-10-13T17:10:05 IST" duration-ms="761" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Tests.Support -->
-      <class name="Tests.AddPatient">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.AddPatient@51c693d]" started-at="2022-10-13T17:07:27 IST" name="setup" finished-at="2022-10-13T17:07:38 IST" duration-ms="10499" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AddPatient()[pri:0, instance:Tests.AddPatient@51c693d]" started-at="2022-10-13T17:07:38 IST" name="AddPatient" description="Check Add Patient flow" finished-at="2022-10-13T17:08:01 IST" duration-ms="23711" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddPatient -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AddPatient@51c693d]" started-at="2022-10-13T17:08:01 IST" name="tearDown" finished-at="2022-10-13T17:08:02 IST" duration-ms="897" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Tests.AddPatient -->
-      <class name="Tests.LoginLogout">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.LoginLogout@1c852c0f]" started-at="2022-10-13T17:07:14 IST" name="setup" finished-at="2022-10-13T17:07:26 IST" duration-ms="12246" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginflow()[pri:0, instance:Tests.LoginLogout@1c852c0f]" started-at="2022-10-13T17:07:26 IST" name="loginflow" description="Check login flow" finished-at="2022-10-13T17:07:26 IST" duration-ms="64" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at Tests.LoginLogout.loginflow(LoginLogout.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginflow -->
-        <test-method signature="logoutflow()[pri:0, instance:Tests.LoginLogout@1c852c0f]" started-at="2022-10-13T17:07:26 IST" name="logoutflow" description="Check logout flow" finished-at="2022-10-13T17:07:26 IST" duration-ms="5" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at Tests.LoginLogout.logoutflow(LoginLogout.java:42)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutflow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginLogout@1c852c0f]" started-at="2022-10-13T17:07:26 IST" name="tearDown" finished-at="2022-10-13T17:07:27 IST" duration-ms="804" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginLogout@2a3888c1]" started-at="2022-10-18T15:27:29 IST" name="tearDown" finished-at="2022-10-18T15:27:30 IST" duration-ms="1132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Tests.LoginLogout -->
-      <class name="Tests.Settings">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.Settings@4e07b95f]" started-at="2022-10-13T17:09:44 IST" name="setup" finished-at="2022-10-13T17:09:53 IST" duration-ms="8641" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="settingsFlow()[pri:0, instance:Tests.Settings@4e07b95f]" started-at="2022-10-13T17:09:53 IST" name="settingsFlow" description="Check settings flow" finished-at="2022-10-13T17:09:53 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at Tests.Settings.settingsFlow(Settings.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- settingsFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Settings@4e07b95f]" started-at="2022-10-13T17:09:53 IST" name="tearDown" finished-at="2022-10-13T17:09:54 IST" duration-ms="795" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Tests.Settings -->
-    </test> <!-- VelMeni Automation -->
+    </test> <!-- Login -->
   </suite> <!-- All Test Suite -->
 </testng-results>
