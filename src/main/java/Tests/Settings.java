@@ -35,6 +35,30 @@ public class Settings {
         sdUtils.SettingsSection(driver);
         sdUtils.clickLogOutButton(driver);
     }
+    @Test(description = "Check negative settings flow")
+    public void settingsFlow2() throws InterruptedException {
+        sdUtils.clickLogInButton(driver);
+        sdUtils.SettingsSection2(driver);
+        sdUtils.clickLogOutButton(driver);
+    }
+    @Test(description = "Check negative settings flow")
+    public void settingsFlow3() throws InterruptedException {
+        sdUtils.clickLogInButton(driver);
+        sdUtils.SettingsSection3(driver);
+        sdUtils.clickLogOutButton(driver);
+    }
+    @Test(description = "Check negative settings flow")
+    public void settingsFlow4() throws InterruptedException {
+        sdUtils.clickLogInButton(driver);
+        sdUtils.SettingsSection4(driver);
+        sdUtils.clickLogOutButton(driver);
+    }
+    @Test(description = "Check negative settings flow")
+    public void settingsFlow5() throws InterruptedException {
+        sdUtils.clickLogInButton(driver);
+        sdUtils.SettingsSection5(driver);
+        sdUtils.clickLogOutButton(driver);
+    }
     //-----------------------------------AFTER CLASS--------------------------------
 
     @AfterClass

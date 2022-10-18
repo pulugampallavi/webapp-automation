@@ -6,6 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 
 import java.io.IOException;
 import java.util.Iterator;
@@ -50,10 +51,12 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         driver.findElement(SaveBtn).click();
     }
 
+    public void addPatientbtn(WebDriver driver){
+        Assert.assertTrue(driver.findElement(AddPatientBtn).isEnabled(), "Save btn not disabled");
 
 
+    }
     //----------------------------------CHATBOT FLOW--------------------------------------
-
     public void ChatbotFlow(WebDriver driver) throws InterruptedException {
         JavascriptExecutor js= (JavascriptExecutor) driver;
         Thread.sleep(10000);
@@ -76,7 +79,6 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         Thread.sleep(10000);
         js.executeScript("document.getElementsByClassName('buttonTmplContentChild')[4].click();");
         driver.findElement(ChatBotCloseBtn).click();
-
     }
     //----------------------------------Upload and Analyze Section Flow----------------------------------------
 
@@ -90,7 +92,6 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         driver.findElement(UploadImageBtn).sendKeys("R:/Velmeni/Proofs & Files/bitewingimage/200-4.1.jpeg");
         driver.findElement(UploadImageBtn).submit();
         driver.findElement(ProceedBtn).click();
-       // Thread.sleep(2000);
         driver.findElement(AnalyzeBtnPopup).click();
         Thread.sleep(2000);
         driver.findElement(AcceptBtn).click();
@@ -98,11 +99,8 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         driver.findElement(SaveFindingsBtn).click();
         Thread.sleep(2000);
         driver.findElement(DownloadReportBtn).click();
-
     }
-
     //----------------------------------SUPPORT FLOW----------------------------------------
-
     public void supportSection(WebDriver driver) throws InterruptedException {
         Thread.sleep(5000);
         driver.findElement(SupportIcon).click();
@@ -124,9 +122,7 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         Thread.sleep(3000);
         driver.switchTo().window(parent);
     }
-
     //----------------------------------SETTINGS SECTION FLOW----------------------------------------
-
     public void SettingsSection(WebDriver driver) throws InterruptedException {
         driver.findElement(settingsIcon).click();
         WebElement userField = driver.findElement(UserNameField);
@@ -139,21 +135,92 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         String value = passField.getText();
 
         driver.findElement(NewPasswordField).click();
-        Thread.sleep(4000);
+        Thread.sleep(2000);
         WebElement newele =  driver.findElement(NewPasswordField);
         newele.sendKeys("Test@123456");
-        Thread.sleep(4000);
+        Thread.sleep(2000);
         driver.findElement(ShowPassword).click();
 
         driver.findElement(ConfirmPasswordField).click();
-        Thread.sleep(4000);
+        Thread.sleep(2000);
         driver.findElement(ConfirmPasswordField).click();
         WebElement newele2 =  driver.findElement(ConfirmPasswordField);
         newele2.sendKeys("Test@123456");
     }
 
-    //----------------------------------SEARCH PATIENT FLOW----------------------------------------
+    public void SettingsSection2(WebDriver driver) throws InterruptedException {
+        driver.findElement(settingsIcon).click();
+        WebElement userField = driver.findElement(UserNameField);
+        String val = userField.getText();
+        //System.out.println("Entered text is: " + val);
 
+        driver.findElement(NewPasswordField).click();
+        Thread.sleep(2000);
+        WebElement newele =  driver.findElement(NewPasswordField);
+        newele.sendKeys("Test@123456");
+        Thread.sleep(2000);
+        driver.findElement(ShowPassword).click();
+
+        driver.findElement(ConfirmPasswordField).click();
+        Thread.sleep(2000);
+        driver.findElement(ConfirmPasswordField).click();
+        WebElement newele2 =  driver.findElement(ConfirmPasswordField);
+        newele2.sendKeys("Test@123456");
+//        boolean vld = driver.findElement(SaveBtnSettings).isDisplayed();
+//        if (vld == false){System.out.println("Save btn disabled");}
+        Assert.assertFalse(driver.findElement(SaveBtnSettings).isEnabled(), "Save btn disabled");
+    }
+    public void SettingsSection3(WebDriver driver) throws InterruptedException {
+        driver.findElement(settingsIcon).click();
+        WebElement userField = driver.findElement(UserNameField);
+        String val = userField.getText();
+        //System.out.println("Entered text is: " + val);
+
+        WebElement passField = driver.findElement(CurrentPassword);
+        passField.sendKeys("Test@12345");
+        String value = passField.getText();
+
+        driver.findElement(ConfirmPasswordField).click();
+        Thread.sleep(2000);
+        driver.findElement(ConfirmPasswordField).click();
+        WebElement newele2 =  driver.findElement(ConfirmPasswordField);
+        newele2.sendKeys("Test@123456");
+//        boolean vld = driver.findElement(SaveBtnSettings).isDisplayed();
+//        if (vld == false){System.out.println("Save btn disabled");}
+        Assert.assertFalse(driver.findElement(SaveBtnSettings).isEnabled(), "Save btn disabled");
+    }
+    public void SettingsSection4(WebDriver driver) throws InterruptedException {
+        driver.findElement(settingsIcon).click();
+        WebElement userField = driver.findElement(UserNameField);
+        String val = userField.getText();
+        //System.out.println("Entered text is: " + val);
+
+        WebElement passField = driver.findElement(CurrentPassword);
+        passField.sendKeys("Test@12345");
+        String value = passField.getText();
+
+        Assert.assertFalse(driver.findElement(SaveBtnSettings).isEnabled(), "Save btn disabled");
+    }
+    public void SettingsSection5(WebDriver driver) throws InterruptedException {
+        driver.findElement(settingsIcon).click();
+        WebElement userField = driver.findElement(UserNameField);
+        String val = userField.getText();
+        //System.out.println("Entered text is: " + val);
+
+        WebElement passField = driver.findElement(CurrentPassword);
+        passField.sendKeys("Test@12345");
+        String value = passField.getText();
+
+        driver.findElement(NewPasswordField).click();
+        Thread.sleep(2000);
+        WebElement newele =  driver.findElement(NewPasswordField);
+        newele.sendKeys("Test@123456");
+        Thread.sleep(2000);
+        driver.findElement(ShowPassword).click();
+
+        Assert.assertFalse(driver.findElement(SaveBtnSettings).isEnabled(), "Save btn disabled");
+    }
+    //----------------------------------SEARCH PATIENT FLOW----------------------------------------
     public void searchPatient(WebDriver driver) throws InterruptedException {
         Thread.sleep(2000);
         driver.findElement(FullScreenBtn).click();
@@ -164,6 +231,17 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         boolean vld = driver.getPageSource().contains(" Bitewing Cases");
         if (vld == true) {
             System.out.println("Redirected to correct user");
+        }
+    }
+
+    public void searchPatient2(WebDriver driver) throws InterruptedException {
+        Thread.sleep(2000);
+        driver.findElement(FullScreenBtn).click();
+        driver.findElement(SearchButton).click();
+        driver.findElement(SearchButton).sendKeys("Znto");
+        boolean vld = driver.getPageSource().contains("No results");
+        if (vld == true) {
+            System.out.println("Results not visible");
         }
     }
     //----------------------------------PATIENT VISITS FLOW----------------------------------------

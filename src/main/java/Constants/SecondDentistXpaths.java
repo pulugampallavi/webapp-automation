@@ -49,7 +49,7 @@ public class SecondDentistXpaths {
     public By NewPasswordField = By.xpath("//*[@id=\"mat-input-4\"]");
     public By ConfirmPasswordField = By.xpath("//*[@id=\"mat-input-5\"]");
     public By ShowPassword = By.xpath("/html/body/app-root/app-main-layout/app-settings/section/div/mat-tab-group/div/mat-tab-body/div/div/div/div/form/mat-form-field[3]/div/div[1]/div[2]/a");
-
+    public By SaveBtnSettings = By.xpath("//div/button[@class='mat-focus-indicator mat-raised-button mat-button-base mat-primary mat-button-disabled']");
     //---------------------------SEARCH PATIENT XPATH-------------------------------------------
     public By SearchButton = By.xpath("//*[@id=\"search-input\"]");
     public By FirstSearchResults = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]");

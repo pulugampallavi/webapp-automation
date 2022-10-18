@@ -34,6 +34,13 @@ public class AddPatient {
         sdUtils.clickLogOutButton(driver);
     }
 
+    @Test(description = "Check Add Patient flow")
+    public void AddPatientbtn() throws InterruptedException {
+        sdUtils.clickLogInButton(driver);
+        sdUtils.addPatientbtn(driver);
+        sdUtils.clickLogOutButton(driver);
+    }
+
     //-----------------------------------AFTER CLASS--------------------------------
 
     @AfterClass

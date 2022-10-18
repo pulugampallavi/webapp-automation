@@ -27,18 +27,21 @@ public class SearchPatient {
         driver.get("https://app.seconddentist.ai/#/authentication/signin");
     }
 
-
     //----------------------------------SEARCH PATIENT TESTCASE----------------------------------------
-
     @Test(description = "Check search patient flow")
     public void searchPatientFlow() throws InterruptedException {
         sdUtils.clickLogInButton(driver);
         sdUtils.searchPatient(driver);
         sdUtils.clickLogOutButton(driver);
+    }
 
+    @Test(description = "Check negative search patient flow")
+    public void searchPatientNegFlow() throws InterruptedException {
+        sdUtils.clickLogInButton(driver);
+        sdUtils.searchPatient2(driver);
+        sdUtils.clickLogOutButton(driver);
     }
     //-----------------------------------AFTER CLASS--------------------------------
-
     @AfterClass
     public void tearDown()
     {
