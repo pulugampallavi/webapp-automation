@@ -16,15 +16,15 @@ public class Chatbot {
     //----------------------------------BEFORE CLASS--------------------------------------
 
     @BeforeClass
-    public void setup()
-    {
+    public void setup() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         sdUtils= new SecondDentistUtils();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-        driver.get(BaseTest.url);;
+        driver.get(BaseTest.url);
+        sdUtils.clickLogInButton(driver);
     }
 
 
@@ -32,15 +32,15 @@ public class Chatbot {
 
     @Test(description = "Check ChatBot flow")
     public void ChatBot() throws InterruptedException {
-        sdUtils.clickLogInButton(driver);
+
         sdUtils.ChatbotFlow(driver);
-        sdUtils.clickLogOutButton(driver);
+
     }
     //-----------------------------------AFTER CLASS--------------------------------
 
     @AfterClass
-    public void tearDown()
-    {
+    public void tearDown() throws InterruptedException {
+        sdUtils.clickLogOutButton(driver);
         driver.quit();
     }
 

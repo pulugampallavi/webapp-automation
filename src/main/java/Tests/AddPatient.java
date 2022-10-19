@@ -1,8 +1,11 @@
 package Tests;
+import Constants.SecondDentistXpaths;
 import Utils.SecondDentistUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -10,42 +13,70 @@ import java.util.concurrent.TimeUnit;
 public class AddPatient {
     WebDriver driver;
     SecondDentistUtils sdUtils;
+    SecondDentistXpaths sdXpaths;
     //----------------------------------BEFORE CLASS--------------------------------------
 
     @BeforeClass
-    public void setup()
-    {
+    public void setup() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         sdUtils= new SecondDentistUtils();
+        sdXpaths = new SecondDentistXpaths();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         driver.get(BaseTest.url);
+        sdUtils.clickLogInButton(driver);
     }
 
 
     //----------------------------------ADD PATIENTS TESTCASE--------------------------------------
 
     @Test(description = "Check Add Patient flow")
-    public void AddPatient() throws InterruptedException {
-        sdUtils.clickLogInButton(driver);
+    public void addPatient() throws InterruptedException
+    {
         sdUtils.addPatientFlow(driver);
-        sdUtils.clickLogOutButton(driver);
     }
 
     @Test(description = "Check Add Patient flow")
-    public void AddPatientbtn() throws InterruptedException {
-        sdUtils.clickLogInButton(driver);
-        sdUtils.addPatientbtn(driver);
-        sdUtils.clickLogOutButton(driver);
-    }
+    public void addPatientbtn() throws InterruptedException {
+        Assert.assertTrue(driver.findElement(sdXpaths.AddPatientBtn).isEnabled(), "Save btn not disabled");
 
+    }
+    @Test(description = "Check add patient flow with invalid name input")
+    public void addPatientWithInvalidFirstName() throws InterruptedException {
+        driver.navigate().refresh();
+        driver.findElement(sdXpaths.AddPatientBtn).click();
+        Actions element1 = new Actions(driver);
+        WebElement fname = driver.findElement(sdXpaths.AddPatFirstName);
+        element1.doubleClick(fname).perform();
+        Thread.sleep(4000);
+        Actions newaction = new Actions(driver);
+        newaction.sendKeys("876978").build().perform();
+        //newaction.sendKeys(Keys.ENTER);
+        driver.findElement(sdXpaths.AddPatLastName).click();
+        Assert.assertTrue(driver.findElement(sdXpaths.FirstNameError).isDisplayed(), "Error in First Name.");
+        driver.findElement(sdXpaths.CrossAddPopUp).click();
+        Thread.sleep(2000);
+    }
+    @Test(description = "Check add patient flow with invalid name input")
+    public void addPatientWithInvalidLastName() throws InterruptedException {
+        driver.navigate().refresh();
+        driver.findElement(sdXpaths.AddPatientBtn).click();
+        driver.findElement(sdXpaths.AddPatLastName).click();
+        Thread.sleep(2000);
+        Actions newaction2 = new Actions(driver);
+        newaction2.sendKeys("Arora").build().perform();
+        newaction2.sendKeys(Keys.ENTER);
+        Assert.assertTrue(driver.findElement(sdXpaths.LastNameError).isDisplayed(), "Error in Last Name.");
+        driver.findElement(sdXpaths.CrossAddPopUp).click();
+        Thread.sleep(2000);
+    }
     //-----------------------------------AFTER CLASS--------------------------------
 
     @AfterClass
-    public void tearDown()
-    {
+    public void tearDown() throws InterruptedException {
+        sdUtils.clickLogOutButton(driver);
         driver.quit();
     }
 }

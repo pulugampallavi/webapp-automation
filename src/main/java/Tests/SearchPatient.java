@@ -16,8 +16,7 @@ public class SearchPatient {
     //----------------------------------BEFORE CLASS--------------------------------------
 
     @BeforeClass
-    public void setup()
-    {
+    public void setup() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         sdUtils= new SecondDentistUtils();
@@ -25,26 +24,23 @@ public class SearchPatient {
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         driver.get("https://app.seconddentist.ai/#/authentication/signin");
+        sdUtils.clickLogInButton(driver);
     }
 
     //----------------------------------SEARCH PATIENT TESTCASE----------------------------------------
     @Test(description = "Check search patient flow")
     public void searchPatientFlow() throws InterruptedException {
-        sdUtils.clickLogInButton(driver);
         sdUtils.searchPatient(driver);
-        sdUtils.clickLogOutButton(driver);
     }
 
     @Test(description = "Check negative search patient flow")
     public void searchPatientNegFlow() throws InterruptedException {
-        sdUtils.clickLogInButton(driver);
         sdUtils.searchPatient2(driver);
-        sdUtils.clickLogOutButton(driver);
     }
     //-----------------------------------AFTER CLASS--------------------------------
     @AfterClass
-    public void tearDown()
-    {
+    public void tearDown() throws InterruptedException {
+        sdUtils.clickLogOutButton(driver);
         driver.quit();
     }
 

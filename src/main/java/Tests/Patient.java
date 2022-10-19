@@ -13,8 +13,7 @@ public class Patient {
     SecondDentistUtils sdUtils;
     //----------------------------------BEFORE CLASS--------------------------------
     @BeforeClass
-    public void setup()
-    {
+    public void setup() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         sdUtils= new SecondDentistUtils();
@@ -22,18 +21,17 @@ public class Patient {
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         driver.get("https://app.seconddentist.ai/#/authentication/signin");
+        sdUtils.clickLogInButton(driver);
     }
     //----------------------------------PATIENT VISITS TESTCASE---------------------
     @Test(description = "Check patient visits flow")
     public void PatientVisits() throws InterruptedException {
-        sdUtils.clickLogInButton(driver);
         sdUtils.patientVisitsflow(driver);
-        sdUtils.clickLogOutButton(driver);
     }
     //-----------------------------------AFTER CLASS--------------------------------
     @AfterClass
-    public void tearDown()
-    {
+    public void tearDown() throws InterruptedException {
+        sdUtils.clickLogOutButton(driver);
         driver.quit();
     }
 }

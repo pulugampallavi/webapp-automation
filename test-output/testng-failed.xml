@@ -9,12 +9,36 @@
     <classes>
       <class name="Tests.LoginLogout">
         <methods>
+          <include name="loginflow"/>
           <include name="setup"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="emptyCredentials"/>
         </methods>
       </class> <!-- Tests.LoginLogout -->
     </classes>
   </test> <!-- Login Page(failed) -->
+  <test thread-count="5" name="Add Patient Test(failed)">
+    <classes>
+      <class name="Tests.AddPatient">
+        <methods>
+          <include name="addPatient"/>
+          <include name="addPatientWithInvalidFirstName"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="addPatientWithInvalidLastName"/>
+        </methods>
+      </class> <!-- Tests.AddPatient -->
+    </classes>
+  </test> <!-- Add Patient Test(failed) -->
+  <test thread-count="5" name="Upload and Analyse(failed)">
+    <classes>
+      <class name="Tests.UploadAndAnalyse">
+        <methods>
+          <include name="setup"/>
+          <include name="periapicalImage"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.UploadAndAnalyse -->
+    </classes>
+  </test> <!-- Upload and Analyse(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

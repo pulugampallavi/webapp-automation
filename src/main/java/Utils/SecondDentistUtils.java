@@ -42,13 +42,13 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         Actions element1 = new Actions(driver);
         WebElement fname = driver.findElement(AddPatFirstName);
         element1.doubleClick(fname).perform();
-        Thread.sleep(4000);
+        Thread.sleep(2000);
         Actions newaction = new Actions(driver);
-        newaction.sendKeys("Cinder").build().perform();
+        newaction.sendKeys("Sania").build().perform();
         driver.findElement(AddPatLastName).click();
-        Thread.sleep(4000);
+        Thread.sleep(2000);
         Actions newaction2 = new Actions(driver);
-        newaction2.sendKeys("ella").build().perform();
+        newaction2.sendKeys("Arora").build().perform();
         driver.findElement(AddPatDOB).click();
         Thread.sleep(2000);
         driver.findElement(AddPAtSelectDate).click();
@@ -56,11 +56,6 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         driver.findElement(SaveBtn).click();
     }
 
-    public void addPatientbtn(WebDriver driver){
-        Assert.assertTrue(driver.findElement(AddPatientBtn).isEnabled(), "Save btn not disabled");
-
-
-    }
     //----------------------------------CHATBOT FLOW--------------------------------------
     public void ChatbotFlow(WebDriver driver) throws InterruptedException {
         JavascriptExecutor js= (JavascriptExecutor) driver;
@@ -94,7 +89,7 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         Thread.sleep(2000);
         driver.findElement(BitewingRadioBtn).click();
         Thread.sleep(4000);
-        driver.findElement(UploadImageBtn).sendKeys("R:/Velmeni/Proofs & Files/bitewingimage/200-4.1.jpeg");
+        driver.findElement(UploadImageBtn).sendKeys("R:/Velmeni_Automation/resources/bitewing1.jpeg");
         driver.findElement(UploadImageBtn).submit();
         driver.findElement(ProceedBtn).click();
         driver.findElement(AnalyzeBtnPopup).click();
