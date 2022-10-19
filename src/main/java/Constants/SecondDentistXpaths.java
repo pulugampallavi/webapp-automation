@@ -7,8 +7,9 @@ public class SecondDentistXpaths {
     public By usernameXpath = By.xpath("//*[@id=\"mat-input-0\"]");
     public By PasswordXpath = By.xpath("//*[@id=\"mat-input-1\"]");
     public By SignIn = By.xpath("//button[@type='submit']");
+    public By DashboardHeader = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[1]");
     public By SignOut = By.xpath("//*[@id=\"leftsidebar\"]/div/ul/li[4]/a");
-
+    public By ShowPasswordLogin = By.xpath("/html/body/app-root/app-auth-layout/app-signin/div/div/div/div/div/div[2]/form/div[2]/div/mat-form-field/div/div[1]/div[4]/a/mat-icon");
     //----------------------------------ADD PATIENTS XPATHS--------------------------------------
     public By PatientSection = By.xpath("//*[@id=\"leftsidebar\"]/div/ul/li[1]/a");
     public By AddPatientBtn = By.xpath("//div/button/span[text()=' Add Patient ']");

@@ -21,7 +21,7 @@ public class AddPatient {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-        driver.get("https://app.seconddentist.ai/#/authentication/signin");
+        driver.get(BaseTest.url);
     }
 
 
