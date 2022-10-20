@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="7" failed="5" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[url=https://app.seconddentist.ai/#/authentication/signin]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-10-19T18:26:32 IST" name="All Test Suite" finished-at="2022-10-19T18:28:51 IST" duration-ms="139444">
+  <suite started-at="2022-10-18T18:08:36 IST" name="All Test Suite" finished-at="2022-10-18T18:09:16 IST" duration-ms="40126">
     <groups>
     </groups>
-    <test started-at="2022-10-19T18:26:32 IST" name="Base Test" finished-at="2022-10-19T18:26:32 IST" duration-ms="32">
+    <test started-at="2022-10-18T18:08:36 IST" name="Base Test" finished-at="2022-10-18T18:08:36 IST" duration-ms="35">
     </test> <!-- Base Test -->
-    <test started-at="2022-10-19T18:26:32 IST" name="Login Page" finished-at="2022-10-19T18:27:10 IST" duration-ms="38011">
+    <test started-at="2022-10-18T18:08:36 IST" name="Login Page" finished-at="2022-10-18T18:09:16 IST" duration-ms="39912">
       <class name="Tests.LoginLogout">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.LoginLogout@6a47b187]" started-at="2022-10-19T18:26:32 IST" name="setUp" finished-at="2022-10-19T18:26:32 IST" duration-ms="38" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.LoginLogout@1722011b]" started-at="2022-10-18T18:08:36 IST" name="setUp" finished-at="2022-10-18T18:08:36 IST" duration-ms="36" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,398 +38,42 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.LoginLogout@6a47b187]" started-at="2022-10-19T18:26:32 IST" name="setup" finished-at="2022-10-19T18:26:42 IST" duration-ms="10221" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.LoginLogout@1722011b]" started-at="2022-10-18T18:08:36 IST" name="setup" finished-at="2022-10-18T18:08:48 IST" duration-ms="12073" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="emptyCredentials()[pri:0, instance:Tests.LoginLogout@6a47b187]" started-at="2022-10-19T18:26:42 IST" name="emptyCredentials" description="Check logout flow" finished-at="2022-10-19T18:26:46 IST" duration-ms="4204" status="PASS">
+        <test-method signature="emptyCredentials()[pri:0, instance:Tests.LoginLogout@1722011b]" started-at="2022-10-18T18:08:48 IST" name="emptyCredentials" description="Check logout flow" finished-at="2022-10-18T18:08:53 IST" duration-ms="4263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyCredentials -->
-        <test-method signature="iconVisibility()[pri:0, instance:Tests.LoginLogout@6a47b187]" started-at="2022-10-19T18:26:47 IST" name="iconVisibility" description="Check logout flow" finished-at="2022-10-19T18:26:51 IST" duration-ms="4200" status="PASS">
+        <test-method signature="iconVisibility()[pri:0, instance:Tests.LoginLogout@1722011b]" started-at="2022-10-18T18:08:53 IST" name="iconVisibility" description="Check logout flow" finished-at="2022-10-18T18:08:57 IST" duration-ms="4228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iconVisibility -->
-        <test-method signature="invalidPassword()[pri:0, instance:Tests.LoginLogout@6a47b187]" started-at="2022-10-19T18:26:51 IST" name="invalidPassword" description="Check logout flow" finished-at="2022-10-19T18:26:55 IST" duration-ms="4475" status="PASS">
+        <test-method signature="invalidPassword()[pri:0, instance:Tests.LoginLogout@1722011b]" started-at="2022-10-18T18:08:57 IST" name="invalidPassword" description="Check logout flow" finished-at="2022-10-18T18:09:01 IST" duration-ms="4422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidPassword -->
-        <test-method signature="invalidUserName()[pri:0, instance:Tests.LoginLogout@6a47b187]" started-at="2022-10-19T18:26:55 IST" name="invalidUserName" description="Check logout flow" finished-at="2022-10-19T18:27:00 IST" duration-ms="4386" status="PASS">
+        <test-method signature="invalidUserName()[pri:0, instance:Tests.LoginLogout@1722011b]" started-at="2022-10-18T18:09:01 IST" name="invalidUserName" description="Check logout flow" finished-at="2022-10-18T18:09:06 IST" duration-ms="4379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidUserName -->
-        <test-method signature="loginflow()[pri:0, instance:Tests.LoginLogout@6a47b187]" started-at="2022-10-19T18:27:00 IST" name="loginflow" description="Check login flow" finished-at="2022-10-19T18:27:04 IST" duration-ms="4427" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Login unsuccessfull. expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Login unsuccessfull. expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at Utils.SecondDentistUtils.clickLogInButton(SecondDentistUtils.java:30)
-at Tests.LoginLogout.loginflow(LoginLogout.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="loginflow()[pri:0, instance:Tests.LoginLogout@1722011b]" started-at="2022-10-18T18:09:06 IST" name="loginflow" description="Check login flow" finished-at="2022-10-18T18:09:10 IST" duration-ms="4500" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[url=https://app.seconddentist.ai/#/authentication/signin]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginflow -->
-        <test-method signature="logoutflow()[pri:0, instance:Tests.LoginLogout@6a47b187]" started-at="2022-10-19T18:27:04 IST" name="logoutflow" description="Check logout flow" finished-at="2022-10-19T18:27:09 IST" duration-ms="5196" status="PASS">
+        <test-method signature="logoutflow()[pri:0, instance:Tests.LoginLogout@1722011b]" started-at="2022-10-18T18:09:10 IST" name="logoutflow" description="Check logout flow" finished-at="2022-10-18T18:09:15 IST" duration-ms="5142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutflow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginLogout@6a47b187]" started-at="2022-10-19T18:27:09 IST" name="tearDown" finished-at="2022-10-19T18:27:10 IST" duration-ms="776" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.LoginLogout@1722011b]" started-at="2022-10-18T18:09:15 IST" name="tearDown" finished-at="2022-10-18T18:09:16 IST" duration-ms="790" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Tests.LoginLogout -->
     </test> <!-- Login Page -->
-    <test started-at="2022-10-19T18:27:10 IST" name="Add Patient Test" finished-at="2022-10-19T18:28:10 IST" duration-ms="59466">
-      <class name="Tests.AddPatient">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.AddPatient@57576994]" started-at="2022-10-19T18:27:10 IST" name="setup" finished-at="2022-10-19T18:27:24 IST" duration-ms="13660" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="addPatient()[pri:0, instance:Tests.AddPatient@57576994]" started-at="2022-10-19T18:27:24 IST" name="addPatient" description="Check Add Patient flow" finished-at="2022-10-19T18:27:25 IST" duration-ms="1100" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <a _ngcontent-mcd-c90="" class="menu-top ng-star-inserted" href="#/doctor/all-patients">...</a> is not clickable at point (31, 67). Other element would receive the click: <div _ngcontent-mcd-c174="" class="tbl-spinner ng-star-inserted">...</div>
-  (Session info: chrome=106.0.5249.119)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-M4HISO1', ip: '192.168.0.157', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [025ff37f46bb2ab9e92a4b1998c29fcb, clickElement {id=0c46d0d1-53f4-4d76-a297-f43826d5bc8f}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\RIAAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51275/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (025ff37f46bb2ab9e92a4b1998c29fcb)] -> xpath: //*[@id="leftsidebar"]/div/ul/li[1]/a]
-Session ID: 025ff37f46bb2ab9e92a4b1998c29fcb]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a _ngcontent-mcd-c90="" class="menu-top ng-star-inserted" href="#/doctor/all-patients">...</a> is not clickable at point (31, 67). Other element would receive the click: <div _ngcontent-mcd-c174="" class="tbl-spinner ng-star-inserted">...</div>
-  (Session info: chrome=106.0.5249.119)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-M4HISO1', ip: '192.168.0.157', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [025ff37f46bb2ab9e92a4b1998c29fcb, clickElement {id=0c46d0d1-53f4-4d76-a297-f43826d5bc8f}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\RIAAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51275/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (025ff37f46bb2ab9e92a4b1998c29fcb)] -> xpath: //*[@id="leftsidebar"]/div/ul/li[1]/a]
-Session ID: 025ff37f46bb2ab9e92a4b1998c29fcb
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at Utils.SecondDentistUtils.addPatientFlow(SecondDentistUtils.java:39)
-at Tests.AddPatient.addPatient(AddPatient.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addPatient -->
-        <test-method signature="addPatientWithInvalidFirstName()[pri:0, instance:Tests.AddPatient@57576994]" started-at="2022-10-19T18:27:25 IST" name="addPatientWithInvalidFirstName" description="Check add patient flow with invalid name input" finished-at="2022-10-19T18:28:01 IST" duration-ms="36330" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="mat-error-5"]"}
-  (Session info: chrome=106.0.5249.119)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-M4HISO1', ip: '192.168.0.157', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [025ff37f46bb2ab9e92a4b1998c29fcb, findElement {using=xpath, value=//*[@id="mat-error-5"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\RIAAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51275/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 025ff37f46bb2ab9e92a4b1998c29fcb]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="mat-error-5"]"}
-  (Session info: chrome=106.0.5249.119)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-M4HISO1', ip: '192.168.0.157', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [025ff37f46bb2ab9e92a4b1998c29fcb, findElement {using=xpath, value=//*[@id="mat-error-5"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\RIAAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51275/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 025ff37f46bb2ab9e92a4b1998c29fcb
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at Tests.AddPatient.addPatientWithInvalidFirstName(AddPatient.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addPatientWithInvalidFirstName -->
-        <test-method signature="addPatientWithInvalidLastName()[pri:0, instance:Tests.AddPatient@57576994]" started-at="2022-10-19T18:28:01 IST" name="addPatientWithInvalidLastName" description="Check add patient flow with invalid name input" finished-at="2022-10-19T18:28:04 IST" duration-ms="2389" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span class="mat-button-wrapper">...</span> is not clickable at point (732, 122). Other element would receive the click: <div _ngcontent-obb-c168="" class="tbl-spinner ng-star-inserted">...</div>
-  (Session info: chrome=106.0.5249.119)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-M4HISO1', ip: '192.168.0.157', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [025ff37f46bb2ab9e92a4b1998c29fcb, clickElement {id=3576a84a-8c38-4219-ac29-817c1456470e}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\RIAAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51275/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (025ff37f46bb2ab9e92a4b1998c29fcb)] -> xpath: //div/button/span[text()=' Add Patient ']]
-Session ID: 025ff37f46bb2ab9e92a4b1998c29fcb]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="mat-button-wrapper">...</span> is not clickable at point (732, 122). Other element would receive the click: <div _ngcontent-obb-c168="" class="tbl-spinner ng-star-inserted">...</div>
-  (Session info: chrome=106.0.5249.119)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-M4HISO1', ip: '192.168.0.157', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [025ff37f46bb2ab9e92a4b1998c29fcb, clickElement {id=3576a84a-8c38-4219-ac29-817c1456470e}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\RIAAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51275/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (025ff37f46bb2ab9e92a4b1998c29fcb)] -> xpath: //div/button/span[text()=' Add Patient ']]
-Session ID: 025ff37f46bb2ab9e92a4b1998c29fcb
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at Tests.AddPatient.addPatientWithInvalidLastName(AddPatient.java:65)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addPatientWithInvalidLastName -->
-        <test-method signature="addPatientbtn()[pri:0, instance:Tests.AddPatient@57576994]" started-at="2022-10-19T18:28:04 IST" name="addPatientbtn" description="Check Add Patient flow" finished-at="2022-10-19T18:28:04 IST" duration-ms="47" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addPatientbtn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.AddPatient@57576994]" started-at="2022-10-19T18:28:04 IST" name="tearDown" finished-at="2022-10-19T18:28:10 IST" duration-ms="5865" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Tests.AddPatient -->
-    </test> <!-- Add Patient Test -->
-    <test started-at="2022-10-19T18:28:10 IST" name="Upload and Analyse" finished-at="2022-10-19T18:28:51 IST" duration-ms="41590">
-      <class name="Tests.UploadAndAnalyse">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.UploadAndAnalyse@5c669da8]" started-at="2022-10-19T18:28:10 IST" name="setup" finished-at="2022-10-19T18:28:22 IST" duration-ms="12526" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="UploadAndAnalyze()[pri:0, instance:Tests.UploadAndAnalyse@5c669da8]" started-at="2022-10-19T18:28:22 IST" name="UploadAndAnalyze" description="Check Upload and Analyze flow" finished-at="2022-10-19T18:28:42 IST" duration-ms="19594" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UploadAndAnalyze -->
-        <test-method signature="periapicalImage()[pri:0, instance:Tests.UploadAndAnalyse@5c669da8]" started-at="2022-10-19T18:28:42 IST" name="periapicalImage" description="Check U&amp;A flow for periapical image" finished-at="2022-10-19T18:28:45 IST" duration-ms="3552" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <mat-row _ngcontent-prh-c174="" role="row" matripple="" class="mat-row cdk-row ng-star-inserted" style="cursor: pointer;">...</mat-row> is not clickable at point (670, 410). Other element would receive the click: <div id="cdk-overlay-3" class="cdk-overlay-pane" style="position: static; margin-bottom: 0px;">...</div>
-  (Session info: chrome=106.0.5249.119)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-M4HISO1', ip: '192.168.0.157', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5570649e7eea1abf59206bf042d02983, clickElement {id=d0faeeb2-bd35-4f0f-8f18-2b08f78de9bb}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\RIAAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51485}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51485/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (5570649e7eea1abf59206bf042d02983)] -> xpath: /html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[6]]
-Session ID: 5570649e7eea1abf59206bf042d02983]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <mat-row _ngcontent-prh-c174="" role="row" matripple="" class="mat-row cdk-row ng-star-inserted" style="cursor: pointer;">...</mat-row> is not clickable at point (670, 410). Other element would receive the click: <div id="cdk-overlay-3" class="cdk-overlay-pane" style="position: static; margin-bottom: 0px;">...</div>
-  (Session info: chrome=106.0.5249.119)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-M4HISO1', ip: '192.168.0.157', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5570649e7eea1abf59206bf042d02983, clickElement {id=d0faeeb2-bd35-4f0f-8f18-2b08f78de9bb}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\RIAAMM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51485}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51485/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (5570649e7eea1abf59206bf042d02983)] -> xpath: /html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[6]]
-Session ID: 5570649e7eea1abf59206bf042d02983
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at Tests.UploadAndAnalyse.periapicalImage(UploadAndAnalyse.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- periapicalImage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.UploadAndAnalyse@5c669da8]" started-at="2022-10-19T18:28:45 IST" name="tearDown" finished-at="2022-10-19T18:28:51 IST" duration-ms="5881" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Tests.UploadAndAnalyse -->
-    </test> <!-- Upload and Analyse -->
   </suite> <!-- All Test Suite -->
 </testng-results>

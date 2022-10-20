@@ -1,7 +1,6 @@
 package Tests;
 import Constants.SecondDentistXpaths;
 import Utils.SecondDentistUtils;
-import com.fasterxml.jackson.databind.ser.Serializers;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
