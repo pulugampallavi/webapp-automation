@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
-public class Chatbot {
+public class Chatbot extends BaseTest{
     WebDriver driver;
     SecondDentistUtils sdUtils;
 

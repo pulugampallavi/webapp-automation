@@ -44,11 +44,11 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         element1.doubleClick(fname).perform();
         Thread.sleep(4000);
         Actions newaction = new Actions(driver);
-        newaction.sendKeys("Cinder").build().perform();
+        newaction.sendKeys("Twenty").build().perform();
         driver.findElement(AddPatLastName).click();
         Thread.sleep(4000);
         Actions newaction2 = new Actions(driver);
-        newaction2.sendKeys("ella").build().perform();
+        newaction2.sendKeys("October").build().perform();
         driver.findElement(AddPatDOB).click();
         Thread.sleep(2000);
         driver.findElement(AddPAtSelectDate).click();
@@ -58,8 +58,6 @@ public class SecondDentistUtils extends SecondDentistXpaths {
 
     public void addPatientbtn(WebDriver driver){
         Assert.assertTrue(driver.findElement(AddPatientBtn).isEnabled(), "Save btn not disabled");
-
-
     }
     //----------------------------------CHATBOT FLOW--------------------------------------
     public void ChatbotFlow(WebDriver driver) throws InterruptedException {

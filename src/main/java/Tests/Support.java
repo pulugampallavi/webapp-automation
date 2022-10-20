@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
-public class Support {
+public class Support extends BaseTest{
     WebDriver driver;
     SecondDentistUtils sdUtils;
 

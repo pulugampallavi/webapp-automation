@@ -10,7 +10,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
-public class AddPatient {
+public class AddPatient extends BaseTest{
     WebDriver driver;
     SecondDentistUtils sdUtils;
     SecondDentistXpaths sdXpaths;
@@ -53,11 +53,10 @@ public class AddPatient {
         Thread.sleep(4000);
         Actions newaction = new Actions(driver);
         newaction.sendKeys("876978").build().perform();
-        //newaction.sendKeys(Keys.ENTER);
         driver.findElement(sdXpaths.AddPatLastName).click();
-        Assert.assertTrue(driver.findElement(sdXpaths.FirstNameError).isDisplayed(), "Error in First Name.");
+        Assert.assertTrue(driver.getPageSource().contains(" Please enter valid first name "), "Error in First Name.");
         driver.findElement(sdXpaths.CrossAddPopUp).click();
-        Thread.sleep(2000);
+        Thread.sleep(4000);
     }
     @Test(description = "Check add patient flow with invalid name input")
     public void addPatientWithInvalidLastName() throws InterruptedException {
@@ -66,11 +65,12 @@ public class AddPatient {
         driver.findElement(sdXpaths.AddPatLastName).click();
         Thread.sleep(2000);
         Actions newaction2 = new Actions(driver);
-        newaction2.sendKeys("Arora").build().perform();
-        newaction2.sendKeys(Keys.ENTER);
-        Assert.assertTrue(driver.findElement(sdXpaths.LastNameError).isDisplayed(), "Error in Last Name.");
+        newaction2.sendKeys("876978").build().perform();
+        driver.findElement(sdXpaths.AddPatFirstName).click();
+        Assert.assertTrue(driver.getPageSource().contains(" Please enter valid last name "), "Error in First Name.");
+
         driver.findElement(sdXpaths.CrossAddPopUp).click();
-        Thread.sleep(2000);
+        Thread.sleep(4000);
     }
     //-----------------------------------AFTER CLASS--------------------------------
 

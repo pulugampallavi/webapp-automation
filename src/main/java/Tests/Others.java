@@ -6,7 +6,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import java.util.concurrent.TimeUnit;
-public class Others {
+public class Others extends BaseTest{
     WebDriver driver;
     private LoginLogout LoginPage;
 

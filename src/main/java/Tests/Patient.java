@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
-public class Patient {
+public class Patient extends BaseTest{
     WebDriver driver;
     SecondDentistUtils sdUtils;
     //----------------------------------BEFORE CLASS--------------------------------

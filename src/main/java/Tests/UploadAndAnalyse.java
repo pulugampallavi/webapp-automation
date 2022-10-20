@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-public class UploadAndAnalyse {
+public class UploadAndAnalyse extends BaseTest{
     WebDriver driver;
     SecondDentistUtils sdUtils;
     SecondDentistXpaths sdXpaths;
