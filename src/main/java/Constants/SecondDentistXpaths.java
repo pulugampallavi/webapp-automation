@@ -22,13 +22,14 @@ public class SecondDentistXpaths {
     public By AddPAtSelectDate = By.xpath("//*[@id=\"mat-datepicker-0\"]/div/mat-month-view/table/tbody/tr[2]/td[7]/div[1]");
     public By AddPatGender = By.xpath("//*[@id=\"female\"]");
     public By SaveBtn = By.xpath("//*[@id=\"mat-dialog-0\"]/app-add-patient/div/div/div[2]/div/form/div[2]/button[1]");
-    public By CrossAddPopUp = By.xpath("//*[@id=\"mat-dialog-1\"]/app-add-patient/div/div/div[1]/button/span[1]/mat-icon");
+    public By SaveBtnDisabled = By.xpath("//*[@id=\"mat-dialog-4\"]/app-add-patient/div/div/div[2]/div/form/div[2]/button[1]");
+    public By CrossAddPopUp = By.xpath("//*[@id=\"mat-dialog-1\"]/app-add-patient/div/div/div[1]/button/span[1]/mat-icon");//*[@id="mat-dialog-0"]/app-add-patient/div/div/div[1]/button/span[1]/mat-icon
     //----------------------------------CHAT BOT XPATHS--------------------------------------
     public By ChatBotValidation = By.xpath("//*[@id=\"botHeaderTitle\"]");
     public By ChatBotCloseBtn = By.xpath("//*[@id=\"KORE_BOT\"]/div[4]/div[3]/button[5]");
 
     //----------------------------------UPLOAD AND ANALYZE XPATHS--------------------------------------
-    public By SelectPatient = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[6]");
+    public By SelectPatient = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]");
     public By UploadAnalyzeButton = By.xpath("//*[@id=\"mat-tab-label-0-2\"]");
     //*[@id="mat-input-0"]
     public By PeriapicalRadioBtn = By.xpath("//*[@id=\"mat-radio-3-input\"]");

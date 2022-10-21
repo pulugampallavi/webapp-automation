@@ -23,7 +23,7 @@ public class UploadAndAnalyse extends BaseTest{
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-        driver.get("https://app.seconddentist.ai/#/authentication/signin");
+        driver.get(BaseTest.url);
         sdUtils.clickLogInButton(driver);
     }
     //----------------------------------Upload and Analyze Section Testcase----------------------------------------
@@ -39,7 +39,7 @@ public class UploadAndAnalyse extends BaseTest{
         Thread.sleep(3000);
         driver.findElement(sdXpaths.UploadAnalyzeButton).click();
         Thread.sleep(2000);
-        driver.findElement(sdXpaths.BitewingRadioBtn).click();
+        driver.findElement(sdXpaths.PeriapicalRadioBtn).click();
         Thread.sleep(4000);
         driver.findElement(sdXpaths.UploadImageBtn).sendKeys("R:/Velmeni_Automation/resources/periapical1.png");
         driver.findElement(sdXpaths.UploadImageBtn).submit();

@@ -40,37 +40,30 @@ public class AddPatient extends BaseTest{
 
     @Test(description = "Check Add Patient flow")
     public void addPatientbtn() throws InterruptedException {
-        Assert.assertTrue(driver.findElement(sdXpaths.AddPatientBtn).isEnabled(), "Save btn not disabled");
+        Assert.assertTrue(driver.findElement(sdXpaths.AddPatientBtn).isEnabled(), "Add Patient btn not disabled");
 
     }
     @Test(description = "Check add patient flow with invalid name input")
-    public void addPatientWithInvalidFirstName() throws InterruptedException {
-        driver.navigate().refresh();
+    public void addPatientWithInvalidName() throws InterruptedException {
+        driver.findElement(sdXpaths.PatientSection).click();
+        Thread.sleep(2000);
         driver.findElement(sdXpaths.AddPatientBtn).click();
         Actions element1 = new Actions(driver);
         WebElement fname = driver.findElement(sdXpaths.AddPatFirstName);
         element1.doubleClick(fname).perform();
         Thread.sleep(4000);
         Actions newaction = new Actions(driver);
-        newaction.sendKeys("876978").build().perform();
+        newaction.sendKeys("789980jbm").build().perform();
         driver.findElement(sdXpaths.AddPatLastName).click();
-        Assert.assertTrue(driver.getPageSource().contains(" Please enter valid first name "), "Error in First Name.");
-        driver.findElement(sdXpaths.CrossAddPopUp).click();
         Thread.sleep(4000);
-    }
-    @Test(description = "Check add patient flow with invalid name input")
-    public void addPatientWithInvalidLastName() throws InterruptedException {
-        driver.navigate().refresh();
-        driver.findElement(sdXpaths.AddPatientBtn).click();
-        driver.findElement(sdXpaths.AddPatLastName).click();
-        Thread.sleep(2000);
         Actions newaction2 = new Actions(driver);
-        newaction2.sendKeys("876978").build().perform();
-        driver.findElement(sdXpaths.AddPatFirstName).click();
-        Assert.assertTrue(driver.getPageSource().contains(" Please enter valid last name "), "Error in First Name.");
+        newaction2.sendKeys("789980jbm").build().perform();
+        driver.findElement(sdXpaths.AddPatDOB).click();
+        Thread.sleep(2000);
+        driver.findElement(sdXpaths.AddPAtSelectDate).click();
+        driver.findElement(sdXpaths.AddPatGender).click();
+        Assert.assertTrue(driver.findElement(sdXpaths.SaveBtnDisabled).isEnabled(), "Save btn not disabled");
 
-        driver.findElement(sdXpaths.CrossAddPopUp).click();
-        Thread.sleep(4000);
     }
     //-----------------------------------AFTER CLASS--------------------------------
 
