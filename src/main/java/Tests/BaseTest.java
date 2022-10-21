@@ -14,8 +14,10 @@ public class BaseTest {
     @Parameters({"environment", "url", "username", "password"})
     @BeforeClass(alwaysRun = true)
     public void setUp(String env, String weburl, String usrname, String pwd) {
+        System.setProperty("webdriver.chrome.driver", "/path/to/driver");
+
         ChromeOptions options = new ChromeOptions();
-        //options.setHeadless(true);
+        options.setHeadless(true);
         environment = env;
         url = weburl;
         username = usrname;

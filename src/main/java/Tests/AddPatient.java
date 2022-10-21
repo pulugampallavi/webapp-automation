@@ -27,6 +27,7 @@ public class AddPatient extends BaseTest{
         driver.manage().window().maximize();
         driver.get(BaseTest.url);
         sdUtils.clickLogInButton(driver);
+        driver.navigate().refresh();
     }
 
 
@@ -63,7 +64,8 @@ public class AddPatient extends BaseTest{
         driver.findElement(sdXpaths.AddPAtSelectDate).click();
         driver.findElement(sdXpaths.AddPatGender).click();
         Assert.assertTrue(driver.findElement(sdXpaths.SaveBtnDisabled).isEnabled(), "Save btn not disabled");
-
+        driver.navigate().refresh();
+        driver.findElement(sdXpaths.CrossAddPopUp).click();
     }
     //-----------------------------------AFTER CLASS--------------------------------
 

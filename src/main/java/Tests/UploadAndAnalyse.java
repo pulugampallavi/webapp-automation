@@ -25,6 +25,7 @@ public class UploadAndAnalyse extends BaseTest{
         driver.manage().window().maximize();
         driver.get(BaseTest.url);
         sdUtils.clickLogInButton(driver);
+        driver.navigate().refresh();
     }
     //----------------------------------Upload and Analyze Section Testcase----------------------------------------
     @Test(description = "Check Upload and Analyze flow")
@@ -44,7 +45,7 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.UploadImageBtn).sendKeys("R:/Velmeni_Automation/resources/periapical1.png");
         driver.findElement(sdXpaths.UploadImageBtn).submit();
         driver.findElement(sdXpaths.ProceedBtn).click();
-        driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
+        driver.findElement(sdXpaths.Analyze2).click();
         Thread.sleep(2000);
         driver.findElement(sdXpaths.AcceptBtn).click();
         Thread.sleep(2000);

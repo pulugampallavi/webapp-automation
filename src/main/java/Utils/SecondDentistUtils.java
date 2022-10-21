@@ -94,7 +94,7 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         Thread.sleep(4000);
         driver.findElement(UploadImageBtn).sendKeys("R:/Velmeni/Proofs & Files/bitewingimage/200-4.1.jpeg");
         driver.findElement(UploadImageBtn).submit();
-        driver.findElement(ProceedBtn).click();
+        driver.findElement(ProceedBitewing).click();
         driver.findElement(AnalyzeBtnPopup).click();
         Thread.sleep(2000);
         driver.findElement(AcceptBtn).click();

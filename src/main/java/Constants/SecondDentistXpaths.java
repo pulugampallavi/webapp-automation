@@ -29,14 +29,20 @@ public class SecondDentistXpaths {
     public By ChatBotCloseBtn = By.xpath("//*[@id=\"KORE_BOT\"]/div[4]/div[3]/button[5]");
 
     //----------------------------------UPLOAD AND ANALYZE XPATHS--------------------------------------
-    public By SelectPatient = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]");
-    public By UploadAnalyzeButton = By.xpath("//*[@id=\"mat-tab-label-0-2\"]");
+    public By SelectPatient = By.xpath("//div/mat-table/mat-row[@class='mat-row cdk-row ng-star-inserted']");
+    public By UploadAnalyzeButton = By.xpath("//div[@aria-posinset='3']");
+    //*[@id="mat-tab-label-1-2"]
     //*[@id="mat-input-0"]
-    public By PeriapicalRadioBtn = By.xpath("//*[@id=\"mat-radio-3-input\"]");
+    public By PeriapicalRadioBtn = By.xpath("//*[@id=\"mat-radio-8\"]/label/span[1]");
+    //*[@id="mat-radio-8"]/label/span[1]
+    //*[@id="mat-radio-9"]/label/span[1]/span[2]
     public By BitewingRadioBtn = By.xpath("//*[@id=\"mat-radio-4\"]/label/span[1]");
     public By UploadImageBtn = By.xpath("//*[@id=\"undefined\"]");
-    public By ProceedBtn = By.xpath("//*[@id=\"cdk-step-content-0-0\"]/form/div/div/div[2]/div/button[2]");
+    public By ProceedBitewing = By.xpath("//*[@id=\"cdk-step-content-0-0\"]/form/div/div/div[2]/div/button[2]");
+    public By ProceedBtn = By.xpath("//*[@id=\"cdk-step-content-1-0\"]/form/div/div/div[2]/div/button[2]");
+    //*[@id="cdk-step-content-1-0"]/form/div/div/div[2]/div/button[2]
     public By AnalyzeBtnPopup = By.xpath("//*[@id=\"mat-dialog-0\"]/app-analyze-consent/div/div[2]/button[2]");
+    public By Analyze2 = By.xpath("//*[@id=\"mat-dialog-1\"]/app-analyze-consent/div/div[2]/button[2]");
     public By AcceptBtn = By.xpath("//div/button[@class='mat-focus-indicator pull-right btn-report mat-raised-button mat-button-base']");
 
  //*[@id="cdk-step-content-0-1"]/form/div/div[4]/div[1]/div[3]/div/button[1]

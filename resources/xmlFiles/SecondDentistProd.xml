@@ -10,16 +10,16 @@
             <class name="Tests.BaseTest"/>
         </classes>
     </test>
-    <test name="Login Page">
-        <classes>
-            <class name="Tests.LoginLogout"/>
-        </classes>
-    </test>
-    <test name="Add Patient Test">
-        <classes>
-            <class name="Tests.AddPatient"/>
-        </classes>
-    </test>
+<!--    <test name="Login Page">-->
+<!--        <classes>-->
+<!--            <class name="Tests.LoginLogout"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Add Patient Test">-->
+<!--        <classes>-->
+<!--            <class name="Tests.AddPatient"/>-->
+<!--        </classes>-->
+<!--    </test>-->
     <test name="Upload and Analyse">
         <classes>
             <class name="Tests.UploadAndAnalyse"/>
