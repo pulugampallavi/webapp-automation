@@ -18,6 +18,8 @@ public class SecondDentistXpaths {
     public By FirstNameError = By.xpath("//*[@id=\"mat-error-5\"]");
     public By LastNameError = By.xpath("//*[@id=\"mat-error-5\"]");
     public By AddPatLastName = By.xpath("//*[@id=\"mat-dialog-0\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[2]/div/div[1]/div");
+    //*[@id="mat-dialog-1"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[2]/div/div[1]/div
+    //*[@id="mat-dialog-0"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[2]/div/div[1]/div
     public By AddPatDOB = By.xpath("//*[@id=\"mat-dialog-0\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[3]/div/div[1]/div[2]/mat-datepicker-toggle/button/span[1]");
     public By AddPAtSelectDate = By.xpath("//*[@id=\"mat-datepicker-0\"]/div/mat-month-view/table/tbody/tr[2]/td[7]/div[1]");
     public By AddPatGender = By.xpath("//*[@id=\"female\"]");
@@ -44,6 +46,7 @@ public class SecondDentistXpaths {
     public By AnalyzeBtnPopup = By.xpath("//*[@id=\"mat-dialog-0\"]/app-analyze-consent/div/div[2]/button[2]");
     public By Analyze2 = By.xpath("//*[@id=\"mat-dialog-1\"]/app-analyze-consent/div/div[2]/button[2]");
     public By AcceptBtn = By.xpath("//div/button[@class='mat-focus-indicator pull-right btn-report mat-raised-button mat-button-base']");
+    public By Accept2 = By.xpath("//*[@id=\"cdk-step-content-1-1\"]/form/div/div[4]/div[1]/div[3]/div/button[1]");
 
  //*[@id="cdk-step-content-0-1"]/form/div/div[4]/div[1]/div[3]/div/button[1]
  //*[@id="cdk-step-content-2-1"]/form/div/div[4]/div[1]/div[3]/div/button[1]

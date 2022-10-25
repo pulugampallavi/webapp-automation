@@ -4,6 +4,7 @@ import Utils.SecondDentistUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -25,6 +26,7 @@ public class UploadAndAnalyse extends BaseTest{
         driver.manage().window().maximize();
         driver.get(BaseTest.url);
         sdUtils.clickLogInButton(driver);
+        Assert.assertTrue(driver.getCurrentUrl().endsWith("seconddentist.ai/#/doctor/all-patients"), "Login unsuccessfull.");
         driver.navigate().refresh();
     }
     //----------------------------------Upload and Analyze Section Testcase----------------------------------------
@@ -47,7 +49,7 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.ProceedBtn).click();
         driver.findElement(sdXpaths.Analyze2).click();
         Thread.sleep(2000);
-        driver.findElement(sdXpaths.AcceptBtn).click();
+        driver.findElement(sdXpaths.Accept2).click();
         Thread.sleep(2000);
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
         Thread.sleep(2000);
