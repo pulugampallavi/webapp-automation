@@ -55,10 +55,12 @@ public class AddPatient extends BaseTest{
         Thread.sleep(4000);
         Actions newaction = new Actions(driver);
         newaction.sendKeys("789980jbm").build().perform();
-        driver.findElement(sdXpaths.AddPatLastName).click();
+        Actions element2 = new Actions(driver);
+        WebElement lname = driver.findElement(sdXpaths.AddPatLastName);
+        element2.doubleClick(lname).perform();
         Thread.sleep(4000);
         Actions newaction2 = new Actions(driver);
-        newaction2.sendKeys("789980jbm").build().perform();
+        newaction2.sendKeys("789jbm").build().perform();
         driver.findElement(sdXpaths.AddPatDOB).click();
         Thread.sleep(2000);
         driver.findElement(sdXpaths.AddPAtSelectDate).click();

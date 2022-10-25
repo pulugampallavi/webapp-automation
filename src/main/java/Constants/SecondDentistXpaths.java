@@ -18,6 +18,7 @@ public class SecondDentistXpaths {
     public By FirstNameError = By.xpath("//*[@id=\"mat-error-5\"]");
     public By LastNameError = By.xpath("//*[@id=\"mat-error-5\"]");
     public By AddPatLastName = By.xpath("//*[@id=\"mat-dialog-0\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[2]/div/div[1]/div");
+    public By AddPatLastName2 = By.xpath("//*[@id=\"mat-dialog-1\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[2]/div/div[1]/div");
     //*[@id="mat-dialog-1"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[2]/div/div[1]/div
     //*[@id="mat-dialog-0"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[2]/div/div[1]/div
     public By AddPatDOB = By.xpath("//*[@id=\"mat-dialog-0\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[3]/div/div[1]/div[2]/mat-datepicker-toggle/button/span[1]");

@@ -53,6 +53,8 @@ public class UploadAndAnalyse extends BaseTest{
         Thread.sleep(2000);
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
         Thread.sleep(2000);
+        driver.findElement(sdXpaths.Accept2).click();
+        driver.findElement(sdXpaths.SaveFindingsBtn).click();
         driver.findElement(sdXpaths.DownloadReportBtn).click();
     }
     //-----------------------------------AFTER CLASS--------------------------------
