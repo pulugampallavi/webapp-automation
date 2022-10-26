@@ -17,16 +17,19 @@ public class SecondDentistXpaths {
     public By AddPatFirstName = By.xpath("//div/input[@data-placeholder='First name']");
     public By FirstNameError = By.xpath("//*[@id=\"mat-error-5\"]");
     public By LastNameError = By.xpath("//*[@id=\"mat-error-5\"]");
-    public By AddPatLastName = By.xpath("//*[@id=\"mat-dialog-0\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[2]/div/div[1]/div");
-    public By AddPatLastName2 = By.xpath("//*[@id=\"mat-dialog-1\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[2]/div/div[1]/div");
+    public By AddPatLastName = By.xpath("//div/input[@data-placeholder='Last name']");
+   // public By AddPatLastName2 = By.xpath("//*[@id=\"mat-dialog-1\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[2]/div/div[1]/div");
     //*[@id="mat-dialog-1"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[2]/div/div[1]/div
     //*[@id="mat-dialog-0"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[2]/div/div[1]/div
+    public By DOBField = By.xpath("//*[@id=\"mat-dialog-1\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[3]/div/div[1]/div[1]");
     public By AddPatDOB = By.xpath("//*[@id=\"mat-dialog-0\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[3]/div/div[1]/div[2]/mat-datepicker-toggle/button/span[1]");
     public By AddPAtSelectDate = By.xpath("//*[@id=\"mat-datepicker-0\"]/div/mat-month-view/table/tbody/tr[2]/td[7]/div[1]");
     public By AddPatGender = By.xpath("//*[@id=\"female\"]");
     public By SaveBtn = By.xpath("//*[@id=\"mat-dialog-0\"]/app-add-patient/div/div/div[2]/div/form/div[2]/button[1]");
-    public By SaveBtnDisabled = By.xpath("//*[@id=\"mat-dialog-4\"]/app-add-patient/div/div/div[2]/div/form/div[2]/button[1]");
-    public By CrossAddPopUp = By.xpath("//*[@id=\"mat-dialog-1\"]/app-add-patient/div/div/div[1]/button/span[1]/mat-icon");//*[@id="mat-dialog-0"]/app-add-patient/div/div/div[1]/button/span[1]/mat-icon
+    public By SaveBtnDisabled = By.xpath("//*[@id=\"mat-dialog-1\"]/app-add-patient/div/div/div[2]/div/form/div[2]/button[1]/span[1]");
+    public By CrossAddPopUp = By.xpath("//*[@id=\"mat-dialog-1\"]/app-add-patient/div/div/div[1]/button/span[1]/mat-icon");
+    //*[@id="mat-dialog-1"]/app-add-patient/div/div/div[1]/button/span[1]/mat-icon
+    //*[@id="mat-dialog-0"]/app-add-patient/div/div/div[1]/button/span[1]/mat-icon
     //----------------------------------CHAT BOT XPATHS--------------------------------------
     public By ChatBotValidation = By.xpath("//*[@id=\"botHeaderTitle\"]");
     public By ChatBotCloseBtn = By.xpath("//*[@id=\"KORE_BOT\"]/div[4]/div[3]/button[5]");
@@ -66,8 +69,11 @@ public class SecondDentistXpaths {
     public By ConfirmPasswordField = By.xpath("//*[@id=\"mat-input-5\"]");
     public By ShowPassword = By.xpath("/html/body/app-root/app-main-layout/app-settings/section/div/mat-tab-group/div/mat-tab-body/div/div/div/div/form/mat-form-field[3]/div/div[1]/div[2]/a");
     public By SaveBtnSettings = By.xpath("//div/button[@class='mat-focus-indicator mat-raised-button mat-button-base mat-primary mat-button-disabled']");
+    public By SaveSettings2 = By.xpath("//*[@id=\"mat-tab-content-0-0\"]/div/div/div/button");
+    //*[@id="mat-tab-content-0-0"]/div/div/div/button
     //---------------------------SEARCH PATIENT XPATH-------------------------------------------
     public By SearchButton = By.xpath("//*[@id=\"search-input\"]");
+    public By SearchBtn2 = By.xpath("");
     public By FirstSearchResults = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]");
 
     //----------------------------------OTHERS XPATHS--------------------------------------

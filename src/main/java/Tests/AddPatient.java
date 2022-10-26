@@ -46,7 +46,11 @@ public class AddPatient extends BaseTest{
     }
     @Test(description = "Check add patient flow with invalid name input")
     public void addPatientWithInvalidName() throws InterruptedException {
-        driver.findElement(sdXpaths.PatientSection).click();
+//        // To zoom out 3 times
+//        for(int i=0; i<2; i++)
+//        {
+//            driver.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.CONTROL,Keys.SUBTRACT));
+//        }
         Thread.sleep(2000);
         driver.findElement(sdXpaths.AddPatientBtn).click();
         Actions element1 = new Actions(driver);
@@ -61,12 +65,10 @@ public class AddPatient extends BaseTest{
         Thread.sleep(4000);
         Actions newaction2 = new Actions(driver);
         newaction2.sendKeys("789jbm").build().perform();
-        driver.findElement(sdXpaths.AddPatDOB).click();
+        driver.findElement(sdXpaths.DOBField).click();
         Thread.sleep(2000);
-        driver.findElement(sdXpaths.AddPAtSelectDate).click();
-        driver.findElement(sdXpaths.AddPatGender).click();
         Assert.assertTrue(driver.findElement(sdXpaths.SaveBtnDisabled).isEnabled(), "Save btn not disabled");
-        driver.navigate().refresh();
+        Thread.sleep(2000);
         driver.findElement(sdXpaths.CrossAddPopUp).click();
     }
     //-----------------------------------AFTER CLASS--------------------------------

@@ -171,13 +171,12 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         newele2.sendKeys("Test@123456");
 //        boolean vld = driver.findElement(SaveBtnSettings).isDisplayed();
 //        if (vld == false){System.out.println("Save btn disabled");}
-        Assert.assertFalse(driver.findElement(SaveBtnSettings).isEnabled(), "Save btn disabled");
+        Assert.assertFalse(driver.findElement(SaveSettings2).isEnabled(), "Save btn disabled");
     }
     public void SettingsSection3(WebDriver driver) throws InterruptedException {
         driver.findElement(settingsIcon).click();
         WebElement userField = driver.findElement(UserNameField);
         String val = userField.getText();
-        //System.out.println("Entered text is: " + val);
 
         WebElement passField = driver.findElement(CurrentPassword);
         passField.sendKeys("Test@12345");
@@ -188,28 +187,22 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         driver.findElement(ConfirmPasswordField).click();
         WebElement newele2 =  driver.findElement(ConfirmPasswordField);
         newele2.sendKeys("Test@123456");
-//        boolean vld = driver.findElement(SaveBtnSettings).isDisplayed();
-//        if (vld == false){System.out.println("Save btn disabled");}
         Assert.assertFalse(driver.findElement(SaveBtnSettings).isEnabled(), "Save btn disabled");
     }
     public void SettingsSection4(WebDriver driver) throws InterruptedException {
         driver.findElement(settingsIcon).click();
         WebElement userField = driver.findElement(UserNameField);
         String val = userField.getText();
-        //System.out.println("Entered text is: " + val);
 
         WebElement passField = driver.findElement(CurrentPassword);
         passField.sendKeys("Test@12345");
         String value = passField.getText();
-
         Assert.assertFalse(driver.findElement(SaveBtnSettings).isEnabled(), "Save btn disabled");
     }
     public void SettingsSection5(WebDriver driver) throws InterruptedException {
         driver.findElement(settingsIcon).click();
         WebElement userField = driver.findElement(UserNameField);
         String val = userField.getText();
-        //System.out.println("Entered text is: " + val);
-
         WebElement passField = driver.findElement(CurrentPassword);
         passField.sendKeys("Test@12345");
         String value = passField.getText();
@@ -221,7 +214,7 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         Thread.sleep(2000);
         driver.findElement(ShowPassword).click();
 
-        Assert.assertFalse(driver.findElement(SaveBtnSettings).isEnabled(), "Save btn disabled");
+        Assert.assertFalse(driver.findElement(SaveSettings2).isEnabled(), "Save btn disabled");
     }
     //----------------------------------SEARCH PATIENT FLOW----------------------------------------
     public void searchPatient(WebDriver driver) throws InterruptedException {
@@ -239,7 +232,7 @@ public class SecondDentistUtils extends SecondDentistXpaths {
 
     public void searchPatient2(WebDriver driver) throws InterruptedException {
         Thread.sleep(2000);
-        driver.findElement(FullScreenBtn).click();
+        driver.findElement(PatientSection).click();
         driver.findElement(SearchButton).click();
         driver.findElement(SearchButton).sendKeys("Znto");
         boolean vld = driver.getPageSource().contains("No results");
