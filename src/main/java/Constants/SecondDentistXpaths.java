@@ -63,10 +63,17 @@ public class SecondDentistXpaths {
 
     //---------------------------SETTINGS SECTION XPATH-------------------------------------------
     public By settingsIcon = By.xpath("//*[@id=\"leftsidebar\"]/div/ul/li[3]/a");
+    //*[@id="leftsidebar"]/div/ul/li[3]/a/i
     public By UserNameField = By.xpath("//*[@id=\"mat-input-2\"]");
-    public By CurrentPassword = By.xpath("//*[@id=\"mat-input-3\"]");
-    public By NewPasswordField = By.xpath("//*[@id=\"mat-input-4\"]");
-    public By ConfirmPasswordField = By.xpath("//*[@id=\"mat-input-5\"]");
+    //*[@id="mat-input-0"]
+    public By CurrentPassword = By.xpath("//*[@id=\"mat-input-1\"]");
+    //*[@id="mat-input-3"]
+    //*[@id="mat-input-1"]
+    public By CurrPassword2 = By.xpath("//*[@id=\"mat-input-3\"]");
+    public By NewPasswordField = By.xpath("//*[@id=\"mat-input-2\"]");
+    //*[@id="mat-input-2"]
+    public By ConfirmPasswordField = By.xpath("//*[@id=\"mat-input-3\"]");
+    //*[@id="mat-input-3"]
     public By ShowPassword = By.xpath("/html/body/app-root/app-main-layout/app-settings/section/div/mat-tab-group/div/mat-tab-body/div/div/div/div/form/mat-form-field[3]/div/div[1]/div[2]/a");
     public By SaveBtnSettings = By.xpath("//div/button[@class='mat-focus-indicator mat-raised-button mat-button-base mat-primary mat-button-disabled']");
     public By SaveSettings2 = By.xpath("//*[@id=\"mat-tab-content-0-0\"]/div/div/div/button");

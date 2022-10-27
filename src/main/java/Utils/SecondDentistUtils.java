@@ -133,7 +133,7 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         String val = userField.getText();
         System.out.println("Entered text is: " + val);
 
-        WebElement passField = driver.findElement(CurrentPassword);
+        WebElement passField = driver.findElement(CurrPassword2);
         passField.sendKeys("Test@12345");
         String value = passField.getText();
 
@@ -152,6 +152,7 @@ public class SecondDentistUtils extends SecondDentistXpaths {
     }
 
     public void SettingsSection2(WebDriver driver) throws InterruptedException {
+        driver.navigate().refresh();
         driver.findElement(settingsIcon).click();
         WebElement userField = driver.findElement(UserNameField);
         String val = userField.getText();
@@ -200,6 +201,7 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         Assert.assertFalse(driver.findElement(SaveBtnSettings).isEnabled(), "Save btn disabled");
     }
     public void SettingsSection5(WebDriver driver) throws InterruptedException {
+        driver.navigate().refresh();
         driver.findElement(settingsIcon).click();
         WebElement userField = driver.findElement(UserNameField);
         String val = userField.getText();
@@ -233,6 +235,7 @@ public class SecondDentistUtils extends SecondDentistXpaths {
     public void searchPatient2(WebDriver driver) throws InterruptedException {
         Thread.sleep(2000);
         driver.findElement(PatientSection).click();
+        Thread.sleep(2000);
         driver.findElement(SearchButton).click();
         driver.findElement(SearchButton).sendKeys("Znto");
         boolean vld = driver.getPageSource().contains("No results");
