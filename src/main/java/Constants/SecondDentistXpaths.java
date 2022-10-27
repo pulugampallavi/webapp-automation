@@ -33,6 +33,10 @@ public class SecondDentistXpaths {
     //----------------------------------CHAT BOT XPATHS--------------------------------------
     public By ChatBotValidation = By.xpath("//*[@id=\"botHeaderTitle\"]");
     public By ChatBotCloseBtn = By.xpath("//*[@id=\"KORE_BOT\"]/div[4]/div[3]/button[5]");
+    public By ChatBotReconnect = By.xpath("//*[@id=\"KORE_BOT\"]/div[4]/div[3]/button[2]");
+    public By ChatBotMinimize = By.xpath("//*[@id=\"KORE_BOT\"]/div[4]/div[3]/button[3]");
+    public By ChatBotExpand = By.xpath("//*[@id=\"KORE_BOT\"]/div[4]/div[3]/button[4]");
+    public By ChatBotIcon = By.xpath("//*[@id=\"KORE_BOT\"]/div[3]/span");
 
     //----------------------------------UPLOAD AND ANALYZE XPATHS--------------------------------------
     public By SelectPatient = By.xpath("//div/mat-table/mat-row[@class='mat-row cdk-row ng-star-inserted']");
@@ -91,6 +95,7 @@ public class SecondDentistXpaths {
     public By PatientVisitsSection = By.xpath("//*[@id=\"mat-tab-label-0-0\"]");
     public By SelectPatient2 = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]");
     public By ImageIconSmall = By.xpath("//div/mat-table/mat-row/mat-cell/mat-icon[@title='View Images']");
+    public By ScanDetails = By.xpath("//*[@id=\"mat-tab-content-0-1\"]/div/app-list-images/div");
     public By ReportIconSmall = By.xpath("//div/mat-table/mat-row/mat-cell/mat-icon[@aria-label='Report']");
 
 }

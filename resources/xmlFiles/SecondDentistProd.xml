@@ -45,4 +45,9 @@
             <class name="Tests.Settings"/>
         </classes>
     </test>
+    <test name="Patients Flow">
+        <classes>
+            <class name="Tests.Patient"/>
+        </classes>
+    </test>
 </suite>

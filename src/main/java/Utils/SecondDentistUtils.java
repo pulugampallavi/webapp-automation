@@ -81,6 +81,15 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         js.executeScript("document.getElementsByClassName('buttonTmplContentChild')[3].click();");
         Thread.sleep(10000);
         js.executeScript("document.getElementsByClassName('buttonTmplContentChild')[4].click();");
+        driver.findElement(ChatBotReconnect).click();
+        Assert.assertTrue(driver.getPageSource().contains("Velmeni's Dental Assistant"), "Chat Reconnected");
+        driver.findElement(ChatBotMinimize).click();
+        Assert.assertTrue(driver.findElement(ChatBotIcon).isDisplayed(), "Chat Minimized");
+        Thread.sleep(2000);
+        js.executeScript("document.getElementsByClassName('minimized')[0].click();");
+        Thread.sleep(5000);
+        driver.findElement(ChatBotExpand).click();
+        Thread.sleep(2000);
         driver.findElement(ChatBotCloseBtn).click();
     }
     //----------------------------------Upload and Analyze Section Flow----------------------------------------
@@ -244,14 +253,18 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         }
     }
     //----------------------------------PATIENT VISITS FLOW----------------------------------------
-    public void patientVisitsflow(WebDriver driver){
+    public void patientVisitsflow(WebDriver driver) throws InterruptedException {
         boolean vld = driver.findElement(PVHeader).isDisplayed();
         if (vld == true){
             System.out.println("On Patient Visits Page");
         }
         driver.findElement(SelectPatient2).click();
         driver.findElement(ImageIconSmall).click();
+        Assert.assertTrue(driver.findElement(ScanDetails).isDisplayed(),"Images section displayed");
+        Thread.sleep(2000);
         driver.findElement(PatientVisitsSection).click();
+        Thread.sleep(3000);
         driver.findElement(ReportIconSmall).click();
+
     }
 }
