@@ -11,7 +11,8 @@ public class SecondDentistXpaths {
     public By SignOut = By.xpath("//*[@id=\"leftsidebar\"]/div/ul/li[4]/a");
     public By ShowPasswordLogin = By.xpath("/html/body/app-root/app-auth-layout/app-signin/div/div/div/div/div/div[2]/form/div[2]/div/mat-form-field/div/div[1]/div[4]/a/mat-icon");
     //----------------------------------ADD PATIENTS XPATHS--------------------------------------
-    public By PatientSection = By.xpath("//*[@id=\"leftsidebar\"]/div/ul/li[1]/a");
+    public By PatientSection = By.xpath("//div//child::i[text()='person']");
+    //*[@id="leftsidebar"]/div/ul/li[1]/a
     public By AddPatientBtn = By.xpath("//div/button/span[text()=' Add Patient ']");
    // /html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[1]/div/div[2]/button
     public By AddPatFirstName = By.xpath("//div/input[@data-placeholder='First name']");
@@ -40,10 +41,12 @@ public class SecondDentistXpaths {
 
     //----------------------------------UPLOAD AND ANALYZE XPATHS--------------------------------------
     public By SelectPatient = By.xpath("//div/mat-table/mat-row[@class='mat-row cdk-row ng-star-inserted']");
+    //html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]
     public By UploadAnalyzeButton = By.xpath("//div[@aria-posinset='3']");
     //*[@id="mat-tab-label-1-2"]
     //*[@id="mat-input-0"]
     public By PeriapicalRadioBtn = By.xpath("//*[@id=\"mat-radio-8\"]/label/span[1]");
+    //*[@id="mat-radio-3"]/label/span[1]/span[2]
     //*[@id="mat-radio-8"]/label/span[1]
     //*[@id="mat-radio-9"]/label/span[1]/span[2]
     public By BitewingRadioBtn = By.xpath("//*[@id=\"mat-radio-4\"]/label/span[1]");
@@ -51,7 +54,9 @@ public class SecondDentistXpaths {
     public By ProceedBitewing = By.xpath("//*[@id=\"cdk-step-content-0-0\"]/form/div/div/div[2]/div/button[2]");
     public By ProceedBtn = By.xpath("//*[@id=\"cdk-step-content-1-0\"]/form/div/div/div[2]/div/button[2]");
     //*[@id="cdk-step-content-1-0"]/form/div/div/div[2]/div/button[2]
+    //*[@id="cdk-step-content-0-0"]/form/div/div/div[2]/div/button[2]
     public By AnalyzeBtnPopup = By.xpath("//*[@id=\"mat-dialog-0\"]/app-analyze-consent/div/div[2]/button[2]");
+    //*[@id="mat-dialog-0"]/app-analyze-consent/div/div[2]/button[2]
     public By Analyze2 = By.xpath("//*[@id=\"mat-dialog-1\"]/app-analyze-consent/div/div[2]/button[2]");
     public By AcceptBtn = By.xpath("//div/button[@class='mat-focus-indicator pull-right btn-report mat-raised-button mat-button-base']");
     public By Accept2 = By.xpath("//*[@id=\"cdk-step-content-1-1\"]/form/div/div[4]/div[1]/div[3]/div/button[1]");
@@ -60,7 +65,33 @@ public class SecondDentistXpaths {
  //*[@id="cdk-step-content-2-1"]/form/div/div[4]/div[1]/div[3]/div/button[1]
     public By SaveFindingsBtn = By.xpath("//div/button[@class='mat-focus-indicator btn-back btn-save mat-raised-button mat-button-base']");
     public By DownloadReportBtn = By.xpath("//div/button[@class='mat-focus-indicator btn-report mat-raised-button mat-button-base']");
+//*[@id="cdk-step-content-0-0"]/form/div/div/div[2]/div/button[2]
 
+    //-------------------------------------------------------------------
+
+    public By BrightnessSlider = By.xpath("//mat-label[text()='Brightness']//parent::div");
+    //*[@id="cdk-step-content-0-1"]/form/div/div[1]/div[1]/div/mat-slider
+    //div[@class='col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6']//child::mat-label[text()='Brightness']
+    public By ContrastSlider = By.xpath("//mat-label[text()='Contrast']//parent::div");
+    public By PeriapicalBtn2 = By.xpath("//*[@id=\"mat-radio-3\"]/label/span[2]");
+    public By ProceedBtn2 = By.xpath("//span[@class='mat-button-wrapper' and contains(text(),'Proceed')]//parent::button");
+    //*[@id="cdk-step-content-1-0"]/form/div/div/div[2]/div/button[2]
+    public By magnifierIcon = By.xpath("//*[@id=\"cdk-step-content-0-1\"]/form/div/div[1]/div[3]/span[1]");
+    public By AntiClockwiseRotate = By.xpath("//div//child::span[text()='rotate_90_degrees_ccw']");
+    public By ClockwiseRotate = By.xpath("//div//child::span[text()='rotate_90_degrees_cw']");
+    public By InvertImage = By.xpath("//div//child::span[text()='invert_colors']");
+    public By RefreshBtn = By.xpath("//div//child::span[text()='refresh']");
+    public By FindingsIcon = By.xpath("//div//child::button[@title='Click to view all supported findings.']");
+    public By CLoseFindingPopup = By.xpath("//div//child::mat-icon[text()='close']");
+    public By HideFindings = By.xpath("//div//child::button[@title='Click to hide findings from image.']");
+    public By UploadImageSmlBtn = By.xpath("//div//child::button[@title='Click to upload new image.']");
+    public By RefreshSmlBtn = By.xpath("//div//child::button[@title='Click to reload current image with predictions.']");
+    public By PrintBtn = By.xpath("//div//child::mat-icon[text()='print']");
+    public By ThreeDots = By.xpath("//div//child::span[text()='more_vert']");
+//div//child::span[text()='Drag & Drop or Click to Browse and Upload Images']
+    //div//child::label[text()='Select Image Type:']
+
+    //Supported Findings
     //---------------------------SUPPORT SECTION XPATH-------------------------------------------
     public By SupportIcon = By.xpath("//*[@id=\"leftsidebar\"]/div/ul/li[2]");
     public By UserManual = By.xpath("/html/body/app-root/app-main-layout/support/section/div/div[2]/div/div/div/div/div[2]/a");
