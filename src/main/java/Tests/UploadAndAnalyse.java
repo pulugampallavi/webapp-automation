@@ -4,12 +4,14 @@ import Utils.SecondDentistUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import java.io.IOException;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 public class UploadAndAnalyse extends BaseTest{
     WebDriver driver;
@@ -101,7 +103,8 @@ public class UploadAndAnalyse extends BaseTest{
     }
     @Test(description = "Teeth Numbering Flow")
     public void TeethNumbering() throws InterruptedException {
-        driver.navigate().refresh();
+        //driver.navigate().refresh();
+        Thread.sleep(2000);
         driver.findElement(sdXpaths.PatientSection).click();
         Thread.sleep(2000);
         driver.findElement(sdXpaths.SelectPatient).click();
@@ -116,17 +119,19 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
         Thread.sleep(4000);
 
-        String T1 = driver.findElement(By.xpath("//div//child::div[text()='31']")).getText();
-        String T2 = driver.findElement(By.xpath("//div//child::div[text()='30']")).getText();
-        String T3 = driver.findElement(By.xpath("//div//child::div[text()='29']")).getText();
-        String T4 = driver.findElement(By.xpath("//div//child::div[text()='28']")).getText();
-        Reporter.log("Teeth numbers are : "+T1+","+T2+","+T3+","+T4);
-        String TN1 = driver.findElement(By.xpath("//select//child::option[text()='UNIVERSAL']")).getText();
-        if (TN1=="UNIVERSAL"){
-            Reporter.log("Teeth numbers are : "+T1+","+T2+","+T3+","+T4);
+        WebElement testDropDown = driver.findElement(By.xpath("//div/select"));
+        Select dropdown = new Select(testDropDown);
+
+        dropdown.selectByValue("UNIVERSAL");
+        List<WebElement> list = driver.findElements(By.xpath("//*[contains(@class,'col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-6')]"));
+        for (WebElement webElement:list){
+           Reporter.log(webElement.getText());
         }
-        else {
-            Reporter.log("Teeth Number Format is In ISO");
+
+        dropdown.selectByValue("ISO");
+        List<WebElement> list2 = driver.findElements(By.xpath("//*[contains(@class,'col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-6')]"));
+        for (WebElement webElement:list2){
+            Reporter.log(webElement.getText());
         }
     }
     //-----------------------------------AFTER CLASS--------------------------------

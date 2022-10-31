@@ -27,6 +27,7 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         driver.findElement(PasswordXpath).sendKeys(BaseTest.password);
         driver.findElement(SignIn).click();
         Thread.sleep(4000);
+        driver.navigate().refresh();
         Assert.assertTrue(driver.getCurrentUrl().endsWith("seconddentist.ai/#/doctor/all-patients"), "Login unsuccessfull.");
     }
     public void clickLogOutButton(WebDriver driver) throws InterruptedException {
@@ -73,13 +74,13 @@ public class SecondDentistUtils extends SecondDentistXpaths {
             System.out.println("ChatBot popup did not open");
         }
         js.executeScript("document.getElementsByClassName('buttonTmplContentChild')[0].click();");
-        Thread.sleep(10000);
+        Thread.sleep(5000);
         js.executeScript("document.getElementsByClassName('buttonTmplContentChild')[1].click();");
-        Thread.sleep(10000);
+        Thread.sleep(5000);
         js.executeScript("document.getElementsByClassName('buttonTmplContentChild')[2].click();");
-        Thread.sleep(10000);
+        Thread.sleep(5000);
         js.executeScript("document.getElementsByClassName('buttonTmplContentChild')[3].click();");
-        Thread.sleep(10000);
+        Thread.sleep(5000);
         js.executeScript("document.getElementsByClassName('buttonTmplContentChild')[4].click();");
         driver.findElement(ChatBotReconnect).click();
         Assert.assertTrue(driver.getPageSource().contains("Velmeni's Dental Assistant"), "Chat Reconnected");
