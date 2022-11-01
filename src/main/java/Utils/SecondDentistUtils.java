@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -31,8 +32,11 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         Assert.assertTrue(driver.getCurrentUrl().endsWith("seconddentist.ai/#/doctor/all-patients"), "Login unsuccessfull.");
     }
     public void clickLogOutButton(WebDriver driver) throws InterruptedException {
-        Thread.sleep(5000);
-        driver.findElement(SignOut).click();
+        Actions clicklogOut= new Actions(driver);
+        WebElement signOutIcon = driver.findElement(SignOut);
+       // Thread.sleep(5000);
+        clicklogOut.click(signOutIcon).perform();
+       // driver.findElement(SignOut).click();
     }
 
     //----------------------------------ADD PATIENTS FLOW--------------------------------------

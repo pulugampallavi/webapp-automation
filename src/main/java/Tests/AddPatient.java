@@ -4,6 +4,7 @@ import Utils.SecondDentistUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -19,7 +20,9 @@ public class AddPatient extends BaseTest{
     @BeforeClass
     public void setup() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless", "--disable-gpu");
+        driver = new ChromeDriver(options);
         sdUtils= new SecondDentistUtils();
         sdXpaths = new SecondDentistXpaths();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

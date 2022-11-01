@@ -15,39 +15,39 @@
             <class name="Tests.LoginLogout"/>
         </classes>
     </test>
-    <test name="Add Patient Test">
-        <classes>
-            <class name="Tests.AddPatient"/>
-        </classes>
-    </test>
-    <test name="Upload and Analyse">
-        <classes>
-            <class name="Tests.UploadAndAnalyse"/>
-        </classes>
-    </test>
-    <test name="Chatbot">
-        <classes>
-            <class name="Tests.Chatbot"/>
-        </classes>
-    </test>
-    <test name="Search Patient">
-        <classes>
-            <class name="Tests.SearchPatient"/>
-        </classes>
-    </test>
-    <test name="Support">
-        <classes>
-            <class name="Tests.Support"/>
-        </classes>
-    </test>
-    <test name="Settings">
-        <classes>
-            <class name="Tests.Settings"/>
-        </classes>
-    </test>
-    <test name="Patients Flow">
-        <classes>
-            <class name="Tests.Patient"/>
-        </classes>
-    </test>
+<!--    <test name="Add Patient Test">-->
+<!--        <classes>-->
+<!--            <class name="Tests.AddPatient"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Upload and Analyse">-->
+<!--        <classes>-->
+<!--            <class name="Tests.UploadAndAnalyse"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Chatbot">-->
+<!--        <classes>-->
+<!--            <class name="Tests.Chatbot"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Search Patient">-->
+<!--        <classes>-->
+<!--            <class name="Tests.SearchPatient"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Support">-->
+<!--        <classes>-->
+<!--            <class name="Tests.Support"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Settings">-->
+<!--        <classes>-->
+<!--            <class name="Tests.Settings"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="Patients Flow">-->
+<!--        <classes>-->
+<!--            <class name="Tests.Patient"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>
