@@ -27,16 +27,14 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         driver.findElement(PasswordXpath).clear();
         driver.findElement(PasswordXpath).sendKeys(BaseTest.password);
         driver.findElement(SignIn).click();
-        Thread.sleep(4000);
-        driver.navigate().refresh();
+        Thread.sleep(7000);
         Assert.assertTrue(driver.getCurrentUrl().endsWith("seconddentist.ai/#/doctor/all-patients"), "Login unsuccessfull.");
     }
     public void clickLogOutButton(WebDriver driver) throws InterruptedException {
-        Actions clicklogOut= new Actions(driver);
-        WebElement signOutIcon = driver.findElement(SignOut);
-       // Thread.sleep(5000);
-        clicklogOut.click(signOutIcon).perform();
-       // driver.findElement(SignOut).click();
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(10000));
+//        WebElement logOutbtn = driver.findElement(SignOut);
+//        wait.until(ExpectedConditions.visibilityOf(logOutbtn));
+        driver.findElement(SignOut).click();
     }
 
     //----------------------------------ADD PATIENTS FLOW--------------------------------------

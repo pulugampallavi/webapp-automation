@@ -10,11 +10,11 @@
             <class name="Tests.BaseTest"/>
         </classes>
     </test>
-    <test name="Login Page">
-        <classes>
-            <class name="Tests.LoginLogout"/>
-        </classes>
-    </test>
+<!--    <test name="Login Page">-->
+<!--        <classes>-->
+<!--            <class name="Tests.LoginLogout"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 <!--    <test name="Add Patient Test">-->
 <!--        <classes>-->
 <!--            <class name="Tests.AddPatient"/>-->
@@ -45,9 +45,9 @@
 <!--            <class name="Tests.Settings"/>-->
 <!--        </classes>-->
 <!--    </test>-->
-<!--    <test name="Patients Flow">-->
-<!--        <classes>-->
-<!--            <class name="Tests.Patient"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Patients Flow">
+        <classes>
+            <class name="Tests.Patient"/>
+        </classes>
+    </test>
 </suite>

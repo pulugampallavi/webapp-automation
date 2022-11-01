@@ -5,12 +5,15 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 public class LoginLogout extends BaseTest {
     WebDriver driver;
@@ -27,7 +30,9 @@ public class LoginLogout extends BaseTest {
         driver = new ChromeDriver(options);
         sdUtils= new SecondDentistUtils();
         sdXpaths = new SecondDentistXpaths();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+//        wait.until(ExpectedConditions.visibilityOfAllElements());
+        driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         driver.get(BaseTest.url);

@@ -87,8 +87,8 @@ public class SecondDentistXpaths {
     public By PVHeader = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-header-row");
     public By PatientVisitsSection = By.xpath("//*[@id=\"mat-tab-label-0-0\"]");
     public By SelectPatient2 = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]");
-    public By ImageIconSmall = By.xpath("//div/mat-table/mat-row/mat-cell/mat-icon[@title='View Images']");
+    public By ImageIconSmall = By.xpath("//mat-cell/mat-icon[@title='View Images']");
     public By ScanDetails = By.xpath("//*[@id=\"mat-tab-content-0-1\"]/div/app-list-images/div");
-    public By ReportIconSmall = By.xpath("//div/mat-table/mat-row/mat-cell/mat-icon[@aria-label='Report']");
+    public By ReportIconSmall = By.xpath("//mat-cell/mat-icon[@aria-label='Report']");
 
 }
