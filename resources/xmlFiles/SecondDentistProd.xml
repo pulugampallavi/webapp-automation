@@ -20,11 +20,16 @@
 <!--            <class name="Tests.AddPatient"/>-->
 <!--        </classes>-->
 <!--    </test>-->
-<!--    <test name="Upload and Analyse">-->
-<!--        <classes>-->
-<!--            <class name="Tests.UploadAndAnalyse"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Upload and Analyse">
+        <classes>
+            <class name="Tests.UploadAndAnalyse">
+                <methods>
+                    <include name="addNotes()"/>
+                    <include name="doctorsNotes()"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 <!--    <test name="Chatbot">-->
 <!--        <classes>-->
 <!--            <class name="Tests.Chatbot"/>-->
@@ -45,9 +50,9 @@
 <!--            <class name="Tests.Settings"/>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="Patients Flow">
-        <classes>
-            <class name="Tests.Patient"/>
-        </classes>
-    </test>
+<!--    <test name="Patients Flow">-->
+<!--        <classes>-->
+<!--            <class name="Tests.Patient"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>

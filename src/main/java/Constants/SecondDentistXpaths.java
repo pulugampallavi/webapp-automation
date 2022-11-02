@@ -46,7 +46,9 @@ public class SecondDentistXpaths {
     public By Accept2 = By.xpath("//*[@id=\"cdk-step-content-1-1\"]/form/div/div[4]/div[1]/div[3]/div/button[1]");
     public By SaveFindingsBtn = By.xpath("//div/button[@class='mat-focus-indicator btn-back btn-save mat-raised-button mat-button-base']");
     public By DownloadReportBtn = By.xpath("//div/button[@class='mat-focus-indicator btn-report mat-raised-button mat-button-base']");
-
+    public By AddNotes = By.xpath("//*[@id=\"cdk-step-content-0-1\"]/form/div/div[4]/div[4]/div/div[4]/label");
+    public By AddNotesTextField = By.xpath("//*[@id=\"cdk-step-content-0-1\"]/form/div/div[4]/div[4]/div/div[4]/textarea");
+    public By DoctorsNotes = By.xpath("//*[@id=\"doc_notes\"]");
     //-------------------------------------------------------------------
     public By BrightnessSlider = By.xpath("//mat-label[text()='Brightness']//parent::div");
     public By ContrastSlider = By.xpath("//mat-label[text()='Contrast']//parent::div");
