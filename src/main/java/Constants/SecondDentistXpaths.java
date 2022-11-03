@@ -11,6 +11,8 @@ public class SecondDentistXpaths {
     public By SignIn = By.xpath("//button[@type='submit']");
     public By SignOut = By.xpath("//*[@id=\"leftsidebar\"]/div/ul/li[4]");
     //*[@id="leftsidebar"]/div/ul/li[4]/a/i
+    public By DoctorIcon = By.xpath("//li[@class='nav-item user_profile d-none d-md-block d-lg-block d-xl-block dropdown']");
+    public By LogOutBtn = By.xpath("//div[@class='notification-dropdown pullDown dropdown-menu show']");
     public By ShowPasswordLogin = By.xpath("/html/body/app-root/app-auth-layout/app-signin/div/div/div/div/div/div[2]/form/div[2]/div/mat-form-field/div/div[1]/div[4]/a/mat-icon");
     //----------------------------------ADD PATIENTS XPATHS--------------------------------------
     public By PatientSection = By.xpath("//div//child::i[text()='person']");
@@ -34,17 +36,17 @@ public class SecondDentistXpaths {
 
     //----------------------------------UPLOAD AND ANALYZE XPATHS--------------------------------------
     public By SelectPatient = By.xpath("//div/mat-table/mat-row[@class='mat-row cdk-row ng-star-inserted']");
-    public By UploadAnalyzeButton = By.xpath("//div[@aria-posinset='3']");
-    public By PeriapicalRadioBtn = By.xpath("//*[@id=\"mat-radio-8\"]/label/span[1]");
-    public By BitewingRadioBtn = By.xpath("//*[@id=\"mat-radio-4\"]/label/span[1]");
+    public By UploadAnalyzeButton = By.xpath("//div//child::div[text()='UPLOAD & ANALYZE']");
+    public By PeriapicalRadioBtn = By.xpath("//div//child::span[text()='Periapical']");
+    public By BitewingRadioBtn = By.xpath("//div//child::span[text()='Bitewing']");
     public By UploadImageBtn = By.xpath("//*[@id=\"undefined\"]");
     public By ProceedBitewing = By.xpath("//*[@id=\"cdk-step-content-0-0\"]/form/div/div/div[2]/div/button[2]");
-    public By ProceedBtn = By.xpath("//*[@id=\"cdk-step-content-1-0\"]/form/div/div/div[2]/div/button[2]");
-    public By AnalyzeBtnPopup = By.xpath("//*[@id=\"mat-dialog-0\"]/app-analyze-consent/div/div[2]/button[2]");
-    public By Analyze2 = By.xpath("//*[@id=\"mat-dialog-1\"]/app-analyze-consent/div/div[2]/button[2]");
-    public By AcceptBtn = By.xpath("//div/button[@class='mat-focus-indicator pull-right btn-report mat-raised-button mat-button-base']");
-    public By Accept2 = By.xpath("//*[@id=\"cdk-step-content-1-1\"]/form/div/div[4]/div[1]/div[3]/div/button[1]");
-    public By SaveFindingsBtn = By.xpath("//div/button[@class='mat-focus-indicator btn-back btn-save mat-raised-button mat-button-base']");
+    public By ProceedBtn = By.xpath("//div//child::span[text()='Proceed']");
+    public By AnalyzeBtnPopup = By.xpath("//div//child::span[text()='Analyze']");
+    public By Analyze2 = By.xpath("//div//child::span[text()='Analyze']");
+    public By AcceptBtn = By.xpath("//div//child::span[text()='Accept']");
+    public By Accept2 = By.xpath("//div//child::span[text()='Accept']");
+    public By SaveFindingsBtn = By.xpath("//div//child::mat-icon[text()='save']");
     public By DownloadReportBtn = By.xpath("//div/button[@class='mat-focus-indicator btn-report mat-raised-button mat-button-base']");
     public By AddNotes = By.xpath("//*[@id=\"cdk-step-content-0-1\"]/form/div/div[4]/div[4]/div/div[4]/label");
     public By AddNotesTextField = By.xpath("//*[@id=\"cdk-step-content-0-1\"]/form/div/div[4]/div[4]/div/div[4]/textarea");
@@ -52,8 +54,8 @@ public class SecondDentistXpaths {
     //-------------------------------------------------------------------
     public By BrightnessSlider = By.xpath("//mat-label[text()='Brightness']//parent::div");
     public By ContrastSlider = By.xpath("//mat-label[text()='Contrast']//parent::div");
-    public By PeriapicalBtn2 = By.xpath("//*[@id=\"mat-radio-3\"]/label/span[2]");
-    public By ProceedBtn2 = By.xpath("//span[@class='mat-button-wrapper' and contains(text(),'Proceed')]//parent::button");
+    public By PeriapicalBtn2 = By.xpath("//div//child::span[text()='Periapical']");
+    public By ProceedBtn2 = By.xpath("//div//child::span[text()='Proceed']");
     public By magnifierIcon = By.xpath("//*[@id=\"cdk-step-content-0-1\"]/form/div/div[1]/div[3]/span[1]");
     public By AntiClockwiseRotate = By.xpath("//div//child::span[text()='rotate_90_degrees_ccw']");
     public By ClockwiseRotate = By.xpath("//div//child::span[text()='rotate_90_degrees_cw']");

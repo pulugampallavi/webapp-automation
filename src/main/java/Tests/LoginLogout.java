@@ -47,6 +47,7 @@ public class LoginLogout extends BaseTest {
     //-------------------------------LOGOUT TESTCASE---------------------------------------
     @Test(description = "Check logout flow")
     public void logoutflow() throws InterruptedException {
+        Thread.sleep(3000);
         sdUtils.clickLogOutButton(driver);
     }
     //-------------------------------INVALID USERNAME TESTCASE---------------------------------------

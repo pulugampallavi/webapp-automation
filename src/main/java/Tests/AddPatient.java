@@ -30,7 +30,7 @@ public class AddPatient extends BaseTest{
         driver.manage().window().maximize();
         driver.get(BaseTest.url);
         sdUtils.clickLogInButton(driver);
-        driver.navigate().refresh();
+        //driver.navigate().refresh();
     }
 
 

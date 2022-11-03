@@ -6,15 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.Reporter;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -27,14 +22,14 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         driver.findElement(PasswordXpath).clear();
         driver.findElement(PasswordXpath).sendKeys(BaseTest.password);
         driver.findElement(SignIn).click();
-        Thread.sleep(7000);
+        Thread.sleep(10000);
         Assert.assertTrue(driver.getCurrentUrl().endsWith("seconddentist.ai/#/doctor/all-patients"), "Login unsuccessfull.");
     }
     public void clickLogOutButton(WebDriver driver) throws InterruptedException {
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(10000));
-//        WebElement logOutbtn = driver.findElement(SignOut);
-//        wait.until(ExpectedConditions.visibilityOf(logOutbtn));
         driver.findElement(SignOut).click();
+
+       // driver.findElement(DoctorIcon).click();
+       // driver.findElement(LogOutBtn).click();
     }
 
     //----------------------------------ADD PATIENTS FLOW--------------------------------------
@@ -57,10 +52,6 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         driver.findElement(AddPAtSelectDate).click();
         driver.findElement(AddPatGender).click();
         driver.findElement(SaveBtn).click();
-    }
-
-    public void addPatientbtn(WebDriver driver){
-        Assert.assertTrue(driver.findElement(AddPatientBtn).isEnabled(), "Save btn not disabled");
     }
     //----------------------------------CHATBOT FLOW--------------------------------------
     public void ChatbotFlow(WebDriver driver) throws InterruptedException {
@@ -97,14 +88,14 @@ public class SecondDentistUtils extends SecondDentistXpaths {
     }
     //----------------------------------Upload and Analyze Section Flow----------------------------------------
 
-    public void uploadAndAnalyzeFlow(WebDriver driver) throws InterruptedException, IOException {
+    public void bitewingImage(WebDriver driver) throws InterruptedException, IOException {
         driver.findElement(SelectPatient).click();
         Thread.sleep(3000);
         driver.findElement(UploadAnalyzeButton).click();
         Thread.sleep(2000);
         driver.findElement(BitewingRadioBtn).click();
         Thread.sleep(4000);
-        driver.findElement(UploadImageBtn).sendKeys("R:/Velmeni/Proofs & Files/bitewingimage/200-4.1.jpeg");
+        driver.findElement(UploadImageBtn).sendKeys("D:/webapp-automation/resources/bitewing1.jpeg");
         driver.findElement(UploadImageBtn).submit();
         driver.findElement(ProceedBitewing).click();
         driver.findElement(AnalyzeBtnPopup).click();

@@ -22,12 +22,7 @@
 <!--    </test>-->
     <test name="Upload and Analyse">
         <classes>
-            <class name="Tests.UploadAndAnalyse">
-                <methods>
-                    <include name="addNotes()"/>
-                    <include name="doctorsNotes()"/>
-                </methods>
-            </class>
+            <class name="Tests.UploadAndAnalyse"/>
         </classes>
     </test>
 <!--    <test name="Chatbot">-->

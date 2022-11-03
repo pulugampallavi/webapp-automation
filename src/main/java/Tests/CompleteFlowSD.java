@@ -330,7 +330,7 @@ public class CompleteFlowSD {
         searchPatient();
         supportSection();
         SettingsSection();
-        //uploadAndAnalyzeFlow();
+        //bitewingImage();
         addPatientFlow();
         Thread.sleep(2000);
        // ImagesSection();
