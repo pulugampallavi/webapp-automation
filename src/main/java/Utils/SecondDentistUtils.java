@@ -90,7 +90,7 @@ public class SecondDentistUtils extends SecondDentistXpaths {
 
     public void bitewingImage(WebDriver driver) throws InterruptedException, IOException {
         driver.findElement(SelectPatient).click();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         driver.findElement(UploadAnalyzeButton).click();
         Thread.sleep(2000);
         driver.findElement(BitewingRadioBtn).click();

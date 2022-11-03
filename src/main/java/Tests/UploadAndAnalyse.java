@@ -40,11 +40,11 @@ public class UploadAndAnalyse extends BaseTest{
         Assert.assertTrue(driver.getCurrentUrl().endsWith("seconddentist.ai/#/doctor/all-patients"), "Login unsuccessfull.");
     }
     //----------------------------------Upload and Analyze Section Testcase----------------------------------------
-    @Test(description = "Check U&A flow for bitewing image")
+    @Test(description = "Check U&A flow for bitewing image", priority = 1)
     public void uploadAndAnalyze() throws InterruptedException, IOException {
         sdUtils.bitewingImage(driver);
     }
-    @Test(description = "Check U&A flow for periapical image")
+    @Test(description = "Check U&A flow for periapical image",priority = 2)
     public void periapicalImage() throws InterruptedException {
         driver.navigate().refresh();
         //driver.findElement(sdXpaths.PatientSection).click();
@@ -68,7 +68,7 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
         driver.findElement(sdXpaths.DownloadReportBtn).click();
     }
-    @Test(description = "Upload and analyze Regression flow")
+    @Test(description = "Upload and analyze Regression flow",priority = 3)
     public void uAndARegession() throws InterruptedException {
         driver.navigate().refresh();
         //driver.findElement(sdXpaths.PatientSection).click();
@@ -108,7 +108,7 @@ public class UploadAndAnalyse extends BaseTest{
         Thread.sleep(5000);
         Assert.assertTrue(driver.getPageSource().contains("Select Image Type:"));
     }
-    @Test(description = "Teeth Numbering Flow")
+    @Test(description = "Teeth Numbering Flow",priority = 4)
     public void teethNumbering() throws InterruptedException {
         driver.navigate().refresh();
         Thread.sleep(2000);
@@ -145,7 +145,7 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
     }
 
-    @Test(description = "Add Notes Flow")
+    @Test(description = "Add Notes Flow",priority = 5)
     public void addNotes() throws InterruptedException {
         driver.navigate().refresh();
         Thread.sleep(2000);
@@ -160,6 +160,7 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.UploadImageBtn).sendKeys("D:/webapp-automation/resources/periapical1.png");
         driver.findElement(sdXpaths.UploadImageBtn).submit();
         driver.findElement(sdXpaths.ProceedBtn2).click();
+        Thread.sleep(2000);
         driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
         Thread.sleep(4000);
         driver.findElement(sdXpaths.Accept2).click();
@@ -172,7 +173,7 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
         driver.findElement(sdXpaths.DownloadReportBtn).click();
     }
-    @Test(description = "Doctors Notes Flow")
+    @Test(description = "Doctors Notes Flow",priority = 6)
     public void doctorsNotes() throws InterruptedException {
         driver.navigate().refresh();
         // driver.findElement(sdXpaths.PatientSection).click();
