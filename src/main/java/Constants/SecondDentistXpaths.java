@@ -20,7 +20,7 @@ public class SecondDentistXpaths {
     public By AddPatFirstName = By.xpath("//div/input[@data-placeholder='First name']");
     public By AddPatLastName = By.xpath("//div/input[@data-placeholder='Last name']");
     public By DOBField = By.xpath("//*[@id=\"mat-dialog-1\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[3]/div/div[1]/div[1]");
-    public By AddPatDOB = By.xpath("//*[@id=\"mat-dialog-0\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[3]/div/div[1]/div[2]/mat-datepicker-toggle/button/span[1]");
+    public By AddPatDOB = By.xpath("//div//child::input[@data-placeholder='Date of Birth (We are accepting only patient having age 14 or above)']");
     public By AddPAtSelectDate = By.xpath("//*[@id=\"mat-datepicker-0\"]/div/mat-month-view/table/tbody/tr[2]/td[7]/div[1]");
     public By AddPatGender = By.xpath("//*[@id=\"female\"]");
     public By SaveBtn = By.xpath("//*[@id=\"mat-dialog-0\"]/app-add-patient/div/div/div[2]/div/form/div[2]/button[1]");
@@ -47,7 +47,7 @@ public class SecondDentistXpaths {
     public By AcceptBtn = By.xpath("//div//child::span[text()='Accept']");
     public By Accept2 = By.xpath("//div//child::span[text()='Accept']");
     public By SaveFindingsBtn = By.xpath("//div//child::mat-icon[text()='save']");
-    public By DownloadReportBtn = By.xpath("//div/button[@class='mat-focus-indicator btn-report mat-raised-button mat-button-base']");
+    public By DownloadReportBtn = By.xpath("//button//child::mat-icon[text()='download']");
     public By AddNotes = By.xpath("//*[@id=\"cdk-step-content-0-1\"]/form/div/div[4]/div[4]/div/div[4]/label");
     public By AddNotesTextField = By.xpath("//*[@id=\"cdk-step-content-0-1\"]/form/div/div[4]/div[4]/div/div[4]/textarea");
     public By DoctorsNotes = By.xpath("//*[@id=\"doc_notes\"]");
@@ -93,6 +93,6 @@ public class SecondDentistXpaths {
     public By SelectPatient2 = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]");
     public By ImageIconSmall = By.xpath("//mat-cell/mat-icon[@title='View Images']");
     public By ScanDetails = By.xpath("//*[@id=\"mat-tab-content-0-1\"]/div/app-list-images/div");
-    public By ReportIconSmall = By.xpath("//mat-cell/mat-icon[@aria-label='Report']");
+    public By ReportIconSmall = By.xpath("//mat-cell//child::mat-icon[text()='description ']");
 
 }

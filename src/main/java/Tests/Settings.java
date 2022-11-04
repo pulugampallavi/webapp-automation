@@ -19,7 +19,7 @@ public class Settings extends BaseTest{
     public void setup() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless", "--disable-gpu");
+        //options.addArguments("--headless", "--disable-gpu");
         driver = new ChromeDriver(options);
         sdUtils= new SecondDentistUtils();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

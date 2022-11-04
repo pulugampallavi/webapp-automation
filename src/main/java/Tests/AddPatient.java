@@ -21,7 +21,7 @@ public class AddPatient extends BaseTest{
     public void setup() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless", "--disable-gpu");
+       // options.addArguments("--headless", "--disable-gpu");
         driver = new ChromeDriver(options);
         sdUtils= new SecondDentistUtils();
         sdXpaths = new SecondDentistXpaths();

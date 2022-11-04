@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
@@ -47,9 +48,8 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         Thread.sleep(4000);
         Actions newaction2 = new Actions(driver);
         newaction2.sendKeys("October").build().perform();
-        driver.findElement(AddPatDOB).click();
+        driver.findElement(AddPatDOB).sendKeys("07/23/1999");
         Thread.sleep(2000);
-        driver.findElement(AddPAtSelectDate).click();
         driver.findElement(AddPatGender).click();
         driver.findElement(SaveBtn).click();
     }

@@ -125,17 +125,19 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.ProceedBtn2).click();
         driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
         Thread.sleep(4000);
-
-        WebElement testDropDown = driver.findElement(By.xpath("//div/select"));
+//*[@id="cdk-step-content-0-1"]/form/div/div[4]/div[1]/div[1]/div[2]/div/select/option[1]
+        //div//child::select[@style='height: 30px;']
+        WebElement testDropDown = driver.findElement(By.xpath("//*[@id=\"cdk-step-content-0-1\"]/form/div/div[4]/div[1]/div[1]/div[2]/div/select"));
         Select dropdown = new Select(testDropDown);
-
-        dropdown.selectByIndex(1);
+      //  driver.findElement(By.xpath("//div//child::select[@style='height: 30px;']"));
+//        driver.findElement(By.xpath(""))
+        dropdown.selectByIndex(0);
         List<WebElement> list = driver.findElements(By.xpath("//*[contains(@class,'col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-6')]"));
         for (WebElement webElement:list){
            Reporter.log(webElement.getText());
         }
 
-        dropdown.selectByIndex(0);
+        dropdown.selectByIndex(1);
         List<WebElement> list2 = driver.findElements(By.xpath("//*[contains(@class,'col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-6')]"));
         for (WebElement webElement:list2){
             Reporter.log(webElement.getText());
