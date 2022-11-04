@@ -130,7 +130,6 @@ public class UploadAndAnalyse extends BaseTest{
         WebElement testDropDown = driver.findElement(By.xpath("//*[@id=\"cdk-step-content-0-1\"]/form/div/div[4]/div[1]/div[1]/div[2]/div/select"));
         Select dropdown = new Select(testDropDown);
       //  driver.findElement(By.xpath("//div//child::select[@style='height: 30px;']"));
-//        driver.findElement(By.xpath(""))
         dropdown.selectByIndex(0);
         List<WebElement> list = driver.findElements(By.xpath("//*[contains(@class,'col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-6')]"));
         for (WebElement webElement:list){
@@ -200,6 +199,45 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.Accept2).click();
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
         driver.findElement(sdXpaths.DownloadReportBtn).click();
+    }
+    @Test(description = "Edit teeth numbers Flow",priority = 7)
+    public void editTeethNumber() throws InterruptedException {
+        driver.navigate().refresh();
+        Thread.sleep(2000);
+        driver.findElement(sdXpaths.SelectPatient).click();
+        Thread.sleep(5000);
+        driver.findElement(sdXpaths.UploadAnalyzeButton).click();
+        Thread.sleep(2000);
+        driver.findElement(sdXpaths.PeriapicalBtn2).click();
+        Thread.sleep(4000);
+        driver.findElement(sdXpaths.UploadImageBtn).sendKeys("D:/webapp-automation/resources/periapical1.png");
+        driver.findElement(sdXpaths.UploadImageBtn).submit();
+        driver.findElement(sdXpaths.ProceedBtn2).click();
+        driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
+        Thread.sleep(4000);
+        driver.findElement(sdXpaths.Accept2).click();
+        driver.findElement(sdXpaths.ThreeDots).click();
+        driver.findElement(sdXpaths.newTeethNo).click();
+        driver.findElement(sdXpaths.SaveTeethNumber).click();
+        driver.findElement(sdXpaths.SaveFindingsBtn).click();
+    }
+    @Test(description = "Add findings Flow",priority = 8)
+    public void addFindingsFlow() throws InterruptedException {
+        driver.navigate().refresh();
+        Thread.sleep(2000);
+        driver.findElement(sdXpaths.SelectPatient).click();
+        Thread.sleep(5000);
+        driver.findElement(sdXpaths.UploadAnalyzeButton).click();
+        Thread.sleep(2000);
+        driver.findElement(sdXpaths.PeriapicalBtn2).click();
+        Thread.sleep(4000);
+        driver.findElement(sdXpaths.UploadImageBtn).sendKeys("D:/webapp-automation/resources/periapical1.png");
+        driver.findElement(sdXpaths.UploadImageBtn).submit();
+        driver.findElement(sdXpaths.ProceedBtn2).click();
+        driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
+        Thread.sleep(4000);
+        driver.findElement(sdXpaths.Accept2).click();
+        driver.findElement(sdXpaths.addFindings).click();
     }
     //-----------------------------------AFTER CLASS--------------------------------
     @AfterClass

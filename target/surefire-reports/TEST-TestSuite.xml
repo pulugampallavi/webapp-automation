@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="38.504" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="51.535" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.16.1+1-LTS-1"/>
@@ -64,28 +64,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="ChatBot" classname="Tests.Chatbot" time="15.19">
-    <failure message="javascript error: Cannot read properties of undefined (reading &apos;click&apos;)&#10;  (Session info: chrome=107.0.5304.88)&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [bf1519a255b119b9231481e2c032d325, executeScript {script=document.getElementsByClassName(&apos;buttonTmplContentChild&apos;)[0].click();, args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61520}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61520/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: bf1519a255b119b9231481e2c032d325" type="org.openqa.selenium.JavascriptException">org.openqa.selenium.JavascriptException: 
-javascript error: Cannot read properties of undefined (reading 'click')
-  (Session info: chrome=107.0.5304.88)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf1519a255b119b9231481e2c032d325, executeScript {script=document.getElementsByClassName('buttonTmplContentChild')[0].click();, args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61520}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61520/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf1519a255b119b9231481e2c032d325
-	at Tests.Chatbot.ChatBot(Chatbot.java:39)
-</failure>
-    <system-out><![CDATA[ChatBot Popup opened
-]]></system-out>
-    <system-err><![CDATA[1293 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 107.0.5304.62 (resolved driver for Chrome 107)
-1313 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win32\107.0.5304.62\chromedriver.exe
-Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 29887
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Nov 04, 2022 4:45:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 107, so returning the closest version found: 106
-]]></system-err>
-  </testcase>
+  <testcase name="editTeethNumber" classname="Tests.UploadAndAnalyse" time="24.96"/>
 </testsuite>

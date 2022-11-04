@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-All_Test_Suite" class="navigator-link">
-              <span class="suite-name border-failed">All Test Suite</span>
+              <span class="suite-name border-passed">All Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
-                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods passed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-All_Test_Suite">
+                    <div class="method-list-content passed suite-All_Test_Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.Chatbot" class="method navigator-link" hash-for-method="ChatBot">ChatBot</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.UploadAndAnalyse" class="method navigator-link" hash-for-method="editTeethNumber">editTeethNumber</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
+                    </div> <!-- method-list-content passed suite-All_Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,44 +118,23 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
-          <div class="suite-All_Test_Suite-class-failed">
+          <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Tests.Chatbot</span>
+              <img src="passed.png"/>
+              <span class="class-name">Tests.UploadAndAnalyse</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ChatBot">
-                  </a> <!-- ChatBot -->
-                  <span class="method-name">ChatBot</span>
-                  <div class="stack-trace">org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of undefined (reading &apos;click&apos;)
-  (Session info: chrome=107.0.5304.88)
-Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf1519a255b119b9231481e2c032d325, executeScript {script=document.getElementsByClassName(&apos;buttonTmplContentChild&apos;)[0].click();, args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61520}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61520/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf1519a255b119b9231481e2c032d325
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:478)
-	at Utils.SecondDentistUtils.ChatbotFlow(SecondDentistUtils.java:69)
-	at Tests.Chatbot.ChatBot(Chatbot.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
+                  <a name="editTeethNumber">
+                  </a> <!-- editTeethNumber -->
+                  <span class="method-name">editTeethNumber</span>
                   <em>
-(Check ChatBot flow)                  </em>
+(Edit teeth numbers Flow)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-failed -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
         </div> <!-- panel All_Test_Suite -->
         <div panel-name="test-xml-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -175,11 +154,15 @@ Session ID: bf1519a255b119b9231481e2c032d325
       &lt;class name=&quot;Tests.BaseTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Base Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Chatbot&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Upload and Analyse&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Tests.Chatbot&quot;/&gt;
+      &lt;class name=&quot;Tests.UploadAndAnalyse&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;editTeethNumber()&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Tests.UploadAndAnalyse --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Chatbot --&gt;
+  &lt;/test&gt; &lt;!-- Upload and Analyse --&gt;
 &lt;/suite&gt; &lt;!-- All Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -194,7 +177,7 @@ Session ID: bf1519a255b119b9231481e2c032d325
                 <span class="test-name">Base Test (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Chatbot (1 class)</span>
+                <span class="test-name">Upload and Analyse (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -222,14 +205,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ChatBot')
-data.setCell(0, 2, 'Tests.Chatbot')
-data.setCell(0, 3, 15169);
+data.setCell(0, 1, 'editTeethNumber')
+data.setCell(0, 2, 'Tests.UploadAndAnalyse')
+data.setCell(0, 3, 24937);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -244,9 +227,26 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Tests.UploadAndAnalyse</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">periapicalImage</span>
+                <br/>
+                <span class="ignored-method-name">uploadAndAnalyze</span>
+                <br/>
+                <span class="ignored-method-name">doctorsNotes</span>
+                <br/>
+                <span class="ignored-method-name">teethNumbering</span>
+                <br/>
+                <span class="ignored-method-name">uAndARegession</span>
+                <br/>
+                <span class="ignored-method-name">addNotes</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-All_Test_Suite" class="panel">
@@ -255,24 +255,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Tests.Chatbot</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Tests.UploadAndAnalyse</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(prod, https://app.seconddentist.ai/#/authentication/signin, pallavi@frugaltesting.com, Test@12345)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">33 ms</span>
+                <span class="method-start">23 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">ChatBot</span>
-                <span class="method-start">21788 ms</span>
+                <span class="method-name">editTeethNumber</span>
+                <span class="method-start">23441 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">36978 ms</span>
+                <span class="method-start">48404 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

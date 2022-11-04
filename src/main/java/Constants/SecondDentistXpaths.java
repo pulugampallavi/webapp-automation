@@ -67,8 +67,14 @@ public class SecondDentistXpaths {
     public By UploadImageSmlBtn = By.xpath("//div//child::button[@title='Click to upload new image.']");
     public By RefreshSmlBtn = By.xpath("//div//child::button[@title='Click to reload current image with predictions.']");
     public By PrintBtn = By.xpath("//div//child::mat-icon[text()='print']");
-   // public By ThreeDots = By.xpath("//div//child::span[text()='more_vert']");
-
+    public By ThreeDots = By.xpath("//div//child::span[text()='more_vert']");
+    public By newTeethNo = By.xpath("//div//child::div[text()='34']");
+    public By SaveTeethNumber = By.xpath("//button//child::span[text()='Save']");
+    public By addFindings = By.xpath("//div//child::span[text()='add_circle_outline']");
+    public By PeridontalDefect = By.xpath("//span//child::mat-panel-title[text()=' Periodontal ']");
+    public By HorizontalBoneLoss = By.xpath("//*[@id=\"cdk-accordion-child-5\"]/div/div[1]");
+    public By acceptFindings = By.xpath("//div//child::span[text()='check_circle_outline']");
+    public By rejectFindings = By.xpath("//div//child::span[text()='highlight_off']");
     //---------------------------SUPPORT SECTION XPATH-------------------------------------------
     public By SupportIcon = By.xpath("//*[@id=\"leftsidebar\"]/div/ul/li[2]");
     public By UserManual = By.xpath("/html/body/app-root/app-main-layout/support/section/div/div[2]/div/div/div/div/div[2]/a");
