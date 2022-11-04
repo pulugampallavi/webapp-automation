@@ -1,60 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 25, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 556.784 sec <<< FAILURE! - in TestSuite
-uploadAndAnalyze(Tests.UploadAndAnalyse)  Time elapsed: 6.241 sec  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <div class="mat-tab-label-content">...</div> is not clickable at point (472, 107). Other element would receive the click: <div _ngcontent-piu-c205="" class="tbl-spinner ng-star-inserted" style="">...</div>
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 38.504 sec <<< FAILURE! - in TestSuite
+ChatBot(Tests.Chatbot)  Time elapsed: 15.19 sec  <<< FAILURE!
+org.openqa.selenium.JavascriptException: 
+javascript error: Cannot read properties of undefined (reading 'click')
   (Session info: chrome=107.0.5304.88)
 Build info: version: '4.5.3', revision: '4b786a1e430'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f95ca75375708319cf5e0b1b2ce033c8, clickElement {id=f965c146-e63b-45ff-835d-0c65a27d17c0}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52519/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (f95ca75375708319cf5e0b1b2ce033c8)] -> xpath: //div//child::div[text()='UPLOAD & ANALYZE']]
-Session ID: f95ca75375708319cf5e0b1b2ce033c8
-	at Tests.UploadAndAnalyse.uploadAndAnalyze(UploadAndAnalyse.java:45)
-
-periapicalImage(Tests.UploadAndAnalyse)  Time elapsed: 73.884 sec  <<< FAILURE!
-org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=107.0.5304.88)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f95ca75375708319cf5e0b1b2ce033c8, clickElement {id=6c205293-2d31-40f0-a01a-9bfc940faa12}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52519/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (f95ca75375708319cf5e0b1b2ce033c8)] -> xpath: //div//child::span[text()='Accept']]
-Session ID: f95ca75375708319cf5e0b1b2ce033c8
-	at Tests.UploadAndAnalyse.periapicalImage(UploadAndAnalyse.java:67)
-
-uAndARegession(Tests.UploadAndAnalyse)  Time elapsed: 31.704 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at Tests.UploadAndAnalyse.uAndARegession(UploadAndAnalyse.java:89)
-
-teethNumbering(Tests.UploadAndAnalyse)  Time elapsed: 34.659 sec  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <div class="mat-tab-label-content">...</div> is not clickable at point (472, 107). Other element would receive the click: <div _ngcontent-oja-c199="" class="tbl-spinner ng-star-inserted" style="">...</div>
-  (Session info: chrome=107.0.5304.88)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f95ca75375708319cf5e0b1b2ce033c8, clickElement {id=c64977a6-adae-40a8-830d-9233204b0f71}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52519/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (f95ca75375708319cf5e0b1b2ce033c8)] -> xpath: //div//child::div[text()='UPLOAD & ANALYZE']]
-Session ID: f95ca75375708319cf5e0b1b2ce033c8
-	at Tests.UploadAndAnalyse.teethNumbering(UploadAndAnalyse.java:119)
-
-addNotes(Tests.UploadAndAnalyse)  Time elapsed: 25.583 sec  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <div class="mat-tab-label-content">...</div> is not clickable at point (472, 107). Other element would receive the click: <div _ngcontent-hyv-c199="" class="tbl-spinner ng-star-inserted" style="">...</div>
-  (Session info: chrome=107.0.5304.88)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f95ca75375708319cf5e0b1b2ce033c8, clickElement {id=7d93897a-a14d-44d0-84c0-87d498218b88}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52519/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (f95ca75375708319cf5e0b1b2ce033c8)] -> xpath: //div//child::div[text()='UPLOAD & ANALYZE']]
-Session ID: f95ca75375708319cf5e0b1b2ce033c8
-	at Tests.UploadAndAnalyse.addNotes(UploadAndAnalyse.java:158)
+Command: [bf1519a255b119b9231481e2c032d325, executeScript {script=document.getElementsByClassName('buttonTmplContentChild')[0].click();, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61520}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61520/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bf1519a255b119b9231481e2c032d325
+	at Tests.Chatbot.ChatBot(Chatbot.java:39)
 
