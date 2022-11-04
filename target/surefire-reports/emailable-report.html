@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">All Test Suite</th></tr>
+<tr><td><a href="#t0">Base Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">19</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Login Page</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">45,994</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Add Patient Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">54,258</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">Upload and Analyse</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">247,998</td><td></td><td></td></tr>
+<tr><td><a href="#t4">Chatbot</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">65,353</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t5">Search Patient</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">31,221</td><td></td><td></td></tr>
+<tr><td><a href="#t6">Support</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">36,292</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t7">Settings</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">44,331</td><td></td><td></td></tr>
+<tr><td><a href="#t8">Patients Flow</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">29,851</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">20</th><th class="num">0</th><th class="num">0</th><th class="num attn">5</th><th class="num">555,317</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Login Page &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">Tests.LoginLogout</td><td><a href="#m0">emptyCredentials</a></td><td rowspan="1">1667556189370</td><td rowspan="1">4174</td></tr><tr class="passedeven"><td><a href="#m1">iconVisibility</a></td><td rowspan="1">1667556193567</td><td rowspan="1">4219</td></tr><tr class="passedeven"><td><a href="#m2">invalidPassword</a></td><td rowspan="1">1667556197788</td><td rowspan="1">4564</td></tr><tr class="passedeven"><td><a href="#m3">invalidUserName</a></td><td rowspan="1">1667556202354</td><td rowspan="1">4291</td></tr><tr class="passedeven"><td><a href="#m4">loginflow</a></td><td rowspan="1">1667556206649</td><td rowspan="1">10360</td></tr><tr class="passedeven"><td><a href="#m5">logoutflow</a></td><td rowspan="1">1667556217013</td><td rowspan="1">3150</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Add Patient Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Tests.AddPatient</td><td><a href="#m6">addPatient</a></td><td rowspan="1">1667556246512</td><td rowspan="1">12958</td></tr><tr class="passedeven"><td><a href="#m7">addPatientWithInvalidName</a></td><td rowspan="1">1667556259472</td><td rowspan="1">14852</td></tr><tr class="passedeven"><td><a href="#m8">addPatientbtn</a></td><td rowspan="1">1667556274327</td><td rowspan="1">26</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">Upload and Analyse &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">Tests.UploadAndAnalyse</td><td><a href="#m9">addNotes</a></td><td rowspan="1">1667556443983</td><td rowspan="1">25573</td></tr><tr class="failedeven"><td><a href="#m10">periapicalImage</a></td><td rowspan="1">1667556303734</td><td rowspan="1">73877</td></tr><tr class="failedeven"><td><a href="#m11">teethNumbering</a></td><td rowspan="1">1667556409323</td><td rowspan="1">34652</td></tr><tr class="failedeven"><td><a href="#m12">uAndARegession</a></td><td rowspan="1">1667556377619</td><td rowspan="1">31702</td></tr><tr class="failedeven"><td><a href="#m13">uploadAndAnalyze</a></td><td rowspan="1">1667556297493</td><td rowspan="1">6228</td></tr><tr><th colspan="4">Upload and Analyse &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Tests.UploadAndAnalyse</td><td><a href="#m14">doctorsNotes</a></td><td rowspan="1">1667556469567</td><td rowspan="1">52596</td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4">Chatbot &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Tests.Chatbot</td><td><a href="#m15">ChatBot</a></td><td rowspan="1">1667556542915</td><td rowspan="1">44815</td></tr></tbody>
+<tbody id="t5"><tr><th colspan="4">Search Patient &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">Tests.SearchPatient</td><td><a href="#m16">searchPatientFlow</a></td><td rowspan="1">1667556608119</td><td rowspan="1">6554</td></tr><tr class="passedeven"><td><a href="#m17">searchPatientNegFlow</a></td><td rowspan="1">1667556614675</td><td rowspan="1">4305</td></tr></tbody>
+<tbody id="t6"><tr><th colspan="4">Support &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Tests.Support</td><td><a href="#m18">supportFlow</a></td><td rowspan="1">1667556629932</td><td rowspan="1">25430</td></tr></tbody>
+<tbody id="t7"><tr><th colspan="4">Settings &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">Tests.Settings</td><td><a href="#m19">settingsFlow</a></td><td rowspan="1">1667556675762</td><td rowspan="1">6822</td></tr><tr class="passedeven"><td><a href="#m20">settingsFlow2</a></td><td rowspan="1">1667556682587</td><td rowspan="1">8532</td></tr><tr class="passedeven"><td><a href="#m21">settingsFlow3</a></td><td rowspan="1">1667556691121</td><td rowspan="1">2480</td></tr><tr class="passedeven"><td><a href="#m22">settingsFlow4</a></td><td rowspan="1">1667556693602</td><td rowspan="1">135</td></tr><tr class="passedeven"><td><a href="#m23">settingsFlow5</a></td><td rowspan="1">1667556693739</td><td rowspan="1">5910</td></tr></tbody>
+<tbody id="t8"><tr><th colspan="4">Patients Flow &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Tests.Patient</td><td><a href="#m24">PatientVisits</a></td><td rowspan="1">1667556721380</td><td rowspan="1">8131</td></tr></tbody>
+</table>
+<h2>Base Test</h2><h2>Login Page</h2><h3 id="m0">Tests.LoginLogout#emptyCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests.LoginLogout#iconVisibility</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Tests.LoginLogout#invalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Tests.LoginLogout#invalidUserName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Tests.LoginLogout#loginflow</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">url=https://app.seconddentist.ai/#/authentication/signin</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Tests.LoginLogout#logoutflow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Add Patient Test</h2><h3 id="m6">Tests.AddPatient#addPatient</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Tests.AddPatient#addPatientWithInvalidName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Tests.AddPatient#addPatientbtn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Upload and Analyse</h2><h3 id="m9">Tests.UploadAndAnalyse#addNotes</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;mat-tab-label-content&quot;&gt;...&lt;/div&gt; is not clickable at point (472, 107). Other element would receive the click: &lt;div _ngcontent-hyv-c199=&quot;&quot; class=&quot;tbl-spinner ng-star-inserted&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=107.0.5304.88)
+Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f95ca75375708319cf5e0b1b2ce033c8, clickElement {id=7d93897a-a14d-44d0-84c0-87d498218b88}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52519/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f95ca75375708319cf5e0b1b2ce033c8)] -&gt; xpath: //div//child::div[text()=&apos;UPLOAD &amp; ANALYZE&apos;]]
+Session ID: f95ca75375708319cf5e0b1b2ce033c8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at Tests.UploadAndAnalyse.addNotes(UploadAndAnalyse.java:158)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Tests.UploadAndAnalyse#periapicalImage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.88)
+Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f95ca75375708319cf5e0b1b2ce033c8, clickElement {id=6c205293-2d31-40f0-a01a-9bfc940faa12}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52519/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f95ca75375708319cf5e0b1b2ce033c8)] -&gt; xpath: //div//child::span[text()=&apos;Accept&apos;]]
+Session ID: f95ca75375708319cf5e0b1b2ce033c8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at Tests.UploadAndAnalyse.periapicalImage(UploadAndAnalyse.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">Tests.UploadAndAnalyse#teethNumbering</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;mat-tab-label-content&quot;&gt;...&lt;/div&gt; is not clickable at point (472, 107). Other element would receive the click: &lt;div _ngcontent-oja-c199=&quot;&quot; class=&quot;tbl-spinner ng-star-inserted&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=107.0.5304.88)
+Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f95ca75375708319cf5e0b1b2ce033c8, clickElement {id=c64977a6-adae-40a8-830d-9233204b0f71}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52519/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f95ca75375708319cf5e0b1b2ce033c8)] -&gt; xpath: //div//child::div[text()=&apos;UPLOAD &amp; ANALYZE&apos;]]
+Session ID: f95ca75375708319cf5e0b1b2ce033c8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at Tests.UploadAndAnalyse.teethNumbering(UploadAndAnalyse.java:119)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">Tests.UploadAndAnalyse#uAndARegession</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at Tests.UploadAndAnalyse.uAndARegession(UploadAndAnalyse.java:89)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">Tests.UploadAndAnalyse#uploadAndAnalyze</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;mat-tab-label-content&quot;&gt;...&lt;/div&gt; is not clickable at point (472, 107). Other element would receive the click: &lt;div _ngcontent-piu-c205=&quot;&quot; class=&quot;tbl-spinner ng-star-inserted&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=107.0.5304.88)
+Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f95ca75375708319cf5e0b1b2ce033c8, clickElement {id=f965c146-e63b-45ff-835d-0c65a27d17c0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52519}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52519/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f95ca75375708319cf5e0b1b2ce033c8)] -&gt; xpath: //div//child::div[text()=&apos;UPLOAD &amp; ANALYZE&apos;]]
+Session ID: f95ca75375708319cf5e0b1b2ce033c8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at Utils.SecondDentistUtils.bitewingImage(SecondDentistUtils.java:94)
+	at Tests.UploadAndAnalyse.uploadAndAnalyze(UploadAndAnalyse.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">Tests.UploadAndAnalyse#doctorsNotes</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Chatbot</h2><h3 id="m15">Tests.Chatbot#ChatBot</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Search Patient</h2><h3 id="m16">Tests.SearchPatient#searchPatientFlow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">Tests.SearchPatient#searchPatientNegFlow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Support</h2><h3 id="m18">Tests.Support#supportFlow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Settings</h2><h3 id="m19">Tests.Settings#settingsFlow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">Tests.Settings#settingsFlow2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">Tests.Settings#settingsFlow3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">Tests.Settings#settingsFlow4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">Tests.Settings#settingsFlow5</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Patients Flow</h2><h3 id="m24">Tests.Patient#PatientVisits</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

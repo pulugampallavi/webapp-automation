@@ -1,0 +1,15 @@
+Tests\UploadAndAnalyse.class
+Tests\Others.class
+Utils\SecondDentistUtils.class
+Tests\Images.class
+Tests\LoginLogout.class
+Tests\Settings.class
+Tests\Patient.class
+Tests\Chatbot.class
+Tests\SearchPatient.class
+Tests\BaseTest.class
+Tests\CompleteFlowSD.class
+Tests\Support.class
+Tests\Rough.class
+Tests\AddPatient.class
+Constants\SecondDentistXpaths.class
