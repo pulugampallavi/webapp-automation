@@ -66,20 +66,11 @@
                             <suiteXmlFiles>
                                 <suiteXmlFile>resources/xmlFiles/SecondDentistProd.xml</suiteXmlFile>
                             </suiteXmlFiles>
+                            <skipTests> false</skipTests>
+                            <testFailureIgnore>true </testFailureIgnore>
                         </configuration>
                     </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-clean-plugin</artifactId>
-                        <version>3.2.0</version>
-                        <configuration>
-                            <filesets>
-                                <fileset>
-                                    <directory>D:\webapp-automation\allure-results</directory>
-                                </fileset>
-                            </filesets>
-                        </configuration>
-                    </plugin>
+
                 </plugins>
             </build>
         </profile>
