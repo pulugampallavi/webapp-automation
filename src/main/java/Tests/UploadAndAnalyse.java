@@ -55,7 +55,8 @@ public class UploadAndAnalyse extends BaseTest{
         Thread.sleep(2000);
         driver.findElement(sdXpaths.PeriapicalRadioBtn).click();
         Thread.sleep(4000);
-        driver.findElement(sdXpaths.UploadImageBtn).sendKeys("D:/webapp-automation/resources/periapical1.png");
+        String filePath1 = System.getProperty("user.dir") + "/resources/periapical1.png";
+        driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath1);
         driver.findElement(sdXpaths.UploadImageBtn).submit();
         driver.findElement(sdXpaths.ProceedBtn).click();
         driver.findElement(sdXpaths.Analyze2).click();
@@ -79,7 +80,8 @@ public class UploadAndAnalyse extends BaseTest{
         Thread.sleep(2000);
         driver.findElement(sdXpaths.PeriapicalBtn2).click();
         Thread.sleep(4000);
-        driver.findElement(sdXpaths.UploadImageBtn).sendKeys("D:/webapp-automation/resources/periapical1.png");
+        String filePath2 = System.getProperty("user.dir") + "/resources/periapical1.png";
+        driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath2);
         driver.findElement(sdXpaths.UploadImageBtn).submit();
         driver.findElement(sdXpaths.ProceedBtn2).click();
         driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
@@ -120,7 +122,8 @@ public class UploadAndAnalyse extends BaseTest{
         Thread.sleep(2000);
         driver.findElement(sdXpaths.PeriapicalBtn2).click();
         Thread.sleep(4000);
-        driver.findElement(sdXpaths.UploadImageBtn).sendKeys("D:/webapp-automation/resources/periapical1.png");
+        String filePath3 = System.getProperty("user.dir") + "/resources/periapical1.png";
+        driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath3);
         driver.findElement(sdXpaths.UploadImageBtn).submit();
         driver.findElement(sdXpaths.ProceedBtn2).click();
         driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
@@ -158,7 +161,8 @@ public class UploadAndAnalyse extends BaseTest{
         Thread.sleep(2000);
         driver.findElement(sdXpaths.PeriapicalBtn2).click();
         Thread.sleep(4000);
-        driver.findElement(sdXpaths.UploadImageBtn).sendKeys("D:/webapp-automation/resources/periapical1.png");
+        String filePath4 = System.getProperty("user.dir") + "/resources/periapical1.png";
+        driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath4);
         driver.findElement(sdXpaths.UploadImageBtn).submit();
         driver.findElement(sdXpaths.ProceedBtn2).click();
         Thread.sleep(2000);
@@ -185,7 +189,8 @@ public class UploadAndAnalyse extends BaseTest{
         Thread.sleep(2000);
         driver.findElement(sdXpaths.PeriapicalBtn2).click();
         Thread.sleep(4000);
-        driver.findElement(sdXpaths.UploadImageBtn).sendKeys("D:/webapp-automation/resources/periapical1.png");
+        String filePath5 = System.getProperty("user.dir") + "/resources/periapical1.png";
+        driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath5);
         driver.findElement(sdXpaths.UploadImageBtn).submit();
         driver.findElement(sdXpaths.ProceedBtn2).click();
         driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
@@ -210,7 +215,8 @@ public class UploadAndAnalyse extends BaseTest{
         Thread.sleep(2000);
         driver.findElement(sdXpaths.PeriapicalBtn2).click();
         Thread.sleep(4000);
-        driver.findElement(sdXpaths.UploadImageBtn).sendKeys("D:/webapp-automation/resources/periapical1.png");
+        String filePath6 = System.getProperty("user.dir") + "/resources/periapical1.png";
+        driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath6);
         driver.findElement(sdXpaths.UploadImageBtn).submit();
         driver.findElement(sdXpaths.ProceedBtn2).click();
         driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
@@ -231,7 +237,9 @@ public class UploadAndAnalyse extends BaseTest{
         Thread.sleep(2000);
         driver.findElement(sdXpaths.PeriapicalBtn2).click();
         Thread.sleep(4000);
-        driver.findElement(sdXpaths.UploadImageBtn).sendKeys("D:/webapp-automation/resources/periapical1.png");
+        String filePath7 = System.getProperty("user.dir") + "/resources/periapical1.png";
+        driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath7);
+        driver.findElement(sdXpaths.UploadImageBtn).submit();
         driver.findElement(sdXpaths.UploadImageBtn).submit();
         driver.findElement(sdXpaths.ProceedBtn2).click();
         driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
