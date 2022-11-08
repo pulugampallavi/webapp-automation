@@ -95,7 +95,8 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         Thread.sleep(2000);
         driver.findElement(BitewingRadioBtn).click();
         Thread.sleep(4000);
-        driver.findElement(UploadImageBtn).sendKeys("D:/webapp-automation/resources/bitewing1.jpeg");
+        String filePath = System.getProperty("user.dir") + "/resources/periapical1.png";
+        driver.findElement(UploadImageBtn).sendKeys(filePath);
         driver.findElement(UploadImageBtn).submit();
         driver.findElement(ProceedBitewing).click();
         driver.findElement(AnalyzeBtnPopup).click();
