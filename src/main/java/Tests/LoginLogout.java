@@ -51,7 +51,7 @@ public class LoginLogout extends BaseTest {
         sdUtils.clickLogOutButton(driver);
     }
     //-------------------------------INVALID USERNAME TESTCASE---------------------------------------
-    @Test(description = "Check logout flow")
+    @Test(description = "Check invalidUserName flow")
     public void invalidUserName() throws InterruptedException {
         driver.findElement(sdXpaths.usernameXpath).clear();
         driver.findElement(sdXpaths.usernameXpath).sendKeys("fhcjhdcghjh76576");
@@ -62,7 +62,7 @@ public class LoginLogout extends BaseTest {
         Assert.assertTrue(driver.getPageSource().contains("User Does not exists. Please sign up."), "Wrong error message.");
     }
     //-------------------------------INVALID USERNAME TESTCASE---------------------------------------
-    @Test(description = "Check logout flow")
+    @Test(description = "Check invalidPassword flow")
     public void invalidPassword() throws InterruptedException {
         driver.findElement(sdXpaths.usernameXpath).clear();
         driver.findElement(sdXpaths.usernameXpath).sendKeys(BaseTest.username);
@@ -72,17 +72,20 @@ public class LoginLogout extends BaseTest {
         Thread.sleep(4000);
         Assert.assertTrue(driver.getPageSource().contains("Invalid Credentials."), "Wrong error message.");
     }
-    @Test(description = "Check logout flow")
+    @Test(description = "Check emptyCredentials flow")
     public void emptyCredentials() throws InterruptedException {
         driver.findElement(sdXpaths.SignIn).click();
         Thread.sleep(4000);
         Assert.assertFalse(driver.getCurrentUrl().endsWith("seconddentist.ai/#/doctor/all-patients"), "Unexpected Login.");
     }
-    @Test(description = "Check logout flow")
+    @Test(description = "Check iconVisibility flow")
     public void iconVisibility() throws InterruptedException {
         driver.findElement(sdXpaths.PasswordXpath).clear();
         driver.findElement(sdXpaths.PasswordXpath).sendKeys(BaseTest.password);
         driver.findElement(sdXpaths.ShowPasswordLogin).click();
+        Assert.assertTrue(driver.findElement(sdXpaths.RememberMe).isDisplayed());
+        driver.findElement(sdXpaths.RememberMeCheckbox).click();
+        Assert.assertTrue(driver.findElement(sdXpaths.ForgotPassword).isDisplayed());
         Thread.sleep(4000);
         Assert.assertFalse(driver.getCurrentUrl().endsWith("seconddentist.ai/#/doctor/all-patients"), "Unexpected Login.");
     }

@@ -12,9 +12,7 @@ public class Images extends BaseTest{
 
 
     //----------------------------------IMAGES XPATHS-------------------------------------
-    //*[@id="mat-tab-label-2-1"]
-    //*[@id="mat-tab-label-2-1"]/div
-    //*[@id="mat-tab-label-0-1"]
+
     private By ImagesSecBtn = By.xpath("//*[@id=\"mat-tab-label-0-1\"]");
     private By XrayImage = By.xpath("//*[@id=\"mat-tab-content-0-1\"]/div/app-list-images/div/div[2]/div/img");
 

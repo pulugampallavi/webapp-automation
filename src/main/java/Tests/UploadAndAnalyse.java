@@ -5,18 +5,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import java.io.IOException;
-import java.time.Duration;
 import java.util.List;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 public class UploadAndAnalyse extends BaseTest{
     WebDriver driver;
@@ -246,6 +242,13 @@ public class UploadAndAnalyse extends BaseTest{
         Thread.sleep(4000);
         driver.findElement(sdXpaths.Accept2).click();
         driver.findElement(sdXpaths.addFindings).click();
+        driver.findElement(sdXpaths.RestorativeDefect).click();
+        driver.findElement(sdXpaths.CariesDefect).click();
+        driver.findElement(sdXpaths.SaveDefect).click();
+        driver.findElement(sdXpaths.rejectFindings).click();
+        driver.findElement(sdXpaths.saveRejectReason).click();
+        driver.findElement(sdXpaths.acceptFindings).click();
+        driver.findElement(sdXpaths.SaveFindingsBtn).click();
     }
     //-----------------------------------AFTER CLASS--------------------------------
     @AfterClass
