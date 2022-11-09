@@ -37,7 +37,7 @@ public class SecondDentistXpaths {
 
     //----------------------------------UPLOAD AND ANALYZE XPATHS--------------------------------------
     public By SelectPatient = By.xpath("//div/mat-table/mat-row[@class='mat-row cdk-row ng-star-inserted']");
-    public By UploadAnalyzeButton = By.xpath("//div//child::div[text()='UPLOAD & ANALYZE']");
+    public By UploadAnalyzeButton = By.xpath("//div[text()='UPLOAD & ANALYZE']");
     public By PeriapicalRadioBtn = By.xpath("//div//child::span[text()='Periapical']");
     public By BitewingRadioBtn = By.xpath("//div//child::span[text()='Bitewing']");
     public By UploadImageBtn = By.xpath("//*[@id=\"undefined\"]");
@@ -104,4 +104,7 @@ public class SecondDentistXpaths {
     public By ScanDetails = By.xpath("//*[@id=\"mat-tab-content-0-1\"]/div/app-list-images/div");
     public By ReportIconSmall = By.xpath("//mat-cell//child::mat-icon[text()='description ']");
 
+    //----------------------------------PATIENTS XPATHS--------------------------------------
+    public By EditPatient = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]/mat-cell[5]/mat-icon");
+    public By PatientDetails = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]/mat-cell[6]/mat-icon");
 }
