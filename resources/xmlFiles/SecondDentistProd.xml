@@ -10,47 +10,47 @@
             <class name="Pages.BaseTest"/>
         </classes>
     </test>
-<!--    <test name="Login Page">-->
-<!--        <classes>-->
-<!--            <class name="Pages.LoginLogout"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="Add Patient Test">-->
-<!--        <classes>-->
-<!--            <class name="Pages.AddPatient"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="Upload and Analyse">-->
-<!--        <classes>-->
-<!--            <class name="Pages.UploadAndAnalyse"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="Chatbot">-->
-<!--        <classes>-->
-<!--            <class name="Pages.Chatbot"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="Search Patient">-->
-<!--        <classes>-->
-<!--            <class name="Pages.SearchPatient"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="Support">-->
-<!--        <classes>-->
-<!--            <class name="Pages.Support"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="Settings">-->
-<!--        <classes>-->
-<!--            <class name="Pages.Settings"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="Patients Flow">-->
-<!--        <classes>-->
-<!--            <class name="Pages.Patient"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-    <test name="Any Test">
+    <test name="Login Page">
+        <classes>
+            <class name="Pages.LoginLogout"/>
+        </classes>
+    </test>
+    <test name="Add Patient Test">
+        <classes>
+            <class name="Pages.AddPatient"/>
+        </classes>
+    </test>
+    <test name="Upload and Analyse">
+        <classes>
+            <class name="Pages.UploadAndAnalyse"/>
+        </classes>
+    </test>
+    <test name="Chatbot">
+        <classes>
+            <class name="Pages.Chatbot"/>
+        </classes>
+    </test>
+    <test name="Search Patient">
+        <classes>
+            <class name="Pages.SearchPatient"/>
+        </classes>
+    </test>
+    <test name="Support">
+        <classes>
+            <class name="Pages.Support"/>
+        </classes>
+    </test>
+    <test name="Settings">
+        <classes>
+            <class name="Pages.Settings"/>
+        </classes>
+    </test>
+    <test name="Patients Flow">
+        <classes>
+            <class name="Pages.Patient"/>
+        </classes>
+    </test>
+    <!--<test name="Any Test">
         <classes>
             <class name="Pages.UploadAndAnalyse">
                 <methods>
@@ -58,5 +58,5 @@
                 </methods>
             </class>
         </classes>
-    </test>
+    </test>-->
 </suite>
