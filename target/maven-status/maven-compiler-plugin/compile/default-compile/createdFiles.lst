@@ -1,0 +1,15 @@
+Pages\Chatbot.class
+Pages\Settings.class
+Pages\AddPatient.class
+Pages\Images.class
+Pages\LoginLogout.class
+Utils\SecondDentistUtils.class
+Pages\BaseTest.class
+Pages\Others.class
+Pages\UploadAndAnalyse.class
+Pages\Rough.class
+Pages\Support.class
+Pages\CompleteFlowSD.class
+Constants\SecondDentistXpaths.class
+Pages\SearchPatient.class
+Pages\Patient.class

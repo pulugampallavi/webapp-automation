@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 8 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-All_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">All Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-All_Test_Suite" class="navigator-link ">
+                    <span>D:\Velmeni_Automation\resources\xmlFiles\SecondDentistProd.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-All_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">9 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-All_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-All_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-All_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-All_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-All_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">28 methods, 8 failed,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-All_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.Patient" class="method navigator-link" hash-for-method="PatientVisits">PatientVisits</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.Patient" class="method navigator-link" hash-for-method="Patients">Patients</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.UploadAndAnalyse" class="method navigator-link" hash-for-method="addFindingsFlow">addFindingsFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.UploadAndAnalyse" class="method navigator-link" hash-for-method="doctorsNotes">doctorsNotes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.LoginLogout" class="method navigator-link" hash-for-method="logoutflow">logoutflow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.UploadAndAnalyse" class="method navigator-link" hash-for-method="periapicalImage">periapicalImage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.UploadAndAnalyse" class="method navigator-link" hash-for-method="uAndARegession">uAndARegession</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.UploadAndAnalyse" class="method navigator-link" hash-for-method="uploadAndAnalyze">uploadAndAnalyze</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods passed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-All_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.Chatbot" class="method navigator-link" hash-for-method="ChatBot">ChatBot</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.UploadAndAnalyse" class="method navigator-link" hash-for-method="addNotes">addNotes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.AddPatient" class="method navigator-link" hash-for-method="addPatient">addPatient</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.AddPatient" class="method navigator-link" hash-for-method="addPatientWithInvalidName">addPatientWithInvalidName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.AddPatient" class="method navigator-link" hash-for-method="addPatientbtn">addPatientbtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.UploadAndAnalyse" class="method navigator-link" hash-for-method="editTeethNumber">editTeethNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.LoginLogout" class="method navigator-link" hash-for-method="emptyCredentials">emptyCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.LoginLogout" class="method navigator-link" hash-for-method="iconVisibility">iconVisibility</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.LoginLogout" class="method navigator-link" hash-for-method="invalidPassword">invalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.LoginLogout" class="method navigator-link" hash-for-method="invalidUserName">invalidUserName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.LoginLogout" class="method navigator-link" hash-for-method="loginflow">loginflow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.SearchPatient" class="method navigator-link" hash-for-method="searchPatientFlow">searchPatientFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.SearchPatient" class="method navigator-link" hash-for-method="searchPatientNegFlow">searchPatientNegFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.Settings" class="method navigator-link" hash-for-method="settingsFlow">settingsFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.Settings" class="method navigator-link" hash-for-method="settingsFlow2">settingsFlow2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.Settings" class="method navigator-link" hash-for-method="settingsFlow3">settingsFlow3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.Settings" class="method navigator-link" hash-for-method="settingsFlow4">settingsFlow4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.Settings" class="method navigator-link" hash-for-method="settingsFlow5">settingsFlow5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.Support" class="method navigator-link" hash-for-method="supportFlow">supportFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Pages.UploadAndAnalyse" class="method navigator-link" hash-for-method="teethNumbering">teethNumbering</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-All_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Pages.LoginLogout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutflow">
+                  </a> <!-- logoutflow -->
+                  <span class="method-name">logoutflow</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;li _ngcontent-otp-c90=&quot;&quot; class=&quot;bottom&quot;&gt;...&lt;/li&gt; is not clickable at point (30, 705). Other element would receive the click: &lt;div _ngcontent-otp-c174=&quot;&quot; class=&quot;tbl-spinner ng-star-inserted&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=107.0.5304.89)
+Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0722a4ab9a59ef1ddedda327ca89aa70, clickElement {id=cb98ff3c-ab61-4943-afb1-84feb7439791}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65426}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65426/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0722a4ab9a59ef1ddedda327ca89aa70)] -&gt; xpath: //*[@id=&quot;leftsidebar&quot;]/div/ul/li[4]]
+Session ID: 0722a4ab9a59ef1ddedda327ca89aa70
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at Utils.SecondDentistUtils.clickLogOutButton(SecondDentistUtils.java:31)
+	at Pages.LoginLogout.logoutflow(LoginLogout.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Check logout flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Pages.Patient</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PatientVisits">
+                  </a> <!-- PatientVisits -->
+                  <span class="method-name">PatientVisits</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;mat-icon _ngcontent-hqi-c205=&quot;&quot; role=&quot;img&quot; aria-label=&quot;Report&quot; title=&quot;Click to download report for selected date&quot; class=&quot;mat-icon notranslate material-icons-outlined action-icon material-icons mat-icon-no-color&quot; aria-hidden=&quot;true&quot; data-mat-icon-type=&quot;font&quot;&gt;...&lt;/mat-icon&gt; is not clickable at point (1289, 178). Other element would receive the click: &lt;div _ngcontent-hqi-c205=&quot;&quot; class=&quot;tbl-spinner ng-star-inserted&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=107.0.5304.89)
+Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b71dffa1b73d4281bf0979c0534a7845, clickElement {id=256a0441-e610-4014-8b72-a952b7920ed8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50024}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50024/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b71dffa1b73d4281bf0979c0534a7845)] -&gt; xpath: //mat-cell//child::mat-icon[text()=&apos;description &apos;]]
+Session ID: b71dffa1b73d4281bf0979c0534a7845
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at Utils.SecondDentistUtils.patientVisitsflow(SecondDentistUtils.java:280)
+	at Pages.Patient.PatientVisits(Patient.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Check patient visits flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Patients">
+                  </a> <!-- Patients -->
+                  <span class="method-name">Patients</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]/mat-cell[5]/mat-icon&quot;}
+  (Session info: chrome=107.0.5304.89)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b71dffa1b73d4281bf0979c0534a7845, findElement {using=xpath, value=/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]/mat-cell[5]/mat-icon}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50024}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50024/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b71dffa1b73d4281bf0979c0534a7845
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at Utils.SecondDentistUtils.patientsFlow(SecondDentistUtils.java:253)
+	at Pages.Patient.Patients(Patient.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Check patients flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Pages.UploadAndAnalyse</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addFindingsFlow">
+                  </a> <!-- addFindingsFlow -->
+                  <span class="method-name">addFindingsFlow</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;mat-button-wrapper&quot;&gt;...&lt;/span&gt; is not clickable at point (829, 512). Other element would receive the click: &lt;div _ngcontent-vcj-c177=&quot;&quot; class=&quot;consent-wrap&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=107.0.5304.89)
+Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [658203f50118c403bd83abd54a5de1fb, clickElement {id=fad15bc6-a3e5-41fd-ba8f-39407801d66e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49163}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49163/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (658203f50118c403bd83abd54a5de1fb)] -&gt; xpath: //div//child::span[text()=&apos;Analyze&apos;]]
+Session ID: 658203f50118c403bd83abd54a5de1fb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at Pages.UploadAndAnalyse.addFindingsFlow(UploadAndAnalyse.java:249)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Add findings Flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doctorsNotes">
+                  </a> <!-- doctorsNotes -->
+                  <span class="method-name">doctorsNotes</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.89)
+Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [658203f50118c403bd83abd54a5de1fb, clickElement {id=32d3f3ba-999d-4bd4-82ea-9b26c457218c}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49163}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49163/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (658203f50118c403bd83abd54a5de1fb)] -&gt; xpath: //div//child::span[text()=&apos;Accept&apos;]]
+Session ID: 658203f50118c403bd83abd54a5de1fb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at Pages.UploadAndAnalyse.doctorsNotes(UploadAndAnalyse.java:207)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Doctors Notes Flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="periapicalImage">
+                  </a> <!-- periapicalImage -->
+                  <span class="method-name">periapicalImage</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.89)
+Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [658203f50118c403bd83abd54a5de1fb, clickElement {id=4b11c783-65b0-4c31-a531-bd8ce641a802}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49163}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49163/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (658203f50118c403bd83abd54a5de1fb)] -&gt; xpath: //div//child::span[text()=&apos;Accept&apos;]]
+Session ID: 658203f50118c403bd83abd54a5de1fb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at Pages.UploadAndAnalyse.periapicalImage(UploadAndAnalyse.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Check U&A flow for periapical image)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uAndARegession">
+                  </a> <!-- uAndARegession -->
+                  <span class="method-name">uAndARegession</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at Pages.UploadAndAnalyse.uAndARegession(UploadAndAnalyse.java:86)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Upload and analyze Regression flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadAndAnalyze">
+                  </a> <!-- uploadAndAnalyze -->
+                  <span class="method-name">uploadAndAnalyze</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;mat-tab-label-content&quot;&gt;...&lt;/div&gt; is not clickable at point (472, 107). Other element would receive the click: &lt;div _ngcontent-xis-c205=&quot;&quot; class=&quot;tbl-spinner ng-star-inserted&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=107.0.5304.89)
+Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [658203f50118c403bd83abd54a5de1fb, clickElement {id=52808fa6-2029-4065-b828-5590e8a044c8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49163}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49163/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (658203f50118c403bd83abd54a5de1fb)] -&gt; xpath: //div[text()=&apos;UPLOAD &amp; ANALYZE&apos;]]
+Session ID: 658203f50118c403bd83abd54a5de1fb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at Utils.SecondDentistUtils.bitewingImage(SecondDentistUtils.java:95)
+	at Pages.UploadAndAnalyse.uploadAndAnalyze(UploadAndAnalyse.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Check U&A flow for bitewing image)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Pages.LoginLogout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="emptyCredentials">
+                  </a> <!-- emptyCredentials -->
+                  <span class="method-name">emptyCredentials</span>
+                  <em>
+(Check emptyCredentials flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="iconVisibility">
+                  </a> <!-- iconVisibility -->
+                  <span class="method-name">iconVisibility</span>
+                  <em>
+(Check iconVisibility flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidPassword">
+                  </a> <!-- invalidPassword -->
+                  <span class="method-name">invalidPassword</span>
+                  <em>
+(Check invalidPassword flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidUserName">
+                  </a> <!-- invalidUserName -->
+                  <span class="method-name">invalidUserName</span>
+                  <em>
+(Check invalidUserName flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginflow">
+                  </a> <!-- loginflow -->
+                  <span class="method-name">loginflow</span>
+                  <em>
+(Check login flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Pages.Chatbot</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChatBot">
+                  </a> <!-- ChatBot -->
+                  <span class="method-name">ChatBot</span>
+                  <em>
+(Check ChatBot flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Pages.Support</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="supportFlow">
+                  </a> <!-- supportFlow -->
+                  <span class="method-name">supportFlow</span>
+                  <em>
+(Check support flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Pages.Settings</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="settingsFlow">
+                  </a> <!-- settingsFlow -->
+                  <span class="method-name">settingsFlow</span>
+                  <em>
+(Check settings flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="settingsFlow2">
+                  </a> <!-- settingsFlow2 -->
+                  <span class="method-name">settingsFlow2</span>
+                  <em>
+(Check negative settings flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="settingsFlow3">
+                  </a> <!-- settingsFlow3 -->
+                  <span class="method-name">settingsFlow3</span>
+                  <em>
+(Check negative settings flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="settingsFlow4">
+                  </a> <!-- settingsFlow4 -->
+                  <span class="method-name">settingsFlow4</span>
+                  <em>
+(Check negative settings flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="settingsFlow5">
+                  </a> <!-- settingsFlow5 -->
+                  <span class="method-name">settingsFlow5</span>
+                  <em>
+(Check negative settings flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Pages.UploadAndAnalyse</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNotes">
+                  </a> <!-- addNotes -->
+                  <span class="method-name">addNotes</span>
+                  <em>
+(Add Notes Flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editTeethNumber">
+                  </a> <!-- editTeethNumber -->
+                  <span class="method-name">editTeethNumber</span>
+                  <em>
+(Edit teeth numbers Flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="teethNumbering">
+                  </a> <!-- teethNumbering -->
+                  <span class="method-name">teethNumbering</span>
+                  <em>
+(Teeth Numbering Flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Pages.SearchPatient</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchPatientFlow">
+                  </a> <!-- searchPatientFlow -->
+                  <span class="method-name">searchPatientFlow</span>
+                  <em>
+(Check search patient flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchPatientNegFlow">
+                  </a> <!-- searchPatientNegFlow -->
+                  <span class="method-name">searchPatientNegFlow</span>
+                  <em>
+(Check negative search patient flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Pages.AddPatient</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPatient">
+                  </a> <!-- addPatient -->
+                  <span class="method-name">addPatient</span>
+                  <em>
+(Check Add Patient flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPatientWithInvalidName">
+                  </a> <!-- addPatientWithInvalidName -->
+                  <span class="method-name">addPatientWithInvalidName</span>
+                  <em>
+(Check add patient flow with invalid name input)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPatientbtn">
+                  </a> <!-- addPatientbtn -->
+                  <span class="method-name">addPatientbtn</span>
+                  <em>
+(Check Add Patient flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+        </div> <!-- panel All_Test_Suite -->
+        <div panel-name="test-xml-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Velmeni_Automation\resources\xmlFiles\SecondDentistProd.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;environment&quot; value=&quot;prod&quot;/&gt;
+  &lt;parameter name=&quot;password&quot; value=&quot;Test@12345&quot;/&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;https://app.seconddentist.ai/#/authentication/signin&quot;/&gt;
+  &lt;parameter name=&quot;username&quot; value=&quot;pallavi@frugaltesting.com&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Base Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Pages.BaseTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Base Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login Page&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Pages.LoginLogout&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Page --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Add Patient Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Pages.AddPatient&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Add Patient Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Upload and Analyse&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Pages.UploadAndAnalyse&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Upload and Analyse --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Chatbot&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Pages.Chatbot&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Chatbot --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Search Patient&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Pages.SearchPatient&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Search Patient --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Support&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Pages.Support&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Support --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Settings&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Pages.Settings&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Settings --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Patients Flow&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Pages.Patient&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Patients Flow --&gt;
+&lt;/suite&gt; &lt;!-- All Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Base Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login Page (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Add Patient Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Upload and Analyse (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Chatbot (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Search Patient (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Support (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Settings (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Patients Flow (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_All_Test_Suite');
+function tableData_All_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(28);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'periapicalImage')
+data.setCell(0, 2, 'Pages.UploadAndAnalyse')
+data.setCell(0, 3, 70053);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'doctorsNotes')
+data.setCell(1, 2, 'Pages.UploadAndAnalyse')
+data.setCell(1, 3, 61399);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'ChatBot')
+data.setCell(2, 2, 'Pages.Chatbot')
+data.setCell(2, 3, 46702);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'teethNumbering')
+data.setCell(3, 2, 'Pages.UploadAndAnalyse')
+data.setCell(3, 3, 38976);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addNotes')
+data.setCell(4, 2, 'Pages.UploadAndAnalyse')
+data.setCell(4, 3, 35486);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Patients')
+data.setCell(5, 2, 'Pages.Patient')
+data.setCell(5, 3, 33062);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'editTeethNumber')
+data.setCell(6, 2, 'Pages.UploadAndAnalyse')
+data.setCell(6, 3, 27354);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'uAndARegession')
+data.setCell(7, 2, 'Pages.UploadAndAnalyse')
+data.setCell(7, 3, 25760);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'supportFlow')
+data.setCell(8, 2, 'Pages.Support')
+data.setCell(8, 3, 22758);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'addFindingsFlow')
+data.setCell(9, 2, 'Pages.UploadAndAnalyse')
+data.setCell(9, 3, 17040);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'addPatientWithInvalidName')
+data.setCell(10, 2, 'Pages.AddPatient')
+data.setCell(10, 3, 14814);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'addPatient')
+data.setCell(11, 2, 'Pages.AddPatient')
+data.setCell(11, 3, 13076);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'loginflow')
+data.setCell(12, 2, 'Pages.LoginLogout')
+data.setCell(12, 3, 10354);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'PatientVisits')
+data.setCell(13, 2, 'Pages.Patient')
+data.setCell(13, 3, 10039);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'settingsFlow2')
+data.setCell(14, 2, 'Pages.Settings')
+data.setCell(14, 3, 8202);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'settingsFlow')
+data.setCell(15, 2, 'Pages.Settings')
+data.setCell(15, 3, 6774);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'searchPatientFlow')
+data.setCell(16, 2, 'Pages.SearchPatient')
+data.setCell(16, 3, 6464);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'uploadAndAnalyze')
+data.setCell(17, 2, 'Pages.UploadAndAnalyse')
+data.setCell(17, 3, 6242);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'settingsFlow5')
+data.setCell(18, 2, 'Pages.Settings')
+data.setCell(18, 3, 6059);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'invalidPassword')
+data.setCell(19, 2, 'Pages.LoginLogout')
+data.setCell(19, 3, 4373);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'iconVisibility')
+data.setCell(20, 2, 'Pages.LoginLogout')
+data.setCell(20, 3, 4312);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'invalidUserName')
+data.setCell(21, 2, 'Pages.LoginLogout')
+data.setCell(21, 3, 4311);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'searchPatientNegFlow')
+data.setCell(22, 2, 'Pages.SearchPatient')
+data.setCell(22, 3, 4256);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'logoutflow')
+data.setCell(23, 2, 'Pages.LoginLogout')
+data.setCell(23, 3, 4206);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'emptyCredentials')
+data.setCell(24, 2, 'Pages.LoginLogout')
+data.setCell(24, 3, 4184);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'settingsFlow3')
+data.setCell(25, 2, 'Pages.Settings')
+data.setCell(25, 3, 2339);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'settingsFlow4')
+data.setCell(26, 2, 'Pages.Settings')
+data.setCell(26, 3, 165);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'addPatientbtn')
+data.setCell(27, 2, 'Pages.AddPatient')
+data.setCell(27, 3, 24);
+window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <div id="times-div-All_Test_Suite">
+              </div> <!-- times-div-All_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginflow</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">url=https://app.seconddentist.ai/#/authentication/signin</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">teethNumbering</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">UNIVERSAL</span>
+                <span class="reporter-method-output">31</span>
+                <span class="reporter-method-output">30</span>
+                <span class="reporter-method-output">29</span>
+                <span class="reporter-method-output">28</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">ISO</span>
+                <span class="reporter-method-output">47</span>
+                <span class="reporter-method-output">46</span>
+                <span class="reporter-method-output">45</span>
+                <span class="reporter-method-output">44</span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output"></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Pages.LoginLogout</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(prod, https://app.seconddentist.ai/#/authentication/signin, pallavi@frugaltesting.com, Test@12345)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">emptyCredentials</span>
+                <span class="method-start">41025 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">iconVisibility</span>
+                <span class="method-start">45219 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidPassword</span>
+                <span class="method-start">49537 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invalidUserName</span>
+                <span class="method-start">53912 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginflow</span>
+                <span class="method-start">58228 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logoutflow</span>
+                <span class="method-start">68587 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">72818 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Pages.AddPatient</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">73137 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(prod, https://app.seconddentist.ai/#/authentication/signin, pallavi@frugaltesting.com, Test@12345)</span>
+                <span class="method-start">73137 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addPatient</span>
+                <span class="method-start">95214 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addPatientWithInvalidName</span>
+                <span class="method-start">108291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addPatientbtn</span>
+                <span class="method-start">123108 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">123133 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Pages.UploadAndAnalyse</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(prod, https://app.seconddentist.ai/#/authentication/signin, pallavi@frugaltesting.com, Test@12345)</span>
+                <span class="method-start">123485 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">123486 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">uploadAndAnalyze</span>
+                <span class="method-start">146876 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">periapicalImage</span>
+                <span class="method-start">153122 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">uAndARegession</span>
+                <span class="method-start">223178 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">teethNumbering</span>
+                <span class="method-start">248940 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addNotes</span>
+                <span class="method-start">287918 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">doctorsNotes</span>
+                <span class="method-start">323407 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editTeethNumber</span>
+                <span class="method-start">384809 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addFindingsFlow</span>
+                <span class="method-start">412173 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">429222 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Pages.Chatbot</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(prod, https://app.seconddentist.ai/#/authentication/signin, pallavi@frugaltesting.com, Test@12345)</span>
+                <span class="method-start">430409 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">430410 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">ChatBot</span>
+                <span class="method-start">466198 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">512903 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Pages.SearchPatient</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">513363 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(prod, https://app.seconddentist.ai/#/authentication/signin, pallavi@frugaltesting.com, Test@12345)</span>
+                <span class="method-start">513363 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">searchPatientFlow</span>
+                <span class="method-start">536202 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchPatientNegFlow</span>
+                <span class="method-start">542669 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">546927 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Pages.Support</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(prod, https://app.seconddentist.ai/#/authentication/signin, pallavi@frugaltesting.com, Test@12345)</span>
+                <span class="method-start">547246 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">547246 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">supportFlow</span>
+                <span class="method-start">560910 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">583670 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Pages.Settings</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(prod, https://app.seconddentist.ai/#/authentication/signin, pallavi@frugaltesting.com, Test@12345)</span>
+                <span class="method-start">583968 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">583969 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">settingsFlow</span>
+                <span class="method-start">608733 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">settingsFlow2</span>
+                <span class="method-start">615508 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">settingsFlow3</span>
+                <span class="method-start">623712 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">settingsFlow4</span>
+                <span class="method-start">626052 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">settingsFlow5</span>
+                <span class="method-start">626218 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">632325 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Pages.Patient</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">632711 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(prod, https://app.seconddentist.ai/#/authentication/signin, pallavi@frugaltesting.com, Test@12345)</span>
+                <span class="method-start">632711 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PatientVisits</span>
+                <span class="method-start">653478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Patients</span>
+                <span class="method-start">663519 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">696585 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
