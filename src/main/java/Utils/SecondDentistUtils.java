@@ -1,14 +1,15 @@
 package Utils;
 
 import Constants.SecondDentistXpaths;
-import Tests.BaseTest;
+import Pages.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 import java.io.IOException;
 import java.util.Iterator;
@@ -246,6 +247,22 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         if (vld == true) {
             System.out.println("Results not visible");
         }
+    }
+    public void patientsFlow(WebDriver driver) throws InterruptedException{
+        Assert.assertTrue(driver.findElement(EditPatient).isDisplayed());
+        Assert.assertTrue(driver.findElement(PatientDetails).isDisplayed());
+        driver.findElement(SelectPatient).click();
+        Thread.sleep(5000);
+        WebElement testdDown = driver.findElement(By.xpath("//*[@id=\"mat-select-0\"]"));
+        Select dropdown = new Select(testdDown);
+        dropdown.selectByIndex(0);
+        WebElement a = dropdown.getFirstSelectedOption();
+        String b = a.getText();
+        if (b=="5"){
+            Reporter.log("Items per page = 5");
+        }
+
+
     }
     //----------------------------------PATIENT VISITS FLOW----------------------------------------
     public void patientVisitsflow(WebDriver driver) throws InterruptedException {
