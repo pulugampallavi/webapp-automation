@@ -11,6 +11,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
+import Utils.AllureReports;
 public class AddPatient extends BaseTest{
     WebDriver driver;
     SecondDentistUtils sdUtils;
@@ -79,6 +80,8 @@ public class AddPatient extends BaseTest{
     @AfterClass
     public void tearDown() throws InterruptedException {
         sdUtils.clickLogOutButton(driver);
+      //  AllureReports.Screenshot(driver,this.getClass().getName());
+
         driver.quit();
     }
 }

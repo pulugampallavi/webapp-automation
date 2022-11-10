@@ -96,16 +96,16 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         Thread.sleep(2000);
         driver.findElement(BitewingRadioBtn).click();
         Thread.sleep(4000);
-        String filePath = System.getProperty("user.dir") + "/resources/periapical1.png";
+        String filePath = System.getProperty("user.dir") + "/resources/bitewing1.jpeg";
         driver.findElement(UploadImageBtn).sendKeys(filePath);
         driver.findElement(UploadImageBtn).submit();
         driver.findElement(ProceedBitewing).click();
         driver.findElement(AnalyzeBtnPopup).click();
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         driver.findElement(AcceptBtn).click();
         Thread.sleep(2000);
         driver.findElement(SaveFindingsBtn).click();
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         driver.findElement(DownloadReportBtn).click();
     }
     //----------------------------------SUPPORT FLOW----------------------------------------
@@ -249,18 +249,19 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         }
     }
     public void patientsFlow(WebDriver driver) throws InterruptedException{
+        Thread.sleep(10000);
         Assert.assertTrue(driver.findElement(EditPatient).isDisplayed());
         Assert.assertTrue(driver.findElement(PatientDetails).isDisplayed());
         driver.findElement(SelectPatient).click();
-        Thread.sleep(5000);
-        WebElement testdDown = driver.findElement(By.xpath("//*[@id=\"mat-select-0\"]"));
-        Select dropdown = new Select(testdDown);
-        dropdown.selectByIndex(0);
-        WebElement a = dropdown.getFirstSelectedOption();
-        String b = a.getText();
-        if (b=="5"){
-            Reporter.log("Items per page = 5");
-        }
+//        Thread.sleep(5000);
+//        WebElement testdDown = driver.findElement(By.xpath("//*[@id=\"mat-select-2\"]"));
+//        Select dropdown = new Select(testdDown);
+//        dropdown.selectByIndex(0);
+//        WebElement a = dropdown.getFirstSelectedOption();
+//        String b = a.getText();
+//        if (b=="5"){
+//            Reporter.log("Items per page = 5");
+//        }
 
 
     }
@@ -275,7 +276,7 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         Assert.assertTrue(driver.findElement(ScanDetails).isDisplayed(),"Images section displayed");
         Thread.sleep(2000);
         driver.findElement(PatientVisitsSection).click();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         driver.findElement(ReportIconSmall).click();
 
     }

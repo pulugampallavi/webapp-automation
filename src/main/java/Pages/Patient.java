@@ -17,7 +17,7 @@ public class Patient extends BaseTest{
     public void setup() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-       // options.addArguments("--headless", "--disable-gpu");
+        //options.addArguments("--headless", "--disable-gpu");
         driver = new ChromeDriver(options);
         sdUtils= new SecondDentistUtils();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -27,12 +27,12 @@ public class Patient extends BaseTest{
         sdUtils.clickLogInButton(driver);
     }
     //----------------------------------PATIENTS TESTCASE---------------------
-    @Test(description = "Check patients flow")
+    @Test(description = "Check patients flow",priority = 1)
     public void Patients() throws InterruptedException {
         sdUtils.patientsFlow(driver);
     }
     //----------------------------------PATIENT VISITS TESTCASE---------------------
-    @Test(description = "Check patient visits flow")
+    @Test(description = "Check patient visits flow",priority = 2)
     public void PatientVisits() throws InterruptedException {
         sdUtils.patientVisitsflow(driver);
     }

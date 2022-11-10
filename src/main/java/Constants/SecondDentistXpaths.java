@@ -9,7 +9,7 @@ public class SecondDentistXpaths {
     public By PasswordXpath = By.xpath("//*[@id=\"mat-input-1\"]");
     //div/input[@formcontrolname='password']
     public By SignIn = By.xpath("//button[@type='submit']");
-    public By SignOut = By.xpath("//*[@id=\"leftsidebar\"]/div/ul/li[4]");
+    public By SignOut = By.xpath("//a/i[text()='power_settings_new']");
     //*[@id="leftsidebar"]/div/ul/li[4]/a/i
     public By RememberMeCheckbox = By.xpath("/html/body/app-root/app-auth-layout/app-signin/div/div/div/div/div/div[2]/form/div[3]/div/label/span/span");
     public By RememberMe = By.xpath("/html/body/app-root/app-auth-layout/app-signin/div/div/div/div/div/div[2]/form/div[3]/div/label");
@@ -22,7 +22,7 @@ public class SecondDentistXpaths {
     public By AddPatLastName = By.xpath("//div/input[@data-placeholder='Last name']");
     public By DOBField = By.xpath("//*[@id=\"mat-dialog-1\"]/app-add-patient/div/div/div[2]/div/form/mat-form-field[3]/div/div[1]/div[1]");
     public By AddPatDOB = By.xpath("//div//child::input[@data-placeholder='Date of Birth (We are accepting only patient having age 14 or above)']");
-    public By AddPAtSelectDate = By.xpath("//*[@id=\"mat-datepicker-0\"]/div/mat-month-view/table/tbody/tr[2]/td[7]/div[1]");
+  //  public By AddPAtSelectDate = By.xpath("//*[@id=\"mat-datepicker-0\"]/div/mat-month-view/table/tbody/tr[2]/td[7]/div[1]");
     public By AddPatGender = By.xpath("//*[@id=\"female\"]");
     public By SaveBtn = By.xpath("//*[@id=\"mat-dialog-0\"]/app-add-patient/div/div/div[2]/div/form/div[2]/button[1]");
     public By SaveBtnDisabled = By.xpath("//*[@id=\"mat-dialog-1\"]/app-add-patient/div/div/div[2]/div/form/div[2]/button[1]/span[1]");
@@ -44,9 +44,7 @@ public class SecondDentistXpaths {
     public By ProceedBitewing = By.xpath("//*[@id=\"cdk-step-content-0-0\"]/form/div/div/div[2]/div/button[2]");
     public By ProceedBtn = By.xpath("//div//child::span[text()='Proceed']");
     public By AnalyzeBtnPopup = By.xpath("//div//child::span[text()='Analyze']");
-    public By Analyze2 = By.xpath("//div//child::span[text()='Analyze']");
     public By AcceptBtn = By.xpath("//div//child::span[text()='Accept']");
-    public By Accept2 = By.xpath("//div//child::span[text()='Accept']");
     public By SaveFindingsBtn = By.xpath("//div//child::mat-icon[text()='save']");
     public By DownloadReportBtn = By.xpath("//button//child::mat-icon[text()='download']");
     public By AddNotes = By.xpath("//*[@id=\"cdk-step-content-0-1\"]/form/div/div[4]/div[4]/div/div[4]/label");
@@ -84,11 +82,11 @@ public class SecondDentistXpaths {
 
     //---------------------------SETTINGS SECTION XPATH-------------------------------------------
     public By settingsIcon = By.xpath("//*[@id=\"leftsidebar\"]/div/ul/li[3]/a/i");
-    public By UserNameField = By.xpath("//*[@id=\"mat-input-2\"]");
-    public By CurrentPassword = By.xpath("//*[@id=\"mat-input-1\"]");
-    public By CurrPassword2 = By.xpath("//*[@id=\"mat-input-3\"]");
-    public By NewPasswordField = By.xpath("//*[@id=\"mat-input-2\"]");
-    public By ConfirmPasswordField = By.xpath("//*[@id=\"mat-input-3\"]");
+    public By UserNameField = By.xpath("//div/input[@formcontrolname='email']");
+    public By CurrentPassword = By.xpath("//div/input[@formcontrolname='old_pwd']");
+    public By CurrPassword2 = By.xpath("//div/input[@formcontrolname='old_pwd']");
+    public By NewPasswordField = By.xpath("//div/input[@formcontrolname='new_pwd']");
+    public By ConfirmPasswordField = By.xpath("//div/input[@formcontrolname='confirm_pwd']");
     public By ShowPassword = By.xpath("/html/body/app-root/app-main-layout/app-settings/section/div/mat-tab-group/div/mat-tab-body/div/div/div/div/form/mat-form-field[3]/div/div[1]/div[2]/a");
     public By SaveBtnSettings = By.xpath("//div/button[@class='mat-focus-indicator mat-raised-button mat-button-base mat-primary mat-button-disabled']");
     public By SaveSettings2 = By.xpath("//*[@id=\"mat-tab-content-0-0\"]/div/div/div/button");
@@ -100,11 +98,11 @@ public class SecondDentistXpaths {
     public By PVHeader = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-header-row");
     public By PatientVisitsSection = By.xpath("//*[@id=\"mat-tab-label-0-0\"]");
     public By SelectPatient2 = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]");
-    public By ImageIconSmall = By.xpath("//mat-cell/mat-icon[@title='View Images']");
+    public By ImageIconSmall = By.xpath("(//mat-cell/mat-icon[@title='View Images'])[1]");
     public By ScanDetails = By.xpath("//*[@id=\"mat-tab-content-0-1\"]/div/app-list-images/div");
-    public By ReportIconSmall = By.xpath("//mat-cell//child::mat-icon[text()='description ']");
+    public By ReportIconSmall = By.xpath("(//mat-cell//child::mat-icon[text()='description '])[1]");
 
     //----------------------------------PATIENTS XPATHS--------------------------------------
-    public By EditPatient = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]/mat-cell[5]/mat-icon");
-    public By PatientDetails = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]/mat-cell[6]/mat-icon");
+    public By EditPatient = By.xpath("(//mat-cell/mat-icon[text()='edit'])[1]");
+    public By PatientDetails = By.xpath("(//mat-cell/mat-icon[text()='info'])[1]");
 }

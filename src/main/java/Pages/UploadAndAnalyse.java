@@ -54,13 +54,13 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath1);
         driver.findElement(sdXpaths.UploadImageBtn).submit();
         driver.findElement(sdXpaths.ProceedBtn).click();
-        driver.findElement(sdXpaths.Analyze2).click();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.Accept2).click();
+        driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
+        Thread.sleep(5000);
+        driver.findElement(sdXpaths.AcceptBtn).click();
         Thread.sleep(2000);
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.Accept2).click();
+        Thread.sleep(5000);
+        driver.findElement(sdXpaths.AcceptBtn).click();
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
         driver.findElement(sdXpaths.DownloadReportBtn).click();
     }
@@ -82,7 +82,7 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
         Thread.sleep(4000);
         Assert.assertTrue(driver.findElement(sdXpaths.BrightnessSlider).isDisplayed());
-        Thread.sleep(2000);
+        Thread.sleep(10000);
         Assert.assertTrue(driver.findElement(sdXpaths.ContrastSlider).isDisplayed());
         Thread.sleep(2000);
         Assert.assertTrue(driver.findElement(sdXpaths.magnifierIcon).isDisplayed());
@@ -146,7 +146,7 @@ public class UploadAndAnalyse extends BaseTest{
             Reporter.log(webElement.getText());
         }
         Thread.sleep(2000);
-        driver.findElement(sdXpaths.Accept2).click();
+        driver.findElement(sdXpaths.AcceptBtn).click();
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
     }
 
@@ -168,14 +168,14 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.ProceedBtn2).click();
         Thread.sleep(2000);
         driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
-        Thread.sleep(4000);
-        driver.findElement(sdXpaths.Accept2).click();
+        Thread.sleep(5000);
+        driver.findElement(sdXpaths.AcceptBtn).click();
         driver.findElement(sdXpaths.AddNotes).click();
         Thread.sleep(2000);
         driver.findElement(sdXpaths.AddNotesTextField).sendKeys("jkabisvjhijfhvowfgwfkjsbfjkfblkwh");
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
         Thread.sleep(2000);
-        driver.findElement(sdXpaths.Accept2).click();
+        driver.findElement(sdXpaths.AcceptBtn).click();
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
         driver.findElement(sdXpaths.DownloadReportBtn).click();
     }
@@ -195,14 +195,14 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.UploadImageBtn).submit();
         driver.findElement(sdXpaths.ProceedBtn2).click();
         driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
-        Thread.sleep(4000);
-        driver.findElement(sdXpaths.Accept2).click();
+        Thread.sleep(5000);
+        driver.findElement(sdXpaths.AcceptBtn).click();
         driver.findElement(sdXpaths.AddNotes).click();
         Thread.sleep(2000);
         driver.findElement(sdXpaths.DoctorsNotes).sendKeys("jkabisvjhijfhvowfgwfkjsbfjkfblkwh");
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
         Thread.sleep(2000);
-        driver.findElement(sdXpaths.Accept2).click();
+        driver.findElement(sdXpaths.AcceptBtn).click();
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
         driver.findElement(sdXpaths.DownloadReportBtn).click();
     }
@@ -221,8 +221,8 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.UploadImageBtn).submit();
         driver.findElement(sdXpaths.ProceedBtn2).click();
         driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
-        Thread.sleep(4000);
-        driver.findElement(sdXpaths.Accept2).click();
+        Thread.sleep(5000);
+        driver.findElement(sdXpaths.AcceptBtn).click();
         driver.findElement(sdXpaths.ThreeDots).click();
         driver.findElement(sdXpaths.newTeethNo).click();
         driver.findElement(sdXpaths.SaveTeethNumber).click();
@@ -241,11 +241,10 @@ public class UploadAndAnalyse extends BaseTest{
         String filePath7 = System.getProperty("user.dir") + "/resources/periapical1.png";
         driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath7);
         driver.findElement(sdXpaths.UploadImageBtn).submit();
-        driver.findElement(sdXpaths.UploadImageBtn).submit();
         driver.findElement(sdXpaths.ProceedBtn2).click();
         driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
-        Thread.sleep(4000);
-        driver.findElement(sdXpaths.Accept2).click();
+        Thread.sleep(5000);
+        driver.findElement(sdXpaths.AcceptBtn).click();
         driver.findElement(sdXpaths.addFindings).click();
         driver.findElement(sdXpaths.RestorativeDefect).click();
         driver.findElement(sdXpaths.CariesDefect).click();
@@ -255,6 +254,20 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.acceptFindings).click();
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
     }
+   /* @Test(description = "Invalid File format flow")
+    public void invalidFileFormat() throws InterruptedException {
+        driver.navigate().refresh();
+        Thread.sleep(2000);
+        driver.findElement(sdXpaths.SelectPatient).click();
+        Thread.sleep(5000);
+        driver.findElement(sdXpaths.UploadAnalyzeButton).click();
+        Thread.sleep(2000);
+        driver.findElement(sdXpaths.PeriapicalBtn2).click();
+        Thread.sleep(4000);
+        String filePath7 = System.getProperty("user.dir") + "/resources/periapical1.png";
+        driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath7);
+        driver.findElement(sdXpaths.UploadImageBtn).submit();
+    }*/
     //-----------------------------------AFTER CLASS--------------------------------
     @AfterClass
     public void tearDown() throws InterruptedException {

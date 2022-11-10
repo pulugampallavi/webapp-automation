@@ -4,6 +4,7 @@ Pages\AddPatient.class
 Pages\Images.class
 Pages\LoginLogout.class
 Utils\SecondDentistUtils.class
+Utils\AllureReports.class
 Pages\BaseTest.class
 Pages\Others.class
 Pages\UploadAndAnalyse.class
