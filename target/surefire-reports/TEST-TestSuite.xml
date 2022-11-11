@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="691.936" tests="28" errors="0" skipped="0" failures="5">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="46.884" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.16.1+1-LTS-1"/>
@@ -64,107 +64,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="emptyCredentials" classname="Pages.LoginLogout" time="4.126"/>
-  <testcase name="iconVisibility" classname="Pages.LoginLogout" time="4.325"/>
-  <testcase name="invalidPassword" classname="Pages.LoginLogout" time="4.386"/>
-  <testcase name="invalidUserName" classname="Pages.LoginLogout" time="4.296"/>
-  <testcase name="loginflow" classname="Pages.LoginLogout" time="10.356"/>
-  <testcase name="logoutflow" classname="Pages.LoginLogout" time="3.167"/>
-  <testcase name="addPatient" classname="Pages.AddPatient" time="12.981"/>
-  <testcase name="addPatientWithInvalidName" classname="Pages.AddPatient" time="14.827"/>
-  <testcase name="addPatientbtn" classname="Pages.AddPatient" time="0.028"/>
-  <testcase name="uploadAndAnalyze" classname="Pages.UploadAndAnalyse" time="24.05"/>
-  <testcase name="periapicalImage" classname="Pages.UploadAndAnalyse" time="66.552">
-    <failure message="element not interactable&#10;  (Session info: chrome=107.0.5304.89)&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [49171b6383b9a94cd899af52a41cea58, clickElement {id=45bbbe77-1afe-4be2-9049-736d0675aed8}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50514}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50514/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (49171b6383b9a94cd899af52a41cea58)] -&gt; xpath: //div//child::span[text()=&apos;Accept&apos;]]&#10;Session ID: 49171b6383b9a94cd899af52a41cea58" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=107.0.5304.89)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [49171b6383b9a94cd899af52a41cea58, clickElement {id=45bbbe77-1afe-4be2-9049-736d0675aed8}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50514}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50514/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (49171b6383b9a94cd899af52a41cea58)] -> xpath: //div//child::span[text()='Accept']]
-Session ID: 49171b6383b9a94cd899af52a41cea58
-	at Pages.UploadAndAnalyse.periapicalImage(UploadAndAnalyse.java:63)
-</failure>
-  </testcase>
-  <testcase name="uAndARegession" classname="Pages.UploadAndAnalyse" time="51.36"/>
-  <testcase name="teethNumbering" classname="Pages.UploadAndAnalyse" time="40.015"/>
-  <testcase name="addNotes" classname="Pages.UploadAndAnalyse" time="61.909">
-    <failure message="element not interactable&#10;  (Session info: chrome=107.0.5304.89)&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [49171b6383b9a94cd899af52a41cea58, sendKeysToElement {id=35120acb-78d3-4b8b-b705-1e75307b9b3c, value=[Ljava.lang.CharSequence;@13ef7fa1}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50514}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50514/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (49171b6383b9a94cd899af52a41cea58)] -&gt; xpath: //*[@id=&quot;cdk-step-content-0-1&quot;]/form/div/div[4]/div[4]/div/div[4]/textarea]&#10;Session ID: 49171b6383b9a94cd899af52a41cea58" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=107.0.5304.89)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [49171b6383b9a94cd899af52a41cea58, sendKeysToElement {id=35120acb-78d3-4b8b-b705-1e75307b9b3c, value=[Ljava.lang.CharSequence;@13ef7fa1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50514}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50514/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (49171b6383b9a94cd899af52a41cea58)] -> xpath: //*[@id="cdk-step-content-0-1"]/form/div/div[4]/div[4]/div/div[4]/textarea]
-Session ID: 49171b6383b9a94cd899af52a41cea58
-	at Pages.UploadAndAnalyse.addNotes(UploadAndAnalyse.java:175)
-</failure>
-  </testcase>
-  <testcase name="doctorsNotes" classname="Pages.UploadAndAnalyse" time="63.512">
-    <failure message="element not interactable&#10;  (Session info: chrome=107.0.5304.89)&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [49171b6383b9a94cd899af52a41cea58, clickElement {id=708727e6-8392-4a2f-b68f-23aad9f8047f}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50514}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50514/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (49171b6383b9a94cd899af52a41cea58)] -&gt; xpath: //div//child::span[text()=&apos;Accept&apos;]]&#10;Session ID: 49171b6383b9a94cd899af52a41cea58" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=107.0.5304.89)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [49171b6383b9a94cd899af52a41cea58, clickElement {id=708727e6-8392-4a2f-b68f-23aad9f8047f}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50514}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50514/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (49171b6383b9a94cd899af52a41cea58)] -> xpath: //div//child::span[text()='Accept']]
-Session ID: 49171b6383b9a94cd899af52a41cea58
-	at Pages.UploadAndAnalyse.doctorsNotes(UploadAndAnalyse.java:205)
-</failure>
-  </testcase>
-  <testcase name="editTeethNumber" classname="Pages.UploadAndAnalyse" time="28.939"/>
-  <testcase name="addFindingsFlow" classname="Pages.UploadAndAnalyse" time="27.391"/>
-  <testcase name="ChatBot" classname="Pages.Chatbot" time="15.179">
-    <failure message="javascript error: Cannot read properties of undefined (reading &apos;click&apos;)&#10;  (Session info: chrome=107.0.5304.89)&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3dc485a97c673d42b35b70077c3074af, executeScript {script=document.getElementsByClassName(&apos;buttonTmplContentChild&apos;)[0].click();, args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51166}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51166/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3dc485a97c673d42b35b70077c3074af" type="org.openqa.selenium.JavascriptException">org.openqa.selenium.JavascriptException: 
-javascript error: Cannot read properties of undefined (reading 'click')
-  (Session info: chrome=107.0.5304.89)
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3dc485a97c673d42b35b70077c3074af, executeScript {script=document.getElementsByClassName('buttonTmplContentChild')[0].click();, args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51166}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51166/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3dc485a97c673d42b35b70077c3074af
-	at Pages.Chatbot.ChatBot(Chatbot.java:39)
-</failure>
-    <system-out><![CDATA[ChatBot Popup opened
-]]></system-out>
-    <system-err><![CDATA[481083 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 107.0.5304.62 (resolved driver for Chrome 107)
-481094 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Admin\.cache\selenium\chromedriver\win32\107.0.5304.62\chromedriver.exe
-Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 13878
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Nov 10, 2022 5:10:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 107, so returning the closest version found: 106
-]]></system-err>
-  </testcase>
-  <testcase name="searchPatientFlow" classname="Pages.SearchPatient" time="6.517"/>
-  <testcase name="searchPatientNegFlow" classname="Pages.SearchPatient" time="4.286"/>
-  <testcase name="supportFlow" classname="Pages.Support" time="21.32"/>
-  <testcase name="settingsFlow" classname="Pages.Settings" time="6.887"/>
-  <testcase name="settingsFlow2" classname="Pages.Settings" time="8.158"/>
-  <testcase name="settingsFlow3" classname="Pages.Settings" time="2.387"/>
-  <testcase name="settingsFlow4" classname="Pages.Settings" time="0.137"/>
-  <testcase name="settingsFlow5" classname="Pages.Settings" time="5.924"/>
-  <testcase name="Patients" classname="Pages.Patient" time="10.167"/>
-  <testcase name="PatientVisits" classname="Pages.Patient" time="30.057">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-header-row&quot;}&#10;  (Session info: chrome=107.0.5304.89)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.16.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [9ea50fbd6d260ea681bd03bb2d77e42d, findElement {using=xpath, value=/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-header-row}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51354}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51354/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9ea50fbd6d260ea681bd03bb2d77e42d" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-header-row"}
-  (Session info: chrome=107.0.5304.89)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.5.3', revision: '4b786a1e430'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9ea50fbd6d260ea681bd03bb2d77e42d, findElement {using=xpath, value=/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-header-row}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51354}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51354/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9ea50fbd6d260ea681bd03bb2d77e42d
-	at Pages.Patient.PatientVisits(Patient.java:37)
-</failure>
-  </testcase>
+  <testcase name="ImagesFlow" classname="Pages.Images" time="5.751"/>
 </testsuite>

@@ -50,12 +50,14 @@
             <class name="Pages.Patient"/>
         </classes>
     </test>
+    <test name="Images Flow">
+        <classes>
+            <class name="Pages.Images"/>
+        </classes>
+    </test>
 <!--   <test name="Any Test">-->
 <!--        <classes>-->
-<!--            <class name="Pages.UploadAndAnalyse">-->
-<!--                <methods>-->
-<!--                    <include name="Patients"/>-->
-<!--                </methods>-->
+<!--            <class name="Pages.Images">-->
 <!--            </class>-->
 <!--        </classes>-->
 <!--    </test>-->

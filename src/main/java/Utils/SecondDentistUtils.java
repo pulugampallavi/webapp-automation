@@ -44,12 +44,12 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         element1.doubleClick(fname).perform();
         Thread.sleep(4000);
         Actions newaction = new Actions(driver);
-        newaction.sendKeys("Twenty").build().perform();
+        newaction.sendKeys("SampleUser").build().perform();
         driver.findElement(AddPatLastName).click();
         Thread.sleep(4000);
         Actions newaction2 = new Actions(driver);
-        newaction2.sendKeys("October").build().perform();
-        driver.findElement(AddPatDOB).sendKeys("07/23/1999");
+        newaction2.sendKeys("November").build().perform();
+        driver.findElement(AddPatDOB).sendKeys("07/06/1959");
         Thread.sleep(2000);
         driver.findElement(AddPatGender).click();
         driver.findElement(SaveBtn).click();
@@ -91,7 +91,8 @@ public class SecondDentistUtils extends SecondDentistXpaths {
 
     public void bitewingImage(WebDriver driver) throws InterruptedException, IOException {
         driver.findElement(SelectPatient).click();
-        Thread.sleep(5000);
+        //Thread.sleep(7000);
+        driver.findElement(PVHeader).click();
         driver.findElement(UploadAnalyzeButton).click();
         Thread.sleep(2000);
         driver.findElement(BitewingRadioBtn).click();
@@ -105,6 +106,7 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         driver.findElement(AcceptBtn).click();
         Thread.sleep(2000);
         driver.findElement(SaveFindingsBtn).click();
+        Thread.sleep(5000);
         Thread.sleep(5000);
         driver.findElement(DownloadReportBtn).click();
     }
@@ -262,8 +264,6 @@ public class SecondDentistUtils extends SecondDentistXpaths {
 //        if (b=="5"){
 //            Reporter.log("Items per page = 5");
 //        }
-
-
     }
     //----------------------------------PATIENT VISITS FLOW----------------------------------------
     public void patientVisitsflow(WebDriver driver) throws InterruptedException {
@@ -278,6 +278,14 @@ public class SecondDentistUtils extends SecondDentistXpaths {
         driver.findElement(PatientVisitsSection).click();
         Thread.sleep(5000);
         driver.findElement(ReportIconSmall).click();
+    }
+    //----------------------------------IMAGES SECTION--------------------------------------
+    public void ImagesSection(WebDriver driver) throws InterruptedException {
+        driver.findElement(PatientSection).click();
+        driver.findElement(SelectPatient).click();
+        Thread.sleep(5000);
+        driver.findElement(ImagesSecBtn).click();
+        Assert.assertTrue(driver.findElement(XrayImage).isDisplayed());
 
     }
 }

@@ -56,11 +56,11 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.ProceedBtn).click();
         driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
         Thread.sleep(5000);
+        Thread.sleep(3000);
         driver.findElement(sdXpaths.AcceptBtn).click();
         Thread.sleep(2000);
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
-        Thread.sleep(5000);
-        driver.findElement(sdXpaths.AcceptBtn).click();
+      //  driver.findElement(sdXpaths.AcceptBtn).click();
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
         driver.findElement(sdXpaths.DownloadReportBtn).click();
     }
@@ -174,16 +174,12 @@ public class UploadAndAnalyse extends BaseTest{
         Thread.sleep(2000);
         driver.findElement(sdXpaths.AddNotesTextField).sendKeys("jkabisvjhijfhvowfgwfkjsbfjkfblkwh");
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.AcceptBtn).click();
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
         driver.findElement(sdXpaths.DownloadReportBtn).click();
     }
     @Test(description = "Doctors Notes Flow",priority = 6)
     public void doctorsNotes() throws InterruptedException {
         driver.navigate().refresh();
-        // driver.findElement(sdXpaths.PatientSection).click();
-        Thread.sleep(2000);
         driver.findElement(sdXpaths.SelectPatient).click();
         Thread.sleep(5000);
         driver.findElement(sdXpaths.UploadAnalyzeButton).click();
@@ -201,8 +197,7 @@ public class UploadAndAnalyse extends BaseTest{
         Thread.sleep(2000);
         driver.findElement(sdXpaths.DoctorsNotes).sendKeys("jkabisvjhijfhvowfgwfkjsbfjkfblkwh");
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.AcceptBtn).click();
+
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
         driver.findElement(sdXpaths.DownloadReportBtn).click();
     }

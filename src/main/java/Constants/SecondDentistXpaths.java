@@ -95,7 +95,7 @@ public class SecondDentistXpaths {
     //----------------------------------OTHERS XPATHS--------------------------------------
     public By FullScreenBtn = By.xpath("/html/body/app-root/app-main-layout/app-header/nav/div/div[2]/ul[2]/li[1]/button");
     //----------------------------------PATIENT VISITS XPATHS--------------------------------------
-    public By PVHeader = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-header-row");
+    public By PVHeader = By.xpath("//div[@class='mat-tab-list']");
     public By PatientVisitsSection = By.xpath("//*[@id=\"mat-tab-label-0-0\"]");
     public By SelectPatient2 = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]");
     public By ImageIconSmall = By.xpath("(//mat-cell/mat-icon[@title='View Images'])[1]");
@@ -105,4 +105,8 @@ public class SecondDentistXpaths {
     //----------------------------------PATIENTS XPATHS--------------------------------------
     public By EditPatient = By.xpath("(//mat-cell/mat-icon[text()='edit'])[1]");
     public By PatientDetails = By.xpath("(//mat-cell/mat-icon[text()='info'])[1]");
+
+    //----------------------------------IMAGES XPATHS--------------------------------------
+    public By ImagesSecBtn = By.xpath("//div[text()='IMAGES']");
+    public By XrayImage = By.xpath("//*[@id=\"mat-tab-content-0-1\"]/div/app-list-images/div/div[2]/div/img");
 }
