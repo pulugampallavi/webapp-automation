@@ -7,11 +7,14 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -283,7 +286,9 @@ public class SecondDentistUtils extends SecondDentistXpaths {
     public void ImagesSection(WebDriver driver) throws InterruptedException {
         driver.findElement(PatientSection).click();
         driver.findElement(SelectPatient).click();
-        Thread.sleep(5000);
+        // Thread.sleep(5000);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(ImagesSecBtn));
         driver.findElement(ImagesSecBtn).click();
         Assert.assertTrue(driver.findElement(XrayImage).isDisplayed());
 

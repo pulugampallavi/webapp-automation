@@ -16,7 +16,7 @@ public class SecondDentistXpaths {
     public By ForgotPassword = By.xpath("//a[text()='Forgot Password?']");
     public By ShowPasswordLogin = By.xpath("/html/body/app-root/app-auth-layout/app-signin/div/div/div/div/div/div[2]/form/div[2]/div/mat-form-field/div/div[1]/div[4]/a/mat-icon");
     //----------------------------------ADD PATIENTS XPATHS--------------------------------------
-    public By PatientSection = By.xpath("//div//child::i[text()='person']");
+    public By PatientSection = By.xpath("//a/i[text()='person']");
     public By AddPatientBtn = By.xpath("//div/button/span[text()=' Add Patient ']");
     public By AddPatFirstName = By.xpath("//div/input[@data-placeholder='First name']");
     public By AddPatLastName = By.xpath("//div/input[@data-placeholder='Last name']");
@@ -76,6 +76,7 @@ public class SecondDentistXpaths {
     public By acceptFindings = By.xpath("//div//child::span[text()='check_circle_outline']");
     public By rejectFindings = By.xpath("//div//child::span[text()='highlight_off']");
     public By saveRejectReason = By.xpath("//button/span[text()='Save']");
+    public By hereBtnUA = By.xpath("//span/a[text()='here.']");
     //---------------------------SUPPORT SECTION XPATH-------------------------------------------
     public By SupportIcon = By.xpath("//*[@id=\"leftsidebar\"]/div/ul/li[2]");
     public By UserManual = By.xpath("/html/body/app-root/app-main-layout/support/section/div/div[2]/div/div/div/div/div[2]/a");
@@ -95,9 +96,9 @@ public class SecondDentistXpaths {
     //----------------------------------OTHERS XPATHS--------------------------------------
     public By FullScreenBtn = By.xpath("/html/body/app-root/app-main-layout/app-header/nav/div/div[2]/ul[2]/li[1]/button");
     //----------------------------------PATIENT VISITS XPATHS--------------------------------------
-    public By PVHeader = By.xpath("//div[@class='mat-tab-list']");
+    public By PVHeader = By.xpath("//li[text()=' Akash Jaiswal']");
     public By PatientVisitsSection = By.xpath("//*[@id=\"mat-tab-label-0-0\"]");
-    public By SelectPatient2 = By.xpath("/html/body/app-root/app-main-layout/app-allpatients/section/div/div[2]/div/div/div/div[2]/mat-table/mat-row[1]");
+    public By SelectPatient2 = By.xpath("//mat-table/mat-row[1]");
     public By ImageIconSmall = By.xpath("(//mat-cell/mat-icon[@title='View Images'])[1]");
     public By ScanDetails = By.xpath("//*[@id=\"mat-tab-content-0-1\"]/div/app-list-images/div");
     public By ReportIconSmall = By.xpath("(//mat-cell//child::mat-icon[text()='description '])[1]");

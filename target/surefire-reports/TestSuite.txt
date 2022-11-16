@@ -1,4 +1,69 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.884 sec - in TestSuite
+Tests run: 42, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 988.305 sec <<< FAILURE! - in TestSuite
+uploadAndAnalyze(Pages.UploadAndAnalyse)  Time elapsed: 1.261 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <li _ngcontent-dge-c205="" class="breadcrumb-item active">...</li> is not clickable at point (233, 69). Other element would receive the click: <div _ngcontent-dge-c205="" class="tbl-spinner ng-star-inserted" style="">...</div>
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b666f088a604e32352ada96149511df8, clickElement {id=43f8172a-96e0-4c18-af70-1abee0ecbf58}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62647}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62647/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b666f088a604e32352ada96149511df8)] -> xpath: //li[text()=' Akash Jaiswal']]
+Session ID: b666f088a604e32352ada96149511df8
+	at Pages.UploadAndAnalyse.uploadAndAnalyze(UploadAndAnalyse.java:63)
+
+periapicalImage(Pages.UploadAndAnalyse)  Time elapsed: 52.877 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <mat-icon _ngcontent-qyu-c198="" role="img" class="mat-icon notranslate material-icons mat-icon-no-color" aria-hidden="true" data-mat-icon-type="font">...</mat-icon> is not clickable at point (1435, 163). Other element would receive the click: <div _ngcontent-qyu-c198="" class="tbl-spinner img-spinner ng-star-inserted" style="">...</div>
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b666f088a604e32352ada96149511df8, clickElement {id=c5cab535-5c6f-480f-93c2-f7baf2c296e9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62647}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62647/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b666f088a604e32352ada96149511df8)] -> xpath: //div//child::mat-icon[text()='save']]
+Session ID: b666f088a604e32352ada96149511df8
+	at Pages.UploadAndAnalyse.periapicalImage(UploadAndAnalyse.java:74)
+
+uAndARegSuppotedFindings(Pages.UploadAndAnalyse)  Time elapsed: 22.735 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button _ngcontent-rme-c198="" mat-raised-button="" title="Click to view all supported findings." class="mat-focus-indicator btn-supported-pathologies mat-raised-button mat-button-base">...</button> is not clickable at point (1213, 162). Other element would receive the click: <div _ngcontent-rme-c198="" class="tbl-spinner img-spinner ng-star-inserted" style="">...</div>
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b666f088a604e32352ada96149511df8, clickElement {id=e09af7d8-6eef-4043-99c2-eae840124527}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62647}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62647/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b666f088a604e32352ada96149511df8)] -> xpath: //div//child::button[@title='Click to view all supported findings.']]
+Session ID: b666f088a604e32352ada96149511df8
+	at Pages.UploadAndAnalyse.uAndARegSuppotedFindings(UploadAndAnalyse.java:138)
+
+uAndARegUploadImgBtn(Pages.UploadAndAnalyse)  Time elapsed: 26.298 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button _ngcontent-jju-c198="" mat-raised-button="" title="Click to upload new image." class="mat-focus-indicator btn-back mat-raised-button mat-button-base">...</button> is not clickable at point (1303, 162). Other element would receive the click: <div _ngcontent-jju-c198="" class="tbl-spinner img-spinner ng-star-inserted" style="">...</div>
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b666f088a604e32352ada96149511df8, clickElement {id=0a98e13e-adba-4f57-9e0f-c885f03f009f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62647}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62647/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b666f088a604e32352ada96149511df8)] -> xpath: //div//child::button[@title='Click to upload new image.']]
+Session ID: b666f088a604e32352ada96149511df8
+	at Pages.UploadAndAnalyse.uAndARegUploadImgBtn(UploadAndAnalyse.java:172)
+
+ImagesFlow(Pages.Images)  Time elapsed: 1.257 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <div class="mat-tab-label-content">...</div> is not clickable at point (300, 107). Other element would receive the click: <div _ngcontent-bix-c205="" class="tbl-spinner ng-star-inserted" style="">...</div>
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ff0843f2d2cd2643aaa3eead71f2254e, clickElement {id=4c47df77-7dd3-48ad-9adb-1dd9c9c21f2f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63456}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63456/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ff0843f2d2cd2643aaa3eead71f2254e)] -> xpath: //div[text()='IMAGES']]
+Session ID: ff0843f2d2cd2643aaa3eead71f2254e
+	at Pages.Images.ImagesFlow(Images.java:45)
+

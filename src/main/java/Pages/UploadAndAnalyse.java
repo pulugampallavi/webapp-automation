@@ -5,13 +5,19 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import java.io.IOException;
+import java.time.Duration;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 public class UploadAndAnalyse extends BaseTest{
     WebDriver driver;
@@ -34,15 +40,9 @@ public class UploadAndAnalyse extends BaseTest{
         sdUtils.clickLogInButton(driver);
         Assert.assertTrue(driver.getCurrentUrl().endsWith("seconddentist.ai/#/doctor/all-patients"), "Login unsuccessfull.");
     }
-    //----------------------------------Upload and Analyze Section Testcase----------------------------------------
-    @Test(description = "Check U&A flow for bitewing image", priority = 1)
-    public void uploadAndAnalyze() throws InterruptedException, IOException {
-        sdUtils.bitewingImage(driver);
-    }
-    @Test(description = "Check U&A flow for periapical image",priority = 2)
-    public void periapicalImage() throws InterruptedException {
+
+    public void defaultCode() throws InterruptedException {
         driver.navigate().refresh();
-        //driver.findElement(sdXpaths.PatientSection).click();
         Thread.sleep(2000);
         driver.findElement(sdXpaths.SelectPatient).click();
         Thread.sleep(5000);
@@ -50,11 +50,21 @@ public class UploadAndAnalyse extends BaseTest{
         Thread.sleep(2000);
         driver.findElement(sdXpaths.PeriapicalRadioBtn).click();
         Thread.sleep(4000);
-        String filePath1 = System.getProperty("user.dir") + "/resources/periapical1.png";
+        String filePath1 = System.getProperty("user.dir") + "/resources/periapical1.JPG";
         driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath1);
         driver.findElement(sdXpaths.UploadImageBtn).submit();
         driver.findElement(sdXpaths.ProceedBtn).click();
         driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
+    }
+
+    //----------------------------------Upload and Analyze Section Testcase----------------------------------------
+    @Test(description = "Check U&A flow for bitewing image", priority = 1)
+    public void uploadAndAnalyze() throws InterruptedException, IOException {
+        sdUtils.bitewingImage(driver);
+    }
+    @Test(description = "Check U&A flow for periapical image",priority = 2)
+    public void periapicalImage() throws InterruptedException {
+        defaultCode();
         Thread.sleep(5000);
         Thread.sleep(3000);
         driver.findElement(sdXpaths.AcceptBtn).click();
@@ -65,63 +75,107 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.DownloadReportBtn).click();
     }
     @Test(description = "Upload and analyze Regression flow",priority = 3)
-    public void uAndARegession() throws InterruptedException {
-        driver.navigate().refresh();
-        //driver.findElement(sdXpaths.PatientSection).click();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.SelectPatient).click();
-        Thread.sleep(5000);
-        driver.findElement(sdXpaths.UploadAnalyzeButton).click();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.PeriapicalBtn2).click();
-        Thread.sleep(4000);
-        String filePath2 = System.getProperty("user.dir") + "/resources/periapical1.png";
-        driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath2);
-        driver.findElement(sdXpaths.UploadImageBtn).submit();
-        driver.findElement(sdXpaths.ProceedBtn2).click();
-        driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
-        Thread.sleep(4000);
+    public void uAndARegBrightSlider() throws InterruptedException {
+        defaultCode();
+        //Thread.sleep(4000);
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(60));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(sdXpaths.BrightnessSlider));
         Assert.assertTrue(driver.findElement(sdXpaths.BrightnessSlider).isDisplayed());
-        Thread.sleep(10000);
+    }
+    @Test(description = "Upload and analyze Regression flow",priority = 4)
+    public void uAndARegContrastSlider() throws InterruptedException {
+        defaultCode();
+        //Thread.sleep(10000);
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(60));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(sdXpaths.ContrastSlider));
         Assert.assertTrue(driver.findElement(sdXpaths.ContrastSlider).isDisplayed());
-        Thread.sleep(2000);
+    }
+    @Test(description = "Upload and analyze Regression flow",priority = 5)
+    public void uAndARegMagnifierIcon() throws InterruptedException {
+        defaultCode();
+        //Thread.sleep(2000);
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(60));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(sdXpaths.magnifierIcon));
         Assert.assertTrue(driver.findElement(sdXpaths.magnifierIcon).isDisplayed());
-        Thread.sleep(2000);
+    }
+    @Test(description = "Upload and analyze Regression flow",priority = 6)
+    public void uAndARegAntiClkRotate() throws InterruptedException {
+        defaultCode();
+        //Thread.sleep(5000);
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(60));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(sdXpaths.AntiClockwiseRotate));
         Assert.assertTrue(driver.findElement(sdXpaths.AntiClockwiseRotate).isDisplayed());
-        Thread.sleep(2000);
+    }
+    @Test(description = "Upload and analyze Regression flow",priority = 7)
+    public void uAndARegClockwiseRotate() throws InterruptedException {
+        defaultCode();
+        //Thread.sleep(5000);
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(60));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(sdXpaths.ClockwiseRotate));
         Assert.assertTrue(driver.findElement(sdXpaths.ClockwiseRotate).isDisplayed());
-        Thread.sleep(2000);
+    }
+    @Test(description = "Upload and analyze Regression flow",priority = 8)
+    public void uAndARegInvertImage() throws InterruptedException {
+        defaultCode();
+        //Thread.sleep(5000);
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(60));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(sdXpaths.InvertImage));
         Assert.assertTrue(driver.findElement(sdXpaths.InvertImage).isDisplayed());
-        Thread.sleep(2000);
+    }
+    @Test(description = "Upload and analyze Regression flow",priority = 9)
+    public void uAndARegRefreshBtn() throws InterruptedException {
+        defaultCode();
+        //Thread.sleep(5000);
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(60));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(sdXpaths.RefreshBtn));
         Assert.assertTrue(driver.findElement(sdXpaths.RefreshBtn).isDisplayed());
+    }
+    @Test(description = "Upload and analyze Regression flow",priority = 10)
+    public void uAndARegSuppotedFindings() throws InterruptedException {
+        defaultCode();
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(40));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(sdXpaths.FindingsIcon));
         driver.findElement(sdXpaths.FindingsIcon).click();
         Thread.sleep(5000);
         Assert.assertTrue(driver.getPageSource().contains("Supported Findings"));
         driver.findElement(sdXpaths.CLoseFindingPopup).click();
+    }
+    @Test(description = "Upload and analyze Regression flow",priority = 11)
+    public void uAndARegHideFindings() throws InterruptedException {
+        defaultCode();
+        //Thread.sleep(5000);
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(60));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(sdXpaths.HideFindings));
         Assert.assertTrue(driver.findElement(sdXpaths.HideFindings).isDisplayed());
+    }
+    @Test(description = "Upload and analyze Regression flow",priority = 12)
+    public void uAndARegReloadImgBtn() throws InterruptedException {
+        defaultCode();
+        //Thread.sleep(5000);
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(60));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(sdXpaths.RefreshSmlBtn));
         Assert.assertTrue(driver.findElement(sdXpaths.RefreshSmlBtn).isDisplayed());
+    }
+    @Test(description = "Upload and analyze Regression flow",priority = 13)
+    public void uAndARegPrintReportBtn() throws InterruptedException {
+        defaultCode();
+        //Thread.sleep(5000);
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(60));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(sdXpaths.PrintBtn));
         Assert.assertTrue(driver.findElement(sdXpaths.PrintBtn).isDisplayed());
+    }
+    @Test(description = "Upload and analyze Regression flow",priority = 14)
+    public void uAndARegUploadImgBtn() throws InterruptedException {
+        defaultCode();
+        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(40));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(sdXpaths.UploadImageSmlBtn));
         driver.findElement(sdXpaths.UploadImageSmlBtn).click();
         Thread.sleep(5000);
         Assert.assertTrue(driver.getPageSource().contains("Select Image Type:"));
     }
-    @Test(description = "Teeth Numbering Flow",priority = 4)
-    public void teethNumbering() throws InterruptedException {
-        driver.navigate().refresh();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.PatientSection).click();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.SelectPatient).click();
-        Thread.sleep(7000);
-        driver.findElement(sdXpaths.UploadAnalyzeButton).click();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.PeriapicalBtn2).click();
-        Thread.sleep(4000);
-        String filePath3 = System.getProperty("user.dir") + "/resources/periapical1.png";
-        driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath3);
-        driver.findElement(sdXpaths.UploadImageBtn).submit();
-        driver.findElement(sdXpaths.ProceedBtn2).click();
-        driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
+    @Test(description = "Teeth Numbering Flow Universal",priority = 15)
+    public void teethNumberingUni() throws InterruptedException {
+        defaultCode();
         Thread.sleep(4000);
         WebElement testDropDown = driver.findElement(By.xpath("//option[@value='UNIVERSAL']//parent::select"));
         testDropDown.click();
@@ -132,10 +186,12 @@ public class UploadAndAnalyse extends BaseTest{
         List<WebElement> list = driver.findElements(By.xpath("//*[contains(@class,'col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-6')]"));
         for (WebElement webElement:list){
            Reporter.log(webElement.getText());
-        }
-
+        }}
+    @Test(description = "Teeth Numbering Flow ISO",priority = 16)
+    public void teethNumberingISO() throws InterruptedException {
+        defaultCode();
         Thread.sleep(2000);
-
+        WebElement testDropDown = driver.findElement(By.xpath("//option[@value='UNIVERSAL']//parent::select"));
         testDropDown.click();
         driver.findElement(By.xpath("//option[@value='ISO']")).click();
         WebElement new2 = driver.findElement(By.xpath("//option[@value='ISO']"));
@@ -150,24 +206,9 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
     }
 
-    @Test(description = "Add Notes Flow",priority = 5)
+    @Test(description = "Add Notes Flow",priority = 17)
     public void addNotes() throws InterruptedException {
-        driver.navigate().refresh();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.PatientSection).click();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.SelectPatient).click();
-        Thread.sleep(5000);
-        driver.findElement(sdXpaths.UploadAnalyzeButton).click();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.PeriapicalBtn2).click();
-        Thread.sleep(4000);
-        String filePath4 = System.getProperty("user.dir") + "/resources/periapical1.png";
-        driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath4);
-        driver.findElement(sdXpaths.UploadImageBtn).submit();
-        driver.findElement(sdXpaths.ProceedBtn2).click();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
+        defaultCode();
         Thread.sleep(5000);
         driver.findElement(sdXpaths.AcceptBtn).click();
         driver.findElement(sdXpaths.AddNotes).click();
@@ -177,20 +218,9 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
         driver.findElement(sdXpaths.DownloadReportBtn).click();
     }
-    @Test(description = "Doctors Notes Flow",priority = 6)
+    @Test(description = "Doctors Notes Flow",priority = 18)
     public void doctorsNotes() throws InterruptedException {
-        driver.navigate().refresh();
-        driver.findElement(sdXpaths.SelectPatient).click();
-        Thread.sleep(5000);
-        driver.findElement(sdXpaths.UploadAnalyzeButton).click();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.PeriapicalBtn2).click();
-        Thread.sleep(4000);
-        String filePath5 = System.getProperty("user.dir") + "/resources/periapical1.png";
-        driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath5);
-        driver.findElement(sdXpaths.UploadImageBtn).submit();
-        driver.findElement(sdXpaths.ProceedBtn2).click();
-        driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
+        defaultCode();
         Thread.sleep(5000);
         driver.findElement(sdXpaths.AcceptBtn).click();
         driver.findElement(sdXpaths.AddNotes).click();
@@ -201,21 +231,9 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
         driver.findElement(sdXpaths.DownloadReportBtn).click();
     }
-    @Test(description = "Edit teeth numbers Flow",priority = 7)
+    @Test(description = "Edit teeth numbers Flow",priority = 19)
     public void editTeethNumber() throws InterruptedException {
-        driver.navigate().refresh();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.SelectPatient).click();
-        Thread.sleep(5000);
-        driver.findElement(sdXpaths.UploadAnalyzeButton).click();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.PeriapicalBtn2).click();
-        Thread.sleep(4000);
-        String filePath6 = System.getProperty("user.dir") + "/resources/periapical1.png";
-        driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath6);
-        driver.findElement(sdXpaths.UploadImageBtn).submit();
-        driver.findElement(sdXpaths.ProceedBtn2).click();
-        driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
+        defaultCode();
         Thread.sleep(5000);
         driver.findElement(sdXpaths.AcceptBtn).click();
         driver.findElement(sdXpaths.ThreeDots).click();
@@ -223,21 +241,9 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.SaveTeethNumber).click();
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
     }
-    @Test(description = "Add findings Flow",priority = 8)
+    @Test(description = "Add findings Flow",priority = 20)
     public void addFindingsFlow() throws InterruptedException {
-        driver.navigate().refresh();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.SelectPatient).click();
-        Thread.sleep(5000);
-        driver.findElement(sdXpaths.UploadAnalyzeButton).click();
-        Thread.sleep(2000);
-        driver.findElement(sdXpaths.PeriapicalBtn2).click();
-        Thread.sleep(4000);
-        String filePath7 = System.getProperty("user.dir") + "/resources/periapical1.png";
-        driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath7);
-        driver.findElement(sdXpaths.UploadImageBtn).submit();
-        driver.findElement(sdXpaths.ProceedBtn2).click();
-        driver.findElement(sdXpaths.AnalyzeBtnPopup).click();
+        defaultCode();
         Thread.sleep(5000);
         driver.findElement(sdXpaths.AcceptBtn).click();
         driver.findElement(sdXpaths.addFindings).click();
@@ -249,6 +255,29 @@ public class UploadAndAnalyse extends BaseTest{
         driver.findElement(sdXpaths.acceptFindings).click();
         driver.findElement(sdXpaths.SaveFindingsBtn).click();
     }
+    @Test(description = "User Manual in U and A Flow",priority = 21)
+    public void userManualHyperlinkUandAFlow() throws InterruptedException {
+        driver.navigate().refresh();
+        Thread.sleep(2000);
+        driver.findElement(sdXpaths.SelectPatient).click();
+        Thread.sleep(5000);
+        driver.findElement(sdXpaths.UploadAnalyzeButton).click();
+        Thread.sleep(5000);
+        driver.findElement(sdXpaths.hereBtnUA).click();
+        String parent = driver.getWindowHandle();
+        Set<String> allWindowHandles = driver.getWindowHandles();
+        Iterator<String> I1 = allWindowHandles.iterator();
+        while (I1.hasNext()) {
+            String child_window = I1.next();
+            if (!parent.equals(child_window)) {
+                driver.switchTo().window(child_window);
+                System.out.println(driver.switchTo().window(child_window).getTitle());
+            }
+        }
+        Thread.sleep(3000);
+        driver.switchTo().window(parent);
+
+    }
    /* @Test(description = "Invalid File format flow")
     public void invalidFileFormat() throws InterruptedException {
         driver.navigate().refresh();
@@ -259,10 +288,11 @@ public class UploadAndAnalyse extends BaseTest{
         Thread.sleep(2000);
         driver.findElement(sdXpaths.PeriapicalBtn2).click();
         Thread.sleep(4000);
-        String filePath7 = System.getProperty("user.dir") + "/resources/periapical1.png";
+        String filePath7 = System.getProperty("user.dir") + "/resources/periapical1.zip";
         driver.findElement(sdXpaths.UploadImageBtn).sendKeys(filePath7);
         driver.findElement(sdXpaths.UploadImageBtn).submit();
     }*/
+
     //-----------------------------------AFTER CLASS--------------------------------
     @AfterClass
     public void tearDown() throws InterruptedException {
